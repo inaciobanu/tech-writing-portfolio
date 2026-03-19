@@ -2,7 +2,7 @@
 
 A Docusaurus-powered technical writing portfolio showcasing API documentation, developer guides, user manuals, and open source documentation.
 
-**🌐 Live site:** [your-username.github.io/tech-writing-portfolio](https://your-username.github.io/tech-writing-portfolio)
+**🌐 Live site:** [inaciobanu.github.io/tech-writing-portfolio](https://inaciobanu.github.io/tech-writing-portfolio)
 
 ---
 
