@@ -25,7 +25,7 @@ I'm a London-based technical writer with experience documenting APIs, developer 
 
 **Style guides I follow:** Google Developer Documentation Style Guide · Microsoft Writing Style Guide
 
-📩 **Available for freelance and full-time roles** → [ina@withinlondon.com](mailto:ina@withinlondon.com)
+📩 **Available for remote, full-time roles** → [inatechwriter@gmail.com](mailto:inatechwriter@gmail.com)
 
 ---
 
@@ -35,7 +35,7 @@ I'm a London-based technical writer with experience documenting APIs, developer 
 
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR-USERNAME/tech-writing-portfolio.git
+git clone https://github.com/inaciobanu/tech-writing-portfolio.git
 cd tech-writing-portfolio
 
 # Install dependencies
@@ -58,9 +58,9 @@ This portfolio is configured for GitHub Pages deployment.
 1. In `docusaurus.config.js`, replace the placeholder values:
 
 ```js
-url: 'https://YOUR-GITHUB-USERNAME.github.io',
+url: 'https://inaciobanu.github.io',
 baseUrl: '/tech-writing-portfolio/',
-organizationName: 'YOUR-GITHUB-USERNAME',
+organizationName: 'inaciobanu',
 projectName: 'tech-writing-portfolio',
 ```
 
@@ -140,4 +140,4 @@ tech-writing-portfolio/
 
 ---
 
-*Built by Ina · [withinlondon.com](https://withinlondon.com) · London, UK*
+*Built by Ina · [inatechwriter@gmail.com](inatechwriter@gmail.com) · London, UK*
