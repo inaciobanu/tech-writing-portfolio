@@ -8,10 +8,10 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Update this to your GitHub Pages URL once deployed
-  url: 'https://YOUR-GITHUB-USERNAME.github.io',
+  url: 'https://inaciobanu.github.io',
   baseUrl: '/tech-writing-portfolio/',
 
-  organizationName: 'YOUR-GITHUB-USERNAME',
+  organizationName: 'inaciobanu',
   projectName: 'tech-writing-portfolio',
   trailingSlash: false,
 
@@ -81,7 +81,7 @@ const config = {
             label: 'Open Source',
           },
           {
-            href: 'https://github.com/YOUR-GITHUB-USERNAME/tech-writing-portfolio',
+            href: 'https://github.com/inaciobanu/tech-writing-portfolio',
             label: 'GitHub',
             position: 'right',
           },
@@ -105,7 +105,7 @@ const config = {
             items: [
               { label: 'LinkedIn', href: 'https://www.linkedin.com/in/inaciobanu' },
               { label: 'Medium', href: 'https://medium.com/@ina_ciobanu' },
-              { label: 'GitHub', href: 'https://github.com/YOUR-GITHUB-USERNAME' },
+              { label: 'GitHub', href: 'https://github.com/inaciobanu' },
               { label: 'Within London', href: 'https://www.withinlondon.com' },
               { label: 'Email', href: 'mailto:ciobanu.cati@gmail.com' },
             ],
