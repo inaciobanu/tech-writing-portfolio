@@ -7,7 +7,7 @@ slug: /about/intro
 
 # Ina Ciobanu — Senior Technical Writer
 
-**📍 London, UK** · **✉️ ciobanu.cati@gmail.com** · [LinkedIn](https://www.linkedin.com/in/inaciobanu) · [Medium Portfolio](https://medium.com/@ina_ciobanu)
+**📍 London, UK** · **✉️ inatechwriter@gmail.com** · [LinkedIn](https://www.linkedin.com/in/inaciobanu) · [Medium Blog](https://medium.com/@ina_ciobanu)
 
 ---
 
@@ -55,14 +55,12 @@ I am also the founder of **SEOzon Prime**, a trademarked Amazon keyword optimisa
 - 🏆 **Greater London Enterprise Awards 2020** — Best Specialised eCommerce Copywriting & SEO Service of the Year
 - 🏆 Most Outstanding Specialist eCommerce SEO Service
 - 🏆 Best Specialist eCommerce SEO Optimization Service Provider
-- 📸 6th Overall Winner — Ealing Wildlife Group Annual Photo Competition
 
 ---
 
 ## Certifications
 
-- Technical Writing Certification
-- Five Day Coding Challenge
-- A Crash Course on Creativity — Stanford University
-- Explaining European Paintings, 1400–1800 — Honor Code Certificate
-- Warhol Certification
+- Technical Writing
+- Five-Day Coding Challenge
+- Principles of Cyber Security (Level 2)
+- Trilogy Skills Bootcamp in Front-End Web Development
