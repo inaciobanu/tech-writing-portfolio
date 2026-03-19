@@ -62,5 +62,6 @@ I am also the founder of **SEOzon Prime**, a trademarked Amazon keyword optimisa
 
 - Technical Writing
 - Five-Day Coding Challenge
+- Understanding Coding (Level 2)
 - Principles of Cyber Security (Level 2)
 - Trilogy Skills Bootcamp in Front-End Web Development
