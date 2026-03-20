@@ -41,8 +41,7 @@ International exchange scholarship — one of several experiences that establish
 
 | Certification | Issuer |
 |---|---|
-| Technical Writing Certification | — |
-| Five Day Coding Challenge | — |
+| Technical Writing Certification | Technical Writer HQ |
+| Five Day Coding Challenge | Code Institute |
 | A Crash Course on Creativity | Stanford University |
-| Explaining European Paintings, 1400–1800 | Honor Code Certificate |
-| Warhol | — |
+
