@@ -50,6 +50,9 @@ function HomepageHero() {
         <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.95rem', fontStyle: 'italic' }}>
           API docs · Developer portals · Fintech · AI/ML tooling · 18 years experience
         </p>
+        <p style={{ color: 'rgba(255,255,255,0.45)', fontSize: '0.8rem', marginTop: '-0.5rem' }}>
+          🌙 Dark mode available — toggle top right
+        </p>
         <div className={styles.buttons}>
           <Link className="button button--secondary button--lg" to="/docs/about/intro">
             View Portfolio →
