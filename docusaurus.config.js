@@ -44,7 +44,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Ina · Tech Writer',
+        title: 'Ina Ciobanu · Technical Writer',
         logo: {
           alt: 'Portfolio Logo',
           src: 'img/logo.svg',
