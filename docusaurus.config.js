@@ -15,8 +15,8 @@ const config = {
   projectName: 'tech-writing-portfolio',
   trailingSlash: false,
 
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'throw',
 
   i18n: {
     defaultLocale: 'en',
@@ -111,7 +111,7 @@ const config = {
             title: 'Connect',
             items: [
               { label: 'LinkedIn', href: 'https://www.linkedin.com/in/inaciobanu' },
-              { label: 'Email', href: 'inatechwriter@gmail.com' },
+              { label: 'Email', href: 'mailto:inatechwriter@gmail.com' },
               { label: 'Medium', href: 'https://medium.com/@ina_ciobanu' },
               { label: 'GitHub', href: 'https://github.com/inaciobanu' },
               { label: 'X', href: 'https://x.com/ina_ciobanu' },
