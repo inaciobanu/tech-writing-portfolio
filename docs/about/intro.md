@@ -1,7 +1,7 @@
 ---
 id: intro
 title: About Me
-sidebar_label: About Me
+sidebar_label: Overview
 slug: /about/intro
 ---
 
