@@ -15,7 +15,7 @@ slug: /about/intro
 
 I work on complex systems where documentation directly affects how quickly engineers can ship, integrate, and adopt new technology.
 
-With 19 years of experience across IT, fintech, SaaS, healthcare, and e-commerce, I specialise in turning technically dense products into documentation that developers, data scientists, and enterprise teams actually use. I don't just write — I build documentation systems, own developer portals end-to-end, and embed directly with engineering teams to get the technical depth right.
+With 19 years of experience across IT, fintech, AI, data, SaaS, healthcare, and e-commerce, I specialise in turning technically dense products into documentation that developers, data scientists, and enterprise teams actually use. I don't just write — I build documentation systems, own developer portals end-to-end, and embed directly with engineering teams to get the technical depth right.
 
 Currently at **KX**, I document **KDB.AI** (a real-time vector database for AI workloads) and **PyKX** (a Python interface to kdb+ for high-performance analytics). My audience: data scientists, quantitative analysts, financial engineers, and enterprise IT teams.
 
