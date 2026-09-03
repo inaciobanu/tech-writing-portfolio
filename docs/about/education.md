@@ -50,6 +50,6 @@ International exchange scholarship — one of several experiences that establish
 | Level 2 Certificate in Principles of Cyber Security | NCFE |
 | Trilogy Skills Bootcamp in Front-End Web Development | edX |
 | Business Analysis Fundamentals (Requirements, Use Cases & Fundamentals) | Udemy |
-| Five Day Coding Challenge | Code Institute |
+| Five-Day Coding Challenge | Code Institute |
 | A Crash Course on Creativity | Stanford University |
 

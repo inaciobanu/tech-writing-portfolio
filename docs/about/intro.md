@@ -112,8 +112,6 @@ These are the principles I apply to every project — not as a checklist, but as
 - Principles of Cyber Security (Level 2)
 - Trilogy Skills Bootcamp in Front-End Web Development
 - Business Analysis Fundamentals (Requirements, Use Cases & Fundamentals)
-- Five Day Coding Challenge
-- A Crash Course on Creativity
 - Five-Day Coding Challenge
 - A Crash Course on Creativity — Stanford University
 
