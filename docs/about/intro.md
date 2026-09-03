@@ -118,5 +118,5 @@ These are the principles I apply to every project — not as a checklist, but as
 ---
 
 :::tip Available for senior technical writing roles
-I'm open to senior technical writer roles in London and remotely. [Get in touch →](mailto:inatechwriter@gmail.com)
+I'm open to Senior Technical Writer roles. [Get in touch →](mailto:inatechwriter@gmail.com)
 :::
