@@ -64,6 +64,6 @@ curl https://api.payflow.io/v2/payments \
 ## Next Steps
 
 - [Authentication](./authentication) — get your API keys and set up auth
-- [Endpoints Reference](./endpoints) — full list of available endpoints
+- [API Reference](./reference/payflow-api) — generated from the OpenAPI spec, every endpoint with live request/response examples
 - [Error Codes](./errors) — understand and handle API errors
 - [Rate Limits](./rate-limits) — avoid hitting request limits

@@ -19,7 +19,34 @@ const sidebars = {
       items: [
         'api/intro',
         'api/authentication',
-        'api/endpoints',
+        {
+          type: 'category',
+          label: 'API Reference',
+          link: { type: 'doc', id: 'api/reference/payflow-api' },
+          // Generated from openapi/payflow.yaml — run `npm run gen-api-docs`
+          // after editing the spec, then keep this list in sync with the
+          // output of docs/api/reference/sidebar.ts.
+          items: [
+            {
+              type: 'category',
+              label: 'Payments',
+              items: [
+                { type: 'doc', id: 'api/reference/create-payment', label: 'Create a payment', className: 'api-method post' },
+                { type: 'doc', id: 'api/reference/list-payments', label: 'List payments', className: 'api-method get' },
+                { type: 'doc', id: 'api/reference/retrieve-payment', label: 'Retrieve a payment', className: 'api-method get' },
+                { type: 'doc', id: 'api/reference/create-refund', label: 'Create a refund', className: 'api-method post' },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Customers',
+              items: [
+                { type: 'doc', id: 'api/reference/create-customer', label: 'Create a customer', className: 'api-method post' },
+                { type: 'doc', id: 'api/reference/list-customers', label: 'List customers', className: 'api-method get' },
+              ],
+            },
+          ],
+        },
         'api/errors',
         'api/rate-limits',
         'api/kdbai-sample',

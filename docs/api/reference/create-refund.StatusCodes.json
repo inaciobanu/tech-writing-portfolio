@@ -1,0 +1,1 @@
+{"responses":{"200":{"description":"Refund created successfully.","content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"string","example":"re_3PqK9mNw"},"payment_id":{"type":"string","example":"pay_8xKq9mNw"},"amount":{"type":"integer","example":4999},"status":{"type":"string","example":"succeeded"}}}}}}}}

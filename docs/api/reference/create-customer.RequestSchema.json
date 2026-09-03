@@ -1,0 +1,1 @@
+{"title":"Body","body":{"required":true,"content":{"application/json":{"schema":{"type":"object","properties":{"email":{"type":"string","format":"email","description":"Customer email address."},"name":{"type":"string","description":"Full name."},"metadata":{"type":"object","description":"Your custom data.","additionalProperties":true}}}}}}}

@@ -1,0 +1,1 @@
+{"parameters":[{"name":"id","in":"path","required":true,"description":"The payment ID.","schema":{"type":"string","example":"pay_8xKq9mNw"}}]}

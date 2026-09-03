@@ -32,6 +32,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: 'docs',
           showLastUpdateTime: true,
+          docItemComponent: '@theme/ApiItem',
         },
         blog: false, // Portfolio doesn't need a blog
         theme: {
@@ -40,6 +41,44 @@ const config = {
       }),
     ],
   ],
+
+  plugins: [
+    // The OpenAPI theme's code-sample generator (postman-code-generators)
+    // imports Node's `path` module, which webpack 5 no longer polyfills
+    // for the browser bundle by default.
+    function polyfillNodePathForOpenApi() {
+      return {
+        name: 'polyfill-node-path-for-openapi',
+        configureWebpack() {
+          return {
+            resolve: {
+              fallback: {
+                path: require.resolve('path-browserify'),
+              },
+            },
+          };
+        },
+      };
+    },
+    [
+      'docusaurus-plugin-openapi-docs',
+      {
+        id: 'openapi',
+        docsPluginId: 'default',
+        config: {
+          payflow: {
+            specPath: 'openapi/payflow.yaml',
+            outputDir: 'docs/api/reference',
+            sidebarOptions: {
+              groupPathsBy: 'tag',
+            },
+          },
+        },
+      },
+    ],
+  ],
+
+  themes: ['docusaurus-theme-openapi-docs'],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
