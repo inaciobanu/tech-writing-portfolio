@@ -31,6 +31,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: 'docs',
+          showLastUpdateTime: true,
         },
         blog: false, // Portfolio doesn't need a blog
         theme: {
