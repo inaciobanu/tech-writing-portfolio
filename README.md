@@ -69,6 +69,16 @@ npm run gen-api-docs
 
 This regenerates `docs/api/reference/`. The sidebar entries for it are hand-maintained in `sidebars.js` — keep them in sync with the plugin's output if you add or remove endpoints.
 
+### Regenerating the favicon and social preview image
+
+After editing `assets/social/favicon.svg` or `assets/social/og-image.svg`:
+
+```bash
+npm run gen-social-images
+```
+
+This renders both to PNG in `static/img/`. `sharp` is a devDependency used only by this script — it isn't part of the site build itself.
+
 ### Running the prose linter locally
 
 Requires the [Vale CLI](https://vale.sh/docs/install) installed separately (not an npm package):

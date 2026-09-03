@@ -5,7 +5,7 @@ const { themes } = require('prism-react-renderer');
 const config = {
   title: 'Ina Ciobanu | Senior Technical Writer',
   tagline: 'Clear documentation for complex products — APIs, developer tools, and beyond.',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.png',
 
   // Update this to your GitHub Pages URL once deployed
   url: 'https://inaciobanu.github.io',
@@ -83,6 +83,10 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      image: 'img/og-image.png',
+      metadata: [
+        { name: 'twitter:card', content: 'summary_large_image' },
+      ],
       navbar: {
         title: 'Ina Ciobanu · Technical Writer',
         logo: {
