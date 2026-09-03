@@ -60,6 +60,14 @@ const portfolioSections = [
     href: '/docs/opensource/intro',
     tags: ['Open Source', 'Architecture', 'Changelog'],
   },
+  {
+    emoji: '🗂️',
+    title: 'Documentation Governance & Process',
+    desc: 'Auditing an existing documentation space, redesigning its structure, and building the ownership, review cycles, and automation that keep it from decaying again.',
+    href: '/docs/process-governance/intro',
+    tags: ['Confluence', 'Governance', 'Process Analysis'],
+    isNew: true,
+  },
 ];
 
 const thinkingItems = [
@@ -172,6 +180,7 @@ export default function Home() {
           <div className="portfolio-grid" style={{ marginBottom: '3.5rem' }}>
             {portfolioSections.map((item) => (
               <Link key={item.title} className="portfolio-card" to={item.href}>
+                {item.isNew && <span className="portfolio-card__badge">New</span>}
                 <span className="portfolio-card__emoji">{item.emoji}</span>
                 <div className="portfolio-card__title">{item.title}</div>
                 <p className="portfolio-card__desc">{item.desc}</p>
