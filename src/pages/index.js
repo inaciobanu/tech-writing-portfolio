@@ -35,9 +35,9 @@ const portfolioSections = [
   {
     emoji: '🤖',
     title: 'Data & AI Platform Docs',
-    desc: 'Technical documentation for KDB.AI and PyKX — real-time vector databases and Python analytics libraries used by quants and data scientists.',
+    desc: 'Technical documentation for a real-time vector search API — written in the style of the AI/ML platform docs I own daily at KX.',
     href: '/docs/api/kdbai-sample',
-    tags: ['KDB.AI', 'PyKX', 'AI/ML', 'Fintech'],
+    tags: ['Vector Search', 'AI/ML', 'Python Client'],
   },
   {
     emoji: '🛠️',

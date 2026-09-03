@@ -1,18 +1,18 @@
 ---
 id: kdbai-sample
-title: "Sample: KDB.AI Vector Search API"
-sidebar_label: "KDB.AI Vector Search (Sample)"
+title: "Sample: Vector Search API"
+sidebar_label: "Vector Search API (Sample)"
 ---
 
 :::info Portfolio sample
 This is a **portfolio writing sample** demonstrating documentation style for a vector database API. It is written in the style of real-time database and AI tooling documentation — the category I work in daily at KX.
 :::
 
-# KDB.AI Vector Search API
+# Vector Search API
 
-KDB.AI is a real-time vector database built on kdb+, designed for AI and machine learning workloads requiring low-latency similarity search over high-dimensional data.
+**Rotko** is a real-time vector database designed for AI and machine learning workloads requiring low-latency similarity search over high-dimensional data.
 
-This reference documents the Vector Search endpoints — used to insert, index, and query vector embeddings in KDB.AI tables.
+This reference documents the vector search endpoints — used to insert, index, and query vector embeddings in Rotko tables.
 
 ---
 
@@ -31,7 +31,7 @@ A **vector embedding** is a numerical representation of data — text, images, a
 
 ### Indexes
 
-KDB.AI supports two index types:
+Rotko supports three index types:
 
 | Index | Algorithm | Best for |
 |---|---|---|
@@ -49,7 +49,7 @@ All requests require a bearer token:
 Authorization: Bearer <your-api-token>
 ```
 
-Tokens are generated in the KDB.AI Cloud console under **Settings → API Tokens**.
+Tokens are generated in the Rotko Cloud console under **Settings → API Tokens**.
 
 ---
 
@@ -61,7 +61,7 @@ Tokens are generated in the KDB.AI Cloud console under **Settings → API Tokens
 POST /v1/tables/{table}/insert
 ```
 
-Inserts one or more vector embeddings into a KDB.AI table.
+Inserts one or more vector embeddings into a table.
 
 **Path parameters:**
 
@@ -95,7 +95,7 @@ Inserts one or more vector embeddings into a KDB.AI table.
 **Example:**
 
 ```bash
-curl -X POST https://api.kdbai.cloud/v1/tables/earnings_docs/insert \
+curl -X POST https://api.rotko.io/v1/tables/earnings_docs/insert \
   -H "Authorization: Bearer eyJhbG..." \
   -H "Content-Type: application/json" \
   -d '{
@@ -182,15 +182,15 @@ Deletes vectors by ID.
 
 ---
 
-## PyKX Integration
+## PyRotko Integration
 
-KDB.AI is natively accessible via **PyKX**, KX's Python interface to kdb+. This allows Python-native workflows without leaving your data science environment:
+Rotko is natively accessible via **PyRotko**, its Python client library, for workflows that don't leave your data science environment:
 
 ```python
-import kdbai_client as kdbai
+import pyrotko
 
-# Connect to your KDB.AI instance
-session = kdbai.Session(api_key="your-api-key", endpoint="https://api.kdbai.cloud")
+# Connect to your Rotko instance
+session = pyrotko.Session(api_key="your-api-key", endpoint="https://api.rotko.io")
 
 # Get a table handle
 table = session.table("earnings_docs")
@@ -220,12 +220,4 @@ print(results)
 | `404 Not Found` | Table does not exist |
 | `409 Conflict` | Vector ID already exists in the table |
 | `429 Too Many Requests` | Rate limit exceeded |
-| `500 Internal Server Error` | KDB.AI server error — contact support |
-
----
-
-## Further Reading
-
-- [KDB.AI Documentation](https://code.kx.com/kdbai/)
-- [PyKX Documentation](https://code.kx.com/pykx/)
-- [KX Developer Hub](https://code.kx.com/)
+| `500 Internal Server Error` | Server error — contact support |
