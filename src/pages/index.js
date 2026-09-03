@@ -1,9 +1,33 @@
 import React from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
+import Head from '@docusaurus/Head';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import styles from './index.module.css';
+
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Ina Ciobanu',
+  jobTitle: 'Senior Technical Writer',
+  url: 'https://inaciobanu.github.io/tech-writing-portfolio/',
+  worksFor: {
+    '@type': 'Organization',
+    name: 'KX',
+  },
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'London',
+    addressCountry: 'GB',
+  },
+  sameAs: [
+    'https://www.linkedin.com/in/inaciobanu',
+    'https://github.com/inaciobanu',
+    'https://medium.com/@ina_ciobanu',
+    'https://x.com/ina_ciobanu',
+  ],
+};
 
 const impactItems = [
   {
@@ -144,8 +168,13 @@ export default function Home() {
   return (
     <Layout
       title="Ina Ciobanu · Senior Technical Writer Portfolio"
-      description="Senior technical writer specialising in API docs, developer portals, and AI/data platform documentation. KX · PrimaryBid · London."
+      description="Senior technical writer specialising in API docs, developer portals, and AI/data platform documentation. KX · PrimaryBid · London, open to remote."
     >
+      <Head>
+        <script type="application/ld+json">
+          {JSON.stringify(personSchema)}
+        </script>
+      </Head>
       <HomepageHero />
       <main>
         <div className="container" style={{ padding: '3rem 0 4rem' }}>
