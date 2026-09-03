@@ -1,0 +1,31 @@
+name: Lint Documentation
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  checks: write
+
+jobs:
+  vale:
+    name: Vale prose linting
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/cache@v4
+        id: styles
+        with:
+          path: .vale/styles
+          key: vale-styles-${{ hashFiles('.vale.ini') }}
+
+      - uses: vale-cli/vale-action@v3
+        with:
+          sync: ${{ steps.styles.outputs.cache-hit != 'true' }}
+          reporter: github-check
+          fail_on_error: true

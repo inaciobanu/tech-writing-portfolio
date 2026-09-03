@@ -23,3 +23,7 @@ Thumbs.db
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Vale synced style packages (third-party, fetched via `vale sync`)
+.vale/styles/Google/
+.vale/styles/Microsoft/

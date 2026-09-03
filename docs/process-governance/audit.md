@@ -15,7 +15,7 @@ Before I touched the structure, I needed to know what was actually in the space.
 
 Three separate pages walked through "how to add a new site," each written by a different engineer at a different point, and each one slightly wrong about something the others got right. The topology diagrams hadn't been touched since a data-centre migration two years earlier, and they were still linked from the space's homepage as if they were current. Nineteen pages had no owner listed at all – either the field was left blank, or the person who wrote them had since moved teams. And the procedure people actually followed for a couple of common tasks wasn't written down anywhere; it lived in a Slack channel and in two engineers' heads.
 
-None of that is unusual for a space that's grown for six years without anyone responsible for its upkeep.
+None of that's unusual for a space that's grown for six years without anyone responsible for its upkeep.
 
 ## How I went through it
 

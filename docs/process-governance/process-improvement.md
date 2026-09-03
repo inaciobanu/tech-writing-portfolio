@@ -31,7 +31,7 @@ The same weekly check also looks up whether each owner's account is still active
 
 Overdue reviews dropped off within a month of turning it on. Not because anyone got better at remembering – because they stopped having to.
 
-## The other half of this: capturing what people actually do
+## The other half of this: Capturing what people actually do
 
 The reminder fixed timing. It didn't fix accuracy, which is a separate problem I ran into while writing the [site provisioning SOP](./template-sop). Picturing what the on-call engineer would actually do, step by step, against what the written procedure said turned up three places where the two would diverge – the kind of detail a straight description-from-memory wouldn't catch. It's the reason I'd rather sit with someone during a real change and write down what happens than take a page at its word.
 
@@ -41,4 +41,4 @@ Neither of these looked like documentation problems on the surface – the sympt
 
 ## What's next
 
-The reminder system was the first automation I put in, not the last one I'd want. Two more are on my list: nudging new-page authors toward the right template before a page goes live, instead of catching drift at the next review, and auto-drafting a Troubleshooting page from a closed ticket the moment something new gets resolved, so the write-up starts before anyone has to remember to do it. Neither is built yet – the reminder system got the time first because it was the most widespread problem.
+The reminder system was the first automation I put in, not the last one I'd want. Two more are on my list: nudging new-page authors toward the right template before a page goes live, instead of catching drift at the next review, and automatically drafting a Troubleshooting page from a closed ticket the moment something new gets resolved, so the write-up starts before anyone has to remember to do it. Neither is built yet – the reminder system got the time first because it was the most widespread problem.

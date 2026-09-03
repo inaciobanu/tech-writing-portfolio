@@ -21,7 +21,7 @@ This procedure provisions a new site – an office, data centre, or remote point
 
 ## Scope
 
-This procedure applies to physical sites that require WAN connectivity, a local network, and integration with existing monitoring and access control. It does not cover cloud-only or virtual-site deployments; see *Provisioning a Cloud Region* for that procedure.
+This procedure applies to physical sites that require WAN connectivity, a local network, and integration with existing monitoring and access control. It doesn't cover cloud-only or virtual-site deployments; see *Provisioning a Cloud Region* for that procedure.
 
 ## Prerequisites
 
@@ -33,7 +33,7 @@ This procedure applies to physical sites that require WAN connectivity, a local 
 
 ## Step-by-step procedure
 
-1. **Confirm the IP allocation.** Check the addressing team's record and note the assigned subnet(s).
+1. **Confirm the IP allocation.** Check the addressing team's record and note the assigned subnets.
 
    **Caution:** Don't provision against a tentative or "nearly final" allocation. If the confirmed range differs, steps 2–4 have to be redone.
 

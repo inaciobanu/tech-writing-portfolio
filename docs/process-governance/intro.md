@@ -19,7 +19,7 @@ Picture a Network Infrastructure team's Confluence space that's been running for
 
 - [Auditing an Existing Documentation Space](./audit) – how I worked out what to keep, what to merge, and what to quietly retire
 - [Redesigning the Space Structure](./structure) – the structure I landed on, and the one I tried first that didn't work
-- [Sample SOP Template](./template-sop) – one runbook, written the way I'd want it if I were the person on call at 3am
+- [Sample SOP Template](./template-sop) – one runbook, written the way I'd want it if I were the person on call at 3 AM
 - [Governance Model](./governance) – how the space stays accurate after I'm not the one checking it every week
 - [Finding and Fixing a Broken Process](./process-improvement) – a workflow problem worth watching for, and the fix I put in place for it
 
