@@ -5,27 +5,27 @@ title: Education
 
 # Education
 
-## George Enescu University of Arts
-**Faculty of Visual Arts and Design**
-*2nd Bachelor's Degree — History and Theory of Arts · 2013–2016*
+## 2nd Bachelor's Degree — History and Theory of Arts
+**George Enescu University of Arts**
+*Faculty of Visual Arts and Design · 2013–2016*
 
 ---
 
-## Al. I. Cuza University of Iași
-**Faculty of Philosophy**
-*Master's Degree — Public Relations and Advertising · 2010–2012*
+## Master's Degree — Public Relations and Advertising
+**Al. I. Cuza University of Iași**
+*Faculty of Philosophy · 2010–2012*
 
 ---
 
-## Al. I. Cuza University of Iași
-**Faculty of Law**
-*Master's Degree — European Law · 2009–2011*
+## Master's Degree — European Law
+**Al. I. Cuza University of Iași**
+*Faculty of Law · 2009–2011*
 
 ---
 
-## Al. I. Cuza University of Iași
-**Faculty of Economics and Business Administration**
-*Postgraduate Studies — Financial-Banking Management · 2007–2008*
+## Postgraduate Studies — Financial-Banking Management
+**Al. I. Cuza University of Iași**
+*Faculty of Economics and Business Administration · 2007–2008*
 
 ---
 
