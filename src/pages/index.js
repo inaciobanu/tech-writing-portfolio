@@ -133,6 +133,19 @@ const techEnv = [
   { cat: "Style guides", tools: "Google Developer Documentation Style Guide · Microsoft Writing Style Guide" },
 ];
 
+const testimonialItems = [
+  {
+    quote: "Ina brings an impressive blend of clarity, precision, and speed to her work. Her ability to translate complex concepts into relevant and user-focused content made her a trusted partner.",
+    name: "Gareth Forshaw",
+    title: "Content Leader · KX",
+  },
+  {
+    quote: "Ina built our Developer Portal out from nothing — now award-nominated. She learned the platform and product and then wrote for developers, as a developer. A truly great skill.",
+    name: "Gerry McQuade",
+    title: "Senior Technical Customer Success · PrimaryBid",
+  },
+];
+
 function HomepageHero() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
@@ -141,10 +154,10 @@ function HomepageHero() {
         <p className="hero__subtitle">
           Senior Technical Writer · KX · London
         </p>
-        <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '1rem', maxWidth: '620px', margin: '0 auto 0.5rem', lineHeight: 1.6 }}>
+        <p className={styles.heroDescription}>
           I work on complex systems where documentation directly affects how quickly engineers can ship, integrate, and adopt new technology.
         </p>
-        <p style={{ color: 'rgba(255,255,255,0.45)', fontSize: '0.8rem', marginBottom: '2rem' }}>
+        <p className={styles.heroNote}>
           🌙 Dark mode available — toggle top right
         </p>
         <div className={styles.buttons}>
@@ -152,8 +165,7 @@ function HomepageHero() {
             About Me →
           </Link>
           <Link
-            className="button button--outline button--lg"
-            style={{ marginLeft: '1rem', color: 'white', borderColor: 'rgba(255,255,255,0.4)' }}
+            className={clsx('button button--outline button--lg', styles.heroButtonOutline)}
             to="mailto:inatechwriter@gmail.com"
           >
             Get in Touch
@@ -177,52 +189,35 @@ export default function Home() {
       </Head>
       <HomepageHero />
       <main>
-        <div className="container" style={{ padding: '3rem 0 4rem' }}>
+        <div className={clsx('container', styles.main)}>
 
           {/* Impact metrics */}
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-            gap: '1rem',
-            marginBottom: '3.5rem',
-          }}>
+          <div className={clsx(styles.impactGrid, styles.section)}>
             {impactItems.map((item) => (
-              <div key={item.metric} style={{
-                padding: '1.25rem 1.5rem',
-                background: 'var(--ifm-color-emphasis-100)',
-                borderRadius: '4px',
-                borderTop: '3px solid var(--ifm-color-primary)',
-              }}>
-                <div style={{ fontSize: '1.6rem', fontWeight: '300', color: 'var(--ifm-color-primary)', marginBottom: '0.4rem' }}>
+              <div key={item.metric} className={styles.impactCard}>
+                <div className={styles.impactMetric}>
                   {item.metric}
                 </div>
-                <div style={{ fontSize: '0.85rem', lineHeight: 1.5, opacity: 0.75 }}>{item.desc}</div>
+                <div className={styles.impactDesc}>{item.desc}</div>
               </div>
             ))}
           </div>
 
           {/* Portfolio sections */}
-          <h2 style={{ fontWeight: '300', fontSize: '1.6rem', marginBottom: '0.25rem' }}>Portfolio</h2>
-          <p style={{ opacity: 0.6, fontSize: '0.9rem', marginBottom: '1.5rem' }}>
+          <h2 className={styles.sectionHeading}>Portfolio</h2>
+          <p className={styles.sectionSubheading}>
             Writing samples grouped by documentation type — not just file format.
           </p>
-          <div className="portfolio-grid" style={{ marginBottom: '3.5rem' }}>
+          <div className={clsx('portfolio-grid', styles.section)}>
             {portfolioSections.map((item) => (
               <Link key={item.title} className="portfolio-card" to={item.href}>
                 {item.isNew && <span className="portfolio-card__badge">New</span>}
                 <span className="portfolio-card__emoji">{item.emoji}</span>
                 <div className="portfolio-card__title">{item.title}</div>
                 <p className="portfolio-card__desc">{item.desc}</p>
-                <div style={{ marginTop: '0.75rem', display: 'flex', flexWrap: 'wrap', gap: '0.4rem' }}>
+                <div className={styles.tagRow}>
                   {item.tags.map(tag => (
-                    <span key={tag} style={{
-                      fontSize: '0.7rem',
-                      padding: '0.2rem 0.5rem',
-                      background: 'var(--ifm-color-emphasis-200)',
-                      borderRadius: '100px',
-                      color: 'var(--ifm-color-primary)',
-                      fontWeight: 500,
-                    }}>{tag}</span>
+                    <span key={tag} className={styles.tag}>{tag}</span>
                   ))}
                 </div>
               </Link>
@@ -230,59 +225,41 @@ export default function Home() {
           </div>
 
           {/* How I think */}
-          <h2 style={{ fontWeight: '300', fontSize: '1.6rem', marginBottom: '0.25rem' }}>How I Think About Documentation</h2>
-          <p style={{ opacity: 0.6, fontSize: '0.9rem', marginBottom: '1.5rem' }}>
+          <h2 className={styles.sectionHeading}>How I Think About Documentation</h2>
+          <p className={styles.sectionSubheading}>
             Real problems I've solved — context, approach, and outcome.
           </p>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginBottom: '3.5rem' }}>
+          <div className={clsx(styles.thinkingList, styles.section)}>
             {thinkingItems.map((item) => (
-              <div key={item.company} style={{
-                padding: '1.5rem',
-                border: '1px solid var(--ifm-color-emphasis-200)',
-                borderRadius: '4px',
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-                gap: '1.25rem',
-              }}>
+              <div key={item.company} className={styles.thinkingCard}>
                 <div>
-                  <div style={{ fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--ifm-color-primary)', marginBottom: '0.4rem', fontWeight: 500 }}>Problem · {item.company}</div>
-                  <div style={{ fontSize: '0.9rem', lineHeight: 1.6, opacity: 0.8 }}>{item.problem}</div>
+                  <div className={styles.thinkingLabel}>Problem · {item.company}</div>
+                  <div className={styles.thinkingText}>{item.problem}</div>
                 </div>
                 <div>
-                  <div style={{ fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--ifm-color-primary)', marginBottom: '0.4rem', fontWeight: 500 }}>What I Did</div>
-                  <div style={{ fontSize: '0.9rem', lineHeight: 1.6, opacity: 0.8 }}>{item.action}</div>
+                  <div className={styles.thinkingLabel}>What I Did</div>
+                  <div className={styles.thinkingText}>{item.action}</div>
                 </div>
                 <div>
-                  <div style={{ fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#2e7d32', marginBottom: '0.4rem', fontWeight: 500 }}>Result</div>
-                  <div style={{ fontSize: '0.9rem', lineHeight: 1.6, opacity: 0.8 }}>{item.result}</div>
+                  <div className={clsx(styles.thinkingLabel, styles.thinkingLabelResult)}>Result</div>
+                  <div className={styles.thinkingText}>{item.result}</div>
                 </div>
               </div>
             ))}
           </div>
 
           {/* How I improve docs */}
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-            gap: '2rem',
-            marginBottom: '3.5rem',
-          }}>
+          <div className={clsx(styles.twoColGrid, styles.section)}>
             <div>
-              <h2 style={{ fontWeight: '300', fontSize: '1.6rem', marginBottom: '0.25rem' }}>How I Improve Documentation</h2>
-              <p style={{ opacity: 0.6, fontSize: '0.9rem', marginBottom: '1.25rem' }}>
+              <h2 className={styles.sectionHeading}>How I Improve Documentation</h2>
+              <p className={clsx(styles.sectionSubheading, styles.sectionSubheadingTight)}>
                 The principles I apply to every project.
               </p>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
+              <div className={styles.approachList}>
                 {approachItems.map((item) => (
-                  <div key={item} style={{
-                    display: 'flex',
-                    gap: '0.75rem',
-                    alignItems: 'flex-start',
-                    fontSize: '0.9rem',
-                    lineHeight: 1.5,
-                  }}>
-                    <span style={{ color: 'var(--ifm-color-primary)', fontWeight: 'bold', flexShrink: 0 }}>→</span>
-                    <span style={{ opacity: 0.8 }}>{item}</span>
+                  <div key={item} className={styles.approachItem}>
+                    <span className={styles.approachArrow}>→</span>
+                    <span className={styles.approachText}>{item}</span>
                   </div>
                 ))}
               </div>
@@ -290,15 +267,15 @@ export default function Home() {
 
             {/* Technical environment */}
             <div>
-              <h2 style={{ fontWeight: '300', fontSize: '1.6rem', marginBottom: '0.25rem' }}>Technical Environment</h2>
-              <p style={{ opacity: 0.6, fontSize: '0.9rem', marginBottom: '1.25rem' }}>
+              <h2 className={styles.sectionHeading}>Technical Environment</h2>
+              <p className={clsx(styles.sectionSubheading, styles.sectionSubheadingTight)}>
                 Tools and platforms I work with daily.
               </p>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+              <div className={styles.techEnvList}>
                 {techEnv.map((item) => (
                   <div key={item.cat}>
-                    <div style={{ fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--ifm-color-primary)', fontWeight: 500, marginBottom: '0.2rem' }}>{item.cat}</div>
-                    <div style={{ fontSize: '0.85rem', opacity: 0.75, lineHeight: 1.5 }}>{item.tools}</div>
+                    <div className={styles.techEnvCat}>{item.cat}</div>
+                    <div className={styles.techEnvTools}>{item.tools}</div>
                   </div>
                 ))}
               </div>
@@ -306,36 +283,20 @@ export default function Home() {
           </div>
 
           {/* Testimonials */}
-          <h2 style={{ fontWeight: '300', fontSize: '1.6rem', marginBottom: '1.25rem' }}>What People Say</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.25rem', marginBottom: '1rem' }}>
-            {[
-              {
-                quote: "Ina brings an impressive blend of clarity, precision, and speed to her work. Her ability to translate complex concepts into relevant and user-focused content made her a trusted partner.",
-                name: "Gareth Forshaw",
-                title: "Content Leader · KX",
-              },
-              {
-                quote: "Ina built our Developer Portal out from nothing — now award-nominated. She learned the platform and product and then wrote for developers, as a developer. A truly great skill.",
-                name: "Gerry McQuade",
-                title: "Senior Technical Customer Success · PrimaryBid",
-              },
-            ].map((t) => (
-              <div key={t.name} style={{
-                padding: '1.5rem',
-                border: '1px solid var(--ifm-color-emphasis-200)',
-                borderLeft: '3px solid var(--ifm-color-primary)',
-                borderRadius: '0 4px 4px 0',
-              }}>
-                <p style={{ fontStyle: 'italic', marginBottom: '1rem', lineHeight: 1.6, fontSize: '0.9rem' }}>
+          <h2 className={styles.sectionHeadingSolo}>What People Say</h2>
+          <div className={styles.testimonialGrid}>
+            {testimonialItems.map((t) => (
+              <div key={t.name} className={styles.testimonialCard}>
+                <p className={styles.testimonialQuote}>
                   "{t.quote}"
                 </p>
-                <p style={{ margin: 0, fontWeight: '500', fontSize: '0.85rem' }}>{t.name}</p>
-                <p style={{ margin: 0, fontSize: '0.8rem', opacity: 0.6 }}>{t.title}</p>
+                <p className={styles.testimonialName}>{t.name}</p>
+                <p className={styles.testimonialTitle}>{t.title}</p>
               </div>
             ))}
           </div>
-          <div style={{ marginBottom: '3.5rem' }}>
-            <Link to="/docs/about/testimonials" style={{ fontSize: '0.9rem' }}>
+          <div className={styles.section}>
+            <Link to="/docs/about/testimonials" className={styles.readAllLink}>
               Read all testimonials →
             </Link>
           </div>
