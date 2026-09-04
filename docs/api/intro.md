@@ -1,6 +1,7 @@
 ---
 id: intro
 title: API Documentation
+description: "Overview of the PayFlow REST API reference for processing payments, subscriptions, and refunds."
 sidebar_label: Overview
 slug: /api/intro
 ---

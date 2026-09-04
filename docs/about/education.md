@@ -1,6 +1,7 @@
 ---
 id: education
 title: Education
+description: "Ina Ciobanu's academic background — two bachelor's degrees and three master's degrees across arts, PR, law, and finance."
 ---
 
 # Education

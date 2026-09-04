@@ -1,6 +1,7 @@
 ---
 id: getting-started
 title: Getting Started
+description: "How to create a PayFlow account and process your first payment."
 ---
 
 # Getting Started

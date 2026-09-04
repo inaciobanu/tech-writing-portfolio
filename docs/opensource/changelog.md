@@ -1,6 +1,7 @@
 ---
 id: changelog
 title: Changelog
+description: "Release history for Logpilot, following Semantic Versioning and Keep a Changelog."
 ---
 
 # Changelog

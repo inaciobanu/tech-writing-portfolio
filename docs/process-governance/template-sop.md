@@ -1,6 +1,7 @@
 ---
 id: template-sop
 title: Sample SOP Template
+description: "A sample standard operating procedure for adding a new site to the network, written to Google style guide conventions."
 sidebar_label: Sample SOP
 slug: /process-governance/template-sop
 ---

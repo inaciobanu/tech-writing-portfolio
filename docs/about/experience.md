@@ -1,6 +1,7 @@
 ---
 id: experience
 title: Experience
+description: "Work history covering technical writing roles at KX and PrimaryBid, plus nine years of freelance technical content work."
 ---
 
 # Work Experience

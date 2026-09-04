@@ -1,6 +1,7 @@
 ---
 id: dashboard
 title: Dashboard Overview
+description: "A tour of the PayFlow Dashboard's Payments, Customers, and Settings sections."
 ---
 
 # Dashboard Overview

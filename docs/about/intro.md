@@ -1,6 +1,7 @@
 ---
 id: intro
 title: About Me
+description: "Ina Ciobanu, Senior Technical Writer in London — background, impact, technical environment, and specialisms across API, AI/data platform, and fintech documentation."
 sidebar_label: Overview
 slug: /about/intro
 ---

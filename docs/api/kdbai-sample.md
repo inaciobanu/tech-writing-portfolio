@@ -1,6 +1,7 @@
 ---
 id: kdbai-sample
 title: "Sample: Vector Search API"
+description: "A portfolio writing sample documenting a real-time vector search API, in the style of AI/ML platform documentation."
 sidebar_label: "Vector Search API (Sample)"
 ---
 

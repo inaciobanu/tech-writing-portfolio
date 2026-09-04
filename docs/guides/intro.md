@@ -1,6 +1,7 @@
 ---
 id: intro
 title: Developer Guides
+description: "An overview of the PayFlow developer guides, from your first test payment to a production-ready integration."
 sidebar_label: Overview
 slug: /guides/intro
 ---

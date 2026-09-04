@@ -1,6 +1,7 @@
 ---
 id: process-improvement
 title: Finding and Fixing a Broken Process
+description: "Why scheduled SOP reviews stopped happening in practice, and the workflow automation built to fix it."
 sidebar_label: Process Improvement
 slug: /process-governance/process-improvement
 ---

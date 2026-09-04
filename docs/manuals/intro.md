@@ -1,6 +1,7 @@
 ---
 id: intro
 title: User Manual
+description: "The PayFlow Dashboard user manual — managing payments, customers, and account settings."
 sidebar_label: Overview
 slug: /manuals/intro
 ---

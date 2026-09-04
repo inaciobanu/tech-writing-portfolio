@@ -1,6 +1,7 @@
 ---
 id: testimonials
 title: Testimonials
+description: "What colleagues, managers, and collaborators at KX and PrimaryBid say about working with Ina Ciobanu."
 ---
 
 # Testimonials

@@ -1,6 +1,7 @@
 ---
 id: errors
 title: Error Codes
+description: "PayFlow API error response format and standard HTTP status codes."
 ---
 
 # Error Codes

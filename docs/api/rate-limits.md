@@ -1,6 +1,7 @@
 ---
 id: rate-limits
 title: Rate Limits
+description: "PayFlow API rate limits by plan, and how to handle rate-limit errors."
 ---
 
 # Rate Limits

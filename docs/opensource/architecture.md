@@ -1,6 +1,7 @@
 ---
 id: architecture
 title: Architecture
+description: "How Logpilot is structured internally, for anyone contributing code or building a custom transport."
 ---
 
 # Architecture

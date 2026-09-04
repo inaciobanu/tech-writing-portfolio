@@ -1,6 +1,7 @@
 ---
 id: authentication
 title: Authentication
+description: "How to authenticate requests to the PayFlow API using bearer token API keys."
 ---
 
 # Authentication

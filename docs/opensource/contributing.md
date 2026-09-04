@@ -1,6 +1,7 @@
 ---
 id: contributing
 title: Contributing Guide
+description: "How to report bugs, propose features, and submit pull requests to Logpilot."
 ---
 
 # Contributing to Logpilot

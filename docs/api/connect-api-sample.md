@@ -1,6 +1,7 @@
 ---
 id: connect-api-sample
 title: "Sample: PrimaryBid Connect API"
+description: "A portfolio writing sample documenting the PrimaryBid Connect API developer portal for distribution partner integrations."
 sidebar_label: "Connect API Developer Portal (Sample)"
 ---
 

@@ -1,6 +1,7 @@
 ---
 id: audit
 title: Auditing an Existing Documentation Space
+description: "How I audited a Network Infrastructure team's six-year-old Confluence space before redesigning it."
 sidebar_label: Audit
 slug: /process-governance/audit
 ---

@@ -1,6 +1,7 @@
 ---
 id: best-practices
 title: Best Practices
+description: "Production best practices for a reliable PayFlow integration, including idempotency keys and webhook handling."
 ---
 
 # Best Practices

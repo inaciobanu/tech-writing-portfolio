@@ -1,6 +1,7 @@
 ---
 id: intro
 title: Open Source Documentation
+description: "Documentation for Logpilot, a lightweight open source structured logging library for Node.js."
 sidebar_label: Overview
 slug: /opensource/intro
 ---

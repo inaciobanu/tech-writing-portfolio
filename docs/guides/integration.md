@@ -1,6 +1,7 @@
 ---
 id: integration
 title: Integration Guide
+description: "A step-by-step guide to integrating the PayFlow API into a Node.js Express application."
 ---
 
 # Integration Guide

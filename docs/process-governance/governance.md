@@ -1,6 +1,7 @@
 ---
 id: governance
 title: Governance Model
+description: "The ownership, review-cycle, and escalation model that keeps a documentation space from decaying again."
 sidebar_label: Governance
 slug: /process-governance/governance
 ---
