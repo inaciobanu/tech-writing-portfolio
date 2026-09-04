@@ -149,27 +149,50 @@ const testimonialItems = [
 function HomepageHero() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">Ina Ciobanu</h1>
-        <p className="hero__subtitle">
-          Senior Technical Writer · KX · London
-        </p>
-        <p className={styles.heroDescription}>
-          I work on complex systems where documentation directly affects how quickly engineers can ship, integrate, and adopt new technology.
-        </p>
-        <p className={styles.heroNote}>
-          🌙 Dark mode available — toggle top right
-        </p>
-        <div className={styles.buttons}>
-          <Link className="button button--secondary button--lg" to="/docs/about/intro">
-            About Me →
-          </Link>
-          <Link
-            className={clsx('button button--outline button--lg', styles.heroButtonOutline)}
-            to="mailto:inatechwriter@gmail.com"
-          >
-            Get in Touch
-          </Link>
+      <div className={clsx('container', styles.heroInner)}>
+        <div className={styles.heroCopy}>
+          <p className={styles.heroEyebrow}>Technical writer · systems thinker</p>
+          <h1 className="hero__title">Ina Ciobanu</h1>
+          <p className="hero__subtitle">
+            Senior Technical Writer · KX · London
+          </p>
+          <p className={styles.heroDescription}>
+            I turn complex systems into clear documentation that helps engineers ship, integrate, and adopt new technology faster.
+          </p>
+          <div className={styles.buttons}>
+            <Link className="button button--secondary button--lg" to="/docs/about/intro">
+              About Me →
+            </Link>
+            <Link
+              className={clsx('button button--outline button--lg', styles.heroButtonOutline)}
+              to="mailto:inatechwriter@gmail.com"
+            >
+              Get in Touch
+            </Link>
+          </div>
+        </div>
+        <div className={styles.heroVisual} aria-hidden="true">
+          <div className={styles.visualTopline}>
+            <span>DOCS / 01</span>
+            <span className={styles.visualStatus}>● LIVE SYSTEM</span>
+          </div>
+          <p className={styles.visualTitle}>
+            Clarity at every
+            <br />
+            <span>checkpoint.</span>
+          </p>
+          <div className={styles.visualDiagram}>
+            <span className={styles.diagramNode}>API</span>
+            <span className={styles.diagramLine} />
+            <span className={styles.diagramNode}>USER</span>
+            <span className={styles.diagramLine} />
+            <span className={styles.diagramNode}>OUTCOME</span>
+          </div>
+          <div className={styles.visualFooter}>
+            <span>STRUCTURE</span>
+            <span>CLARITY</span>
+            <span>IMPACT</span>
+          </div>
         </div>
       </div>
     </header>
