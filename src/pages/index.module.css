@@ -11,9 +11,9 @@
   height: 38rem;
   right: -16rem;
   top: -20rem;
-  border: 1px solid rgba(0, 205, 205, 0.3);
+  border: 1px solid rgba(159, 168, 218, 0.3);
   border-radius: 50%;
-  box-shadow: 0 0 0 5rem rgba(0, 205, 205, 0.06), 0 0 0 10rem rgba(0, 205, 205, 0.04);
+  box-shadow: 0 0 0 5rem rgba(159, 168, 218, 0.06), 0 0 0 10rem rgba(159, 168, 218, 0.04);
   pointer-events: none;
 }
 
@@ -31,7 +31,7 @@
 }
 
 .heroEyebrow {
-  color: #00cdcd;
+  color: #9fa8da;
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.14em;
@@ -40,12 +40,12 @@
 }
 
 .heroVisual {
-  background: #071322;
-  border: 1px solid rgba(0, 205, 205, 0.45);
+  background: #1a2156;
+  border: 1px solid rgba(159, 168, 218, 0.45);
   min-height: 310px;
   padding: 1.5rem;
   position: relative;
-  box-shadow: 14px 14px 0 rgba(0, 205, 205, 0.14);
+  box-shadow: 14px 14px 0 rgba(63, 81, 181, 0.2);
 }
 
 .visualTopline,
@@ -59,7 +59,7 @@
 }
 
 .visualStatus {
-  color: #00cdcd;
+  color: #9fa8da;
 }
 
 .visualTitle {
@@ -72,7 +72,7 @@
 }
 
 .visualTitle span {
-  color: #00cdcd;
+  color: #9fa8da;
 }
 
 .visualDiagram {
@@ -83,7 +83,7 @@
 }
 
 .diagramNode {
-  border: 1px solid rgba(0, 205, 205, 0.7);
+  border: 1px solid rgba(159, 168, 218, 0.7);
   color: rgba(255, 255, 255, 0.88);
   font-family: var(--ifm-font-family-monospace);
   font-size: 0.62rem;
@@ -92,7 +92,7 @@
 }
 
 .diagramLine {
-  background: #00cdcd;
+  background: #9fa8da;
   height: 1px;
   opacity: 0.7;
   width: 100%;
