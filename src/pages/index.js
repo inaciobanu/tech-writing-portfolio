@@ -211,8 +211,10 @@ export default function Home() {
           <div className={clsx('portfolio-grid', styles.section)}>
             {portfolioSections.map((item) => (
               <Link key={item.title} className="portfolio-card" to={item.href}>
-                {item.isNew && <span className="portfolio-card__badge">New</span>}
-                <span className="portfolio-card__emoji">{item.emoji}</span>
+                <div className="portfolio-card__header">
+                  <span className="portfolio-card__emoji">{item.emoji}</span>
+                  {item.isNew && <span className="portfolio-card__badge">New</span>}
+                </div>
                 <div className="portfolio-card__title">{item.title}</div>
                 <p className="portfolio-card__desc">{item.desc}</p>
                 <div className={styles.tagRow}>
