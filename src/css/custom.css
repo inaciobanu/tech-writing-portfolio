@@ -81,6 +81,10 @@
 .navbar__title { color: #ffffff !important; font-weight: 500; font-size: 1.1rem; }
 .navbar__link { color: rgba(255,255,255,0.87) !important; border-radius: 4px; }
 .navbar__link:hover, .navbar__link--active { color: #ffffff !important; background: rgba(255,255,255,0.12); }
+.navbar-sidebar .menu__link { color: rgba(255, 255, 255, 0.85); }
+.navbar-sidebar .menu__link:hover,
+.navbar-sidebar .menu__link--active { color: #ffffff; background: rgba(255, 255, 255, 0.12); }
+.navbar-sidebar__back { color: rgba(255, 255, 255, 0.7); }
 .navbarMegaMenu .dropdown__menu {
   background: #303f9f;
   border: 1px solid rgba(0, 205, 205, 0.45);

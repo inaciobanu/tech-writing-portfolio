@@ -88,7 +88,7 @@ const config = {
         { name: 'twitter:card', content: 'summary_large_image' },
       ],
       navbar: {
-        title: 'Ina Ciobanu · Technical Writer',
+        title: 'Ina Ciobanu',
         logo: {
           alt: 'Portfolio Logo',
           src: 'img/logo.svg',
