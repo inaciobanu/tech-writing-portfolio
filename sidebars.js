@@ -63,6 +63,7 @@ const sidebars = {
         'guides/quickstart',
         'guides/integration',
         'guides/best-practices',
+        'guides/code-in-docs',
       ],
     },
   ],
