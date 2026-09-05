@@ -130,6 +130,7 @@ const config = {
               { label: 'Quickstart', to: '/docs/guides/quickstart' },
               { label: 'Integration', to: '/docs/guides/integration' },
               { label: 'Best Practices', to: '/docs/guides/best-practices' },
+              { label: 'Code in Docs Style Guide', to: '/docs/guides/code-in-docs' },
             ],
           },
           {

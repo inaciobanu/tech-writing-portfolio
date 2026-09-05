@@ -71,6 +71,14 @@ const portfolioSections = [
     tags: ['Quickstart', 'Integration', 'Best Practices'],
   },
   {
+    emoji: '💻',
+    title: 'Code in Docs Style Guide',
+    desc: 'A practical standard for language-labelled samples, copy-safe code, comments, input and output, verification, maintenance, and reader feedback.',
+    href: '/docs/guides/code-in-docs',
+    tags: ['Code Samples', 'Docs-as-Code', 'Style Guide'],
+    isNew: true,
+  },
+  {
     emoji: '📖',
     title: 'UX & Product Content',
     desc: 'End-user documentation, onboarding flows, and in-app content that helps non-technical users navigate complex products confidently.',
