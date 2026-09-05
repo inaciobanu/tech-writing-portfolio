@@ -3,7 +3,7 @@ id: structure
 title: Redesigning the Space Structure
 description: "Redesigning a documentation space's information architecture around what its user groups actually need to find."
 sidebar_label: Structure
-slug: /process-governance/structure
+slug: /documentation-operations/structure
 ---
 
 # Redesigning the Space Structure
@@ -27,7 +27,7 @@ The second got further before it fell over. I kept architecture and operational 
 1. **Home** – one entry point, with a short "if you're looking for" index pointing at the most common searches
 2. **Architecture & Design** – topology, connectivity, the reasoning behind design decisions
 3. **SOPs / Runbooks** – change management, incident response, the procedures people run under time pressure
-4. **Policies & Governance** – security policy, naming conventions, documentation standards
+4. **Policies & Standards** – security policy, naming conventions, documentation standards
 5. **Onboarding & Training** – a new starter checklist and a glossary, so orientation has one home instead of being scattered across everything else
 6. **Projects & Change Log** – active projects and a historical record of what changed and why
 7. **Troubleshooting & Knowledge Base** – diagnostic content ("why is this happening"), which is a different kind of page from a runbook ("what do I do")
@@ -40,4 +40,4 @@ As a site map, it's flat on purpose – nothing buried more than one click below
 
 The split between architecture and runbooks is the one decision I'd point to first if someone asked why this structure and not another. Everything else follows roughly the same logic: put content where the person who needs it fastest will look first, without making the other three audiences pay much of a price for it.
 
-See [Sample SOP Template](./template-sop) for what one of the standardised pages actually looks like, and [Governance Model](./governance) for how ownership gets enforced once the redesign is finished and nobody's paying close attention anymore.
+See [Sample SOP Template](./template-sop) for what one of the standardised pages actually looks like, and [Ownership & Review Model](./governance) for how ownership gets maintained once the redesign is finished and nobody's paying close attention anymore.

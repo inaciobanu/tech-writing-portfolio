@@ -160,15 +160,15 @@ const config = {
           {
             type: 'dropdown',
             position: 'left',
-            label: 'Process & Governance',
+            label: 'Documentation Operations',
             className: 'navbarMegaMenu',
             items: [
-              { label: 'Overview', to: '/docs/process-governance/intro' },
-              { label: 'Documentation Audit', to: '/docs/process-governance/audit' },
-              { label: 'Information Structure', to: '/docs/process-governance/structure' },
-              { label: 'SOP Template', to: '/docs/process-governance/template-sop' },
-              { label: 'Governance', to: '/docs/process-governance/governance' },
-              { label: 'Process Improvement', to: '/docs/process-governance/process-improvement' },
+              { label: 'Overview', to: '/docs/documentation-operations/intro' },
+              { label: 'Documentation Audit', to: '/docs/documentation-operations/audit' },
+              { label: 'Information Structure', to: '/docs/documentation-operations/structure' },
+              { label: 'SOP Template', to: '/docs/documentation-operations/template-sop' },
+              { label: 'Ownership & Review Model', to: '/docs/documentation-operations/governance' },
+              { label: 'Process Improvement', to: '/docs/documentation-operations/process-improvement' },
             ],
           },
           {
@@ -189,7 +189,7 @@ const config = {
               { label: 'Developer Guides', to: '/docs/guides/intro' },
               { label: 'User Manuals', to: '/docs/manuals/intro' },
               { label: 'Open Source Docs', to: '/docs/opensource/intro' },
-              { label: 'Process & Governance', to: '/docs/process-governance/intro' },
+              { label: 'Documentation Operations', to: '/docs/documentation-operations/intro' },
             ],
           },
           {

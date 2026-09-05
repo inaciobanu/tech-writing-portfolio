@@ -94,7 +94,7 @@ const sidebars = {
   processGovernanceSidebar: [
     {
       type: 'category',
-      label: 'Process & Governance',
+      label: 'Documentation Operations',
       items: [
         'process-governance/intro',
         'process-governance/audit',

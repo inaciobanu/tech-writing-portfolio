@@ -3,7 +3,7 @@ id: template-sop
 title: Sample SOP Template
 description: "A sample standard operating procedure for adding a new site to the network, written to Google style guide conventions."
 sidebar_label: Sample SOP
-slug: /process-governance/template-sop
+slug: /documentation-operations/template-sop
 ---
 
 # SOP: Adding a New Site to the Network
@@ -14,7 +14,7 @@ I wrote this one the way I'd ideally do it: sit with the engineer who actually r
 **Last reviewed:** 2026-06-15 · **Next review due:** 2026-09-15
 **Status:** Active
 
-This follows the standard SOP template from the [Governance Model](./governance) – Purpose, Scope, Owner, Last Reviewed, Prerequisites, Procedure, Rollback, Related pages, in that order, every time. Same layout on every runbook means nobody has to relearn the page structure just because they've moved to a different one.
+This follows the standard SOP template from the [Ownership & Review Model](./governance) – Purpose, Scope, Owner, Last Reviewed, Prerequisites, Procedure, Rollback, Related pages, in that order, every time. Same layout on every runbook means nobody has to relearn the page structure just because they've moved to a different one.
 
 ## Purpose
 
@@ -69,9 +69,9 @@ If validation fails and the issue can't be resolved within the change window:
 
 ## Related pages
 
-- [Governance Model](./governance) – ownership and review policy for this page
+- [Ownership & Review Model](./governance) – ownership and review policy for this page
 - [Finding and Fixing a Broken Process](./process-improvement) – why site provisioning procedures need checking against what engineers actually do
 - *Architecture & Design → WAN Routing Overview*
-- *Policies & Governance → Naming Conventions and Access Standards*
+- *Policies & Standards → Naming Conventions and Access Standards*
 - *SOPs / Runbooks → Change Management Process*
 - *Troubleshooting & Knowledge Base → Common Site Provisioning Issues*

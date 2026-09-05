@@ -1,12 +1,12 @@
 ---
 id: governance
-title: Governance Model
+title: Ownership & Review Model
 description: "The ownership, review-cycle, and escalation model that keeps a documentation space from decaying again."
-sidebar_label: Governance
-slug: /process-governance/governance
+sidebar_label: Ownership & Review Model
+slug: /documentation-operations/governance
 ---
 
-# Governance Model
+# Ownership & Review Model
 
 A new structure doesn't stay new by itself. Something has to stop the space sliding back into the state the [audit](./audit) found it in. That's what this page is: who owns what, how often it gets checked, and what happens when an owner leaves.
 
@@ -24,7 +24,7 @@ Not every page carries the same risk if it goes stale, so the cycle is tiered in
 |---|---|---|
 | SOPs / Runbooks | Quarterly | Highest traffic, and the ones people rely on under time pressure |
 | Architecture & Design | Quarterly | Goes stale the moment the network changes |
-| Policies & Governance | Annually | Changes rarely, but still worth confirming |
+| Policies & Standards | Annually | Changes rarely, but still worth confirming |
 | Onboarding & Training | Annually | Stable, checked yearly for drifted terminology |
 | Troubleshooting & Knowledge Base | As needed | Updated when a new issue gets resolved, not on a fixed clock |
 

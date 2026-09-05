@@ -1,6 +1,6 @@
 # 📝 Ina's Technical Writing Portfolio
 
-A Docusaurus-powered technical writing portfolio showcasing API documentation, developer guides, user manuals, open source documentation, and documentation governance — built docs-as-code, with CI enforcing prose style and link integrity.
+A Docusaurus-powered technical writing portfolio showcasing API documentation, developer guides, user manuals, open source documentation, and documentation systems work — built docs-as-code, with CI enforcing prose style and link integrity.
 
 **🌐 Live site:** [inaciobanu.github.io/tech-writing-portfolio](https://inaciobanu.github.io/tech-writing-portfolio)
 
@@ -11,10 +11,10 @@ A Docusaurus-powered technical writing portfolio showcasing API documentation, d
 | Section | Description |
 |---|---|
 | 🔌 **API Documentation** | REST API reference for a payments API — authentication, endpoints, error codes, and rate limiting. The endpoint reference is generated from an OpenAPI spec, not hand-written. |
-| 🛠️ **Developer Guides** | Quickstart, integration walkthrough, and production best practices |
+| 🛠️ **Developer Guides** | Quickstart, integration walkthrough, production best practices, and a Code in Docs style guide |
 | 📖 **User Manuals** | End-user documentation covering onboarding, dashboard features, and troubleshooting |
 | 🌐 **Open Source Docs** | Contributing guide, architecture overview, and changelog for an open source Node.js library |
-| 🗂️ **Process & Governance** | Case study on auditing and redesigning a documentation space — information architecture, ownership and review-cycle governance, a sample SOP, and a workflow-automation example |
+| 🗂️ **Documentation Systems & Operations** | Case study on auditing and redesigning a documentation space — information architecture, ownership, review workflows, a sample SOP, and workflow automation |
 
 ---
 
@@ -22,10 +22,11 @@ A Docusaurus-powered technical writing portfolio showcasing API documentation, d
 
 This isn't just written content — the repo enforces it:
 
-- **Prose linting in CI** ([`vale`](https://vale.sh/)) — the Process & Governance section is checked against the Google and Microsoft developer documentation style guides on every push, gated on `error`-level findings (see `.vale.ini` for what's deliberately excluded and why)
+- **Prose linting in CI** ([`vale`](https://vale.sh/)) — the Documentation Systems & Operations section is checked against the Google and Microsoft developer documentation style guides on every push, gated on `error`-level findings (see `.vale.ini` for what's deliberately excluded and why)
 - **Broken-link CI gate** — `onBrokenLinks` and `onBrokenMarkdownLinks` are set to `throw`, not `warn`, so a dangling internal link fails the build instead of shipping silently
 - **Spec-driven API reference** — `openapi/payflow.yaml` generates the entire API endpoint reference via `docusaurus-plugin-openapi-docs`; the spec is the source of truth, not the rendered page
 - **Git-based freshness** — every doc page shows a "last updated" date pulled straight from git history, not a manually maintained timestamp
+- **Code example maintenance** — the Code in Docs guide defines language labels, copy-safe samples, verification status, ownership, review triggers, audits, and reader feedback loops
 
 ---
 
@@ -132,10 +133,10 @@ tech-writing-portfolio/
 │   │   ├── kdbai-sample.md      # Portfolio writing sample (fictional)
 │   │   ├── connect-api-sample.md # Portfolio writing sample (real work, PrimaryBid)
 │   │   └── reference/           # Generated from openapi/payflow.yaml — do not edit by hand
-│   ├── guides/                  # Developer guides
+│   ├── guides/                  # Developer guides and Code in Docs style guide
 │   ├── manuals/                 # User manuals
 │   ├── opensource/              # Open source project docs
-│   ├── process-governance/      # Documentation governance case study
+│   ├── process-governance/      # Documentation systems and operations case study
 │   └── about/                   # Bio, experience, testimonials
 ├── openapi/
 │   └── payflow.yaml             # OpenAPI spec — source of truth for docs/api/reference/
@@ -162,6 +163,8 @@ tech-writing-portfolio/
 1. **`docusaurus.config.js`** — update your name, GitHub username, LinkedIn URL, and email
 2. **`src/pages/index.js`** — update the homepage bio and skills
 3. **`docs/`** — replace sample content with your own writing
+
+The `docs/guides/code-in-docs.md` page is a reusable reference for teams defining how code examples should be written, reviewed, tested, and maintained.
 
 ### Add a new section
 
