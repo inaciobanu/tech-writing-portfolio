@@ -6,19 +6,19 @@ sidebar_label: Ownership & Review Model
 slug: /documentation-operations/governance
 ---
 
-# Ownership & Review Model
+# Ownership and review model
 
 A new structure doesn't stay new by itself. Something has to stop the space sliding back into the state the [audit](./audit) found it in. That's what this page is: who owns what, how often it gets checked, and what happens when an owner leaves.
 
 ---
 
-## Documentation Workflow
+## Documentation workflow
 
 Every document follows this lifecycle from creation through retirement:
 
 **Author → SME → Owner → Approver → Published → Periodic Review → Update/Retire**
 
-1. **Author** – Drafts the document, usually a technical writer or SME
+1. **Author** – Drafts the document, usually a technical writer, SME, or domain expert
 2. **SME** – Reviews for technical accuracy; challenges ambiguity
 3. **Owner** – Confirms the document reflects actual current practice; takes accountability for ongoing review
 4. **Approver** – Final sign-off (usually a manager or compliance lead); can reject or require revision
@@ -40,13 +40,13 @@ Not every page carries the same risk if it goes stale, so the cycle is tiered in
 
 | Page type | Cycle | Why |
 |---|---|---|
-| SOPs / Runbooks | Quarterly | Highest traffic, and the ones people rely on under time pressure |
+| SOPs / Runbooks | Quarterly | Highest traffic and the ones people rely on under time pressure |
 | Architecture & Design | Quarterly | Goes stale the moment the network changes |
 | Policies & Standards | Annually | Changes rarely, but still worth confirming |
 | Onboarding & Training | Annually | Stable, checked yearly for drifted terminology |
 | Troubleshooting & Knowledge Base | As needed | Updated when a new issue gets resolved, not on a fixed clock |
 
-A review usually just means the owner confirms the page is still right and updates the date. It doesn't have to mean a rewrite.
+A review usually means the owner confirms the page is accurate and updates the date. It doesn't require a rewrite.
 
 Appointing an owner and setting a date helps, but on its own it's not quite enough – neither one necessarily prompts anyone to look. What closes that gap is a separate story – see [Finding and Fixing a Broken Process](./process-improvement).
 
@@ -56,7 +56,7 @@ Pages follow `[Category] - [Topic] - [Status]` – `SOP - Adding a New Site - Ac
 
 Three templates cover most of the space: the SOP template shown in [Sample SOP Template](./template-sop), an architecture doc template (system overview, current topology, design rationale, dependencies, change history), and a meeting notes template (attendees, decisions, action items with named owners, linked back to the project they relate to). Same template, same page type, every time – a reader who's learned to navigate one SOP can navigate all of them without relearning the layout.
 
-There's a short style standard sitting behind all of it, too, loosely built on Google's developer documentation style guide: plain language over jargon, active voice, present tense, second person for anything the reader has to do, and numbered steps for anything sequential. Warnings go in a labelled Caution or Important line, not buried in a paragraph. Any term that isn't obvious gets one entry in the Onboarding & Training glossary instead of being re-explained inline on every page that uses it.
+There's a style standard behind all of it, built on Google's developer documentation style guide: plain language over jargon, active voice, present tense, second person for anything the reader has to do, and numbered steps for anything sequential. Warnings go in a labelled Caution or Important line, not buried in a paragraph. Any term that isn't obvious gets one entry in the Onboarding & Training glossary instead of being re-explained inline on every page that uses it.
 
 ## Working across teams
 

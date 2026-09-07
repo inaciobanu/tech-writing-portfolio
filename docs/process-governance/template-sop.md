@@ -6,7 +6,7 @@ sidebar_label: Sample SOP
 slug: /documentation-operations/template-sop
 ---
 
-# SOP: Adding a New Site to the Network
+# Standard operating procedure: Adding a new site to the network
 
 I wrote this one the way I'd ideally do it: sit with the engineer who actually runs this procedure and write down what they do, rather than repeat what the old page claimed. In practice the two wouldn't fully match – more on that in [Finding and Fixing a Broken Process](./process-improvement).
 
@@ -14,7 +14,7 @@ I wrote this one the way I'd ideally do it: sit with the engineer who actually r
 **Last reviewed:** 2026-06-15 · **Next review due:** 2026-09-15
 **Status:** Active
 
-This follows the standard SOP template from the [Ownership & Review Model](./governance) – Purpose, Scope, Owner, Last Reviewed, Prerequisites, Procedure, Rollback, Related pages, in that order, every time. Same layout on every runbook means nobody has to relearn the page structure just because they've moved to a different one.
+This follows the standard procedure template from the [Ownership and review model](./governance) – Purpose, Scope, Owner, Last Reviewed, Prerequisites, Procedure, Rollback, Related pages, in that order. Same layout on every runbook means readers don't have to relearn the page structure when switching to a different one.
 
 ## Purpose
 
@@ -28,7 +28,7 @@ This procedure applies to physical sites that require WAN connectivity, a local 
 
 - [ ] Site has an approved entry in **Projects & Change Log**, with a project sponsor named
 - [ ] IP address allocation requested and approved by the addressing team
-- [ ] Site has physical network hardware installed and powered (site build team, tracked separately)
+- [ ] Site has physical network hardware installed and powered (site build team owns this)
 - [ ] Change request raised and approved per the **Change Management Process**
 - [ ] Access to the site's management VLAN confirmed
 
@@ -36,7 +36,7 @@ This procedure applies to physical sites that require WAN connectivity, a local 
 
 1. **Confirm the IP allocation.** Check the addressing team's record and note the assigned subnets.
 
-   **Caution:** Don't provision against a tentative or "nearly final" allocation. If the confirmed range differs, steps 2–4 have to be redone.
+   **Caution:** Don't provision against a tentative or preliminary allocation. If the confirmed range differs, steps 2–4 must be redone.
 
 2. **Configure the site router.** Apply the standard config template (`site-router-base-config`). Update the hostname, management IP, and subnet declarations to match the allocation.
 

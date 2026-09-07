@@ -6,7 +6,7 @@ sidebar_label: Structure
 slug: /documentation-operations/structure
 ---
 
-# Redesigning the Space Structure
+# Redesigning the space structure
 
 The old space grew by whoever needed a page adding one wherever seemed convenient that day. There was no model of what belonged where. Before drawing a new one, I asked a more basic question: who actually opens this space, and what are they trying to do in the two minutes after they land on it?
 
@@ -32,12 +32,12 @@ The second got further before it fell over. I kept architecture and operational 
 6. **Projects & Change Log** – active projects and a historical record of what changed and why
 7. **Troubleshooting & Knowledge Base** – diagnostic content ("why is this happening"), which is a different kind of page from a runbook ("what do I do")
 
-As a site map, it's flat on purpose – nothing buried more than one click below its section, and the same baseline standards apply underneath every section regardless of topic:
+As a site map, it's flat on purpose – nothing buried more than one level below its section, and the same baseline standards apply underneath every section regardless of topic:
 
 ![Confluence space structure: Home, Architecture, SOPs, and Policies in the top row; Onboarding, Projects, and Troubleshoot in the second row; a cross-cutting standards panel underneath listing named owner per page, review-due date shown, consistent templates, and labels for filtering](/img/process-governance-structure.svg)
 
 ## Why it holds up
 
-The split between architecture and runbooks is the one decision I'd point to first if someone asked why this structure and not another. Everything else follows roughly the same logic: put content where the person who needs it fastest will look first, without making the other three audiences pay much of a price for it.
+The split between architecture and runbooks is the one decision I'd point to first if someone asked why this structure and not another. Everything else follows the same logic: put content where the person who needs it fastest will look first, without making the other three audiences pay much of a price for it.
 
 See [Sample SOP Template](./template-sop) for what one of the standardised pages actually looks like, and [Ownership & Review Model](./governance) for how ownership gets maintained once the redesign is finished and nobody's paying close attention anymore.

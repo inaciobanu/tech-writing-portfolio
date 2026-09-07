@@ -6,7 +6,7 @@ sidebar_label: Process Improvement
 slug: /documentation-operations/process-improvement
 ---
 
-# Finding and Fixing a Broken Process
+# Finding and fixing a broken process
 
 Ownership on paper and ownership in practice aren't the same thing. That gap shows up the moment you check how many of the quarterly SOP reviews defined in the [ownership and review model](./governance) actually happened on schedule.
 

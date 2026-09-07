@@ -6,7 +6,7 @@ sidebar_label: Overview
 slug: /documentation-operations/intro
 ---
 
-# Documentation Systems & Operations – A Network Infrastructure Case Study
+# Documentation systems and operations: A network infrastructure case study
 
 I put this case study together to show how I actually work when I'm handed a documentation space nobody owns: how I figure out what's still true, decide what to keep, and build something that doesn't fall apart again six months after I move on.
 

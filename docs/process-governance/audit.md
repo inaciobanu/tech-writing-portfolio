@@ -6,7 +6,7 @@ sidebar_label: Audit
 slug: /documentation-operations/audit
 ---
 
-# Auditing an Existing Documentation Space
+# Auditing an existing documentation space
 
 Before I touched the structure, I needed to know what was actually in the space. Redesigning it without doing that first just moves the same mess into better-looking folders. I've done that the wrong way round before, on a smaller project, and had to go back and redo it.
 
@@ -51,7 +51,7 @@ See [Redesigning the Space Structure](./structure) for what I built once the aud
 
 ---
 
-## Documentation Audit Framework
+## Documentation audit framework
 
 When auditing a documentation space, I use a systematic framework to identify what needs work and prioritize remediation by risk.
 
@@ -67,7 +67,7 @@ When auditing a documentation space, I use a systematic framework to identify wh
 6. **Approve** – Get sign-off from owner before publishing
 7. **Monitor** – Track changes and refresh cycles ongoing
 
-### Documentation Risk Assessment
+### Documentation risk assessment
 
 For each document in the audit, I assess **seven dimensions of risk**:
 
@@ -96,7 +96,7 @@ For each document in the audit, I assess **seven dimensions of risk**:
 
 ### What this reveals
 
-Documents scoring "HIGH RISK" or "CRITICAL" across multiple dimensions signal:
+Documents scoring "HIGH RISK" or "CRITICAL" across multiple dimensions indicate:
 
 - **Ownership gaps** – Nobody is accountable for staying current
 - **Accuracy risk** – Information may be outdated or wrong
