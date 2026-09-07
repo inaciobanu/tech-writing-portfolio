@@ -78,6 +78,10 @@ const config = {
     ],
   ],
 
+  scripts: [
+    { src: '/tech-writing-portfolio/js/glossary.js', defer: true },
+  ],
+
   themes: ['docusaurus-theme-openapi-docs'],
 
   themeConfig:
@@ -172,6 +176,11 @@ const config = {
             ],
           },
           {
+            label: 'Glossary',
+            to: '/docs/glossary',
+            position: 'left',
+          },
+          {
             href: 'https://github.com/inaciobanu/tech-writing-portfolio',
             label: 'GitHub',
             position: 'right',
@@ -190,6 +199,7 @@ const config = {
               { label: 'User Manuals', to: '/docs/manuals/intro' },
               { label: 'Open Source Docs', to: '/docs/opensource/intro' },
               { label: 'Documentation Operations', to: '/docs/documentation-operations/intro' },
+              { label: 'Glossary', to: '/docs/glossary' },
             ],
           },
           {

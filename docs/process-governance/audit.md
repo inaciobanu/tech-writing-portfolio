@@ -48,3 +48,71 @@ Two flags mattered more than the Keep/Update/Merge/Archive call itself: whether 
 Two things fed directly into the next stage: a ranked list of what needed merging or updating before it went anywhere near the new structure, and a list of ownerless pages that became the starting point for [assigning ownership](./governance).
 
 See [Redesigning the Space Structure](./structure) for what I built once the audit was done.
+
+---
+
+## Documentation Audit Framework
+
+When auditing a documentation space, I use a systematic framework to identify what needs work and prioritize remediation by risk.
+
+### Audit methodology
+
+**Inventory → Assess → Risk-Rate → Prioritise → Remediate → Approve → Monitor**
+
+1. **Inventory** – Catalog every document with its metadata (owner, last update, audience, criticality)
+2. **Assess** – Evaluate each document against quality criteria
+3. **Risk-Rate** – Score each document by risk impact
+4. **Prioritise** – Focus on highest-risk items first
+5. **Remediate** – Fix accuracy, structure, ownership, review cycles
+6. **Approve** – Get sign-off from owner before publishing
+7. **Monitor** – Track changes and refresh cycles ongoing
+
+### Documentation Risk Assessment
+
+For each document in the audit, I assess **seven dimensions of risk**:
+
+| Dimension | Assessment Question | Low Risk | Medium Risk | High Risk |
+|-----------|---------------------|----------|-------------|-----------|
+| **Accuracy** | Is the information still correct? | Reviewed within last 6 months | Reviewed 6–12 months ago | Not reviewed in 12+ months; contradicts other docs |
+| **Completeness** | Are required steps or controls missing? | All critical steps present | Some guidance missing | Gaps in procedure; missing controls |
+| **Consistency** | Does it contradict other documentation? | Consistent terminology & logic | Minor variations with other docs | Directly contradicts; creates ambiguity |
+| **Ownership** | Is there a responsible owner? | Named owner with backup | Named owner; no backup | Ownerless; nobody accountable |
+| **Currency** | Has it been reviewed recently? | Review completed <6 months ago | Last reviewed 6–12 months ago | No review date; appears obsolete |
+| **Usability** | Can the intended audience actually follow it? | Tested with users; clear structure | Mostly usable; minor clarity issues | Confusing; jargon-heavy; untested |
+| **Control** | Is the document versioned and approved? | Approved version tracked; change history | Version exists; approval unclear | No version; no approval record |
+
+**Risk scoring:** For each dimension, score 1–3 (low, medium, high). Average the seven scores to get overall document risk.
+
+### Example audit matrix
+
+| Document | Owner | Last Updated | Accuracy | Completeness | Consistency | Ownership | Currency | Usability | Control | Risk Level | Action |
+|----------|-------|--------------|----------|--------------|-------------|-----------|----------|-----------|---------|------------|--------|
+| Adding a New Site (v1) | – | Mar 2022 | High | Medium | High | High | High | Medium | High | **HIGH** | Merge with v2 |
+| Adding a New Site (v2) | Named (FM Ops) | Nov 2023 | Low | Low | Low | Low | Low | Low | Low | **LOW** | Keep |
+| Site Topology Diagrams | – | Aug 2023 | High | High | Low | High | Medium | Medium | High | **HIGH** | Update + assign owner |
+| Change Management Process | Named (Compl.) | Jun 2026 | Low | Low | Low | Low | Low | Low | Low | **LOW** | Keep |
+| VPN Setup (Legacy) | – | Jan 2021 | High | High | Medium | High | High | High | High | **CRITICAL** | Archive (retain for compliance) |
+| Incident Response | – | Feb 2024 | Low | High | High | High | Medium | Low | High | **HIGH** | Merge pages + assign owner |
+
+### What this reveals
+
+Documents scoring "HIGH RISK" or "CRITICAL" across multiple dimensions signal:
+
+- **Ownership gaps** – Nobody is accountable for staying current
+- **Accuracy risk** – Information may be outdated or wrong
+- **Operational risk** – Users may be following incorrect procedures
+- **Compliance risk** – Audit trail may be broken
+- **Organizational debt** – These documents will get worse without intervention
+
+The risk matrix allows a Facilities Manager or documentation owner to see at a glance which documents need urgent attention and which can be left stable.
+
+### Using the audit for prioritization
+
+Once you've scored all documents, prioritize remediation by:
+
+**Risk × Operational Importance × Frequency of Use × Regulatory Impact**
+
+For example:
+- An ownerless SOP used by field teams daily that affects safety = **Fix first**
+- A design document with one named owner, reviewed 9 months ago = **Review and update**
+- An archived procedure from 2021 = **Retain for compliance; monitor only**

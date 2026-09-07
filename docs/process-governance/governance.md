@@ -10,6 +10,24 @@ slug: /documentation-operations/governance
 
 A new structure doesn't stay new by itself. Something has to stop the space sliding back into the state the [audit](./audit) found it in. That's what this page is: who owns what, how often it gets checked, and what happens when an owner leaves.
 
+---
+
+## Documentation Workflow
+
+Every document follows this lifecycle from creation through retirement:
+
+**Author → SME → Owner → Approver → Published → Periodic Review → Update/Retire**
+
+1. **Author** – Drafts the document, usually a technical writer or SME
+2. **SME** – Reviews for technical accuracy; challenges ambiguity
+3. **Owner** – Confirms the document reflects actual current practice; takes accountability for ongoing review
+4. **Approver** – Final sign-off (usually a manager or compliance lead); can reject or require revision
+5. **Published** – Document goes live; version is locked; date recorded
+6. **Periodic Review** – Owner reviews on schedule; updates date or flags for revision
+7. **Update/Retire** – Document is revised or archived; change history logged
+
+---
+
 ## Ownership
 
 Every page has a named owner and a backup, both visible on the page itself, not buried in a separate spreadsheet nobody opens. The owner is accountable for accuracy and does the review when it comes due. The backup covers it if the owner is out, moves teams, or leaves – a page should never be more than one departure away from going ownerless again, which is exactly what happened to nineteen pages before this.
