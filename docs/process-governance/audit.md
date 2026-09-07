@@ -77,7 +77,7 @@ For each document in the audit, I assess **seven dimensions of risk**:
 | **Completeness** | Are required steps or controls missing? | All critical steps present | Some guidance missing | Gaps in procedure; missing controls |
 | **Consistency** | Does it contradict other documentation? | Consistent terminology & logic | Minor variations with other docs | Directly contradicts; creates ambiguity |
 | **Ownership** | Is there a responsible owner? | Named owner with backup | Named owner; no backup | Ownerless; nobody accountable |
-| **Currency** | Has it been reviewed recently? | Review completed <6 months ago | Last reviewed 6–12 months ago | No review date; appears obsolete |
+| **Currency** | Has it been reviewed recently? | Review completed fewer than 6 months ago | Last reviewed 6–12 months ago | No review date; appears obsolete |
 | **Usability** | Can the intended audience actually follow it? | Tested with users; clear structure | Mostly usable; minor clarity issues | Confusing; jargon-heavy; untested |
 | **Control** | Is the document versioned and approved? | Approved version tracked; change history | Version exists; approval unclear | No version; no approval record |
 
@@ -90,7 +90,7 @@ For each document in the audit, I assess **seven dimensions of risk**:
 | Adding a New Site (v1) | – | Mar 2022 | High | Medium | High | High | High | Medium | High | **HIGH** | Merge with v2 |
 | Adding a New Site (v2) | Named (FM Ops) | Nov 2023 | Low | Low | Low | Low | Low | Low | Low | **LOW** | Keep |
 | Site Topology Diagrams | – | Aug 2023 | High | High | Low | High | Medium | Medium | High | **HIGH** | Update + assign owner |
-| Change Management Process | Named (Compl.) | Jun 2026 | Low | Low | Low | Low | Low | Low | Low | **LOW** | Keep |
+| Change Management Process | Named (Compliance) | Jun 2026 | Low | Low | Low | Low | Low | Low | Low | **LOW** | Keep |
 | VPN Setup (Legacy) | – | Jan 2021 | High | High | Medium | High | High | High | High | **CRITICAL** | Archive (retain for compliance) |
 | Incident Response | – | Feb 2024 | Low | High | High | High | Medium | Low | High | **HIGH** | Merge pages + assign owner |
 
@@ -102,7 +102,7 @@ Documents scoring "HIGH RISK" or "CRITICAL" across multiple dimensions indicate:
 - **Accuracy risk** – Information may be outdated or wrong
 - **Operational risk** – Users may be following incorrect procedures
 - **Compliance risk** – Audit trail may be broken
-- **Organizational debt** – These documents will get worse without intervention
+- **Organizational debt** – These documents worsen without intervention
 
 The risk matrix allows a Facilities Manager or documentation owner to see at a glance which documents need urgent attention and which can be left stable.
 

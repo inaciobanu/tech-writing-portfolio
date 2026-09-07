@@ -176,6 +176,17 @@ const config = {
             ],
           },
           {
+            type: 'dropdown',
+            position: 'left',
+            label: 'FM Operations',
+            className: 'navbarMegaMenu',
+            items: [
+              { label: 'Case Study Overview', to: '/docs/fm-operations' },
+              { label: 'Documentation Strategy', to: '/docs/fm-operations/documentation-strategy' },
+              { label: 'PPM Procedure Sample', to: '/docs/fm-operations/ppm-procedure' },
+            ],
+          },
+          {
             label: 'Glossary',
             to: '/docs/glossary',
             position: 'left',
@@ -199,6 +210,7 @@ const config = {
               { label: 'User Manuals', to: '/docs/manuals/intro' },
               { label: 'Open Source Docs', to: '/docs/opensource/intro' },
               { label: 'Documentation Operations', to: '/docs/documentation-operations/intro' },
+              { label: 'FM Operations', to: '/docs/fm-operations' },
               { label: 'Glossary', to: '/docs/glossary' },
             ],
           },

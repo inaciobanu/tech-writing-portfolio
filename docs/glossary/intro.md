@@ -1,9 +1,9 @@
 ---
 id: glossary-intro
-title: Glossary
+title: Documentation glossary
 description: "Key terms and definitions used throughout the portfolio."
-sidebar_label: Glossary
-slug: /glossary
+sidebar_label: Documentation glossary
+slug: /glossary/reference
 ---
 
 # Glossary
@@ -125,6 +125,9 @@ A procedure element that can be adapted by region for operational reasons (e.g.,
 
 **Regional requirement**
 A procedure step or rule that differs by region due to legal, regulatory, or client-specific requirements. Must be documented separately for each region.
+
+**Real Estate Operations (REO)**
+The management of workplace facilities, buildings, sites, and related operational services across a property portfolio.
 
 ---
 

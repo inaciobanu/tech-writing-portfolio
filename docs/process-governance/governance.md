@@ -42,13 +42,13 @@ Not every page carries the same risk if it goes stale, so the cycle is tiered in
 |---|---|---|
 | SOPs / Runbooks | Quarterly | Highest traffic and the ones people rely on under time pressure |
 | Architecture & Design | Quarterly | Goes stale the moment the network changes |
-| Policies & Standards | Annually | Changes rarely, but still worth confirming |
+| Policies & Standards | Annually | Changes infrequently, but still worth confirming |
 | Onboarding & Training | Annually | Stable, checked yearly for drifted terminology |
 | Troubleshooting & Knowledge Base | As needed | Updated when a new issue gets resolved, not on a fixed clock |
 
 A review usually means the owner confirms the page is accurate and updates the date. It doesn't require a rewrite.
 
-Appointing an owner and setting a date helps, but on its own it's not quite enough – neither one necessarily prompts anyone to look. What closes that gap is a separate story – see [Finding and Fixing a Broken Process](./process-improvement).
+Appointing an owner and setting a date helps, but on its own it's not enough – neither one necessarily prompts anyone to look. What closes that gap is a separate story – see [Finding and Fixing a Broken Process](./process-improvement).
 
 ## Naming and templates
 

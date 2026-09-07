@@ -141,47 +141,27 @@ tr:nth-child(even) td { background: #f5f5f5; }
   text-decoration: none;
 }
 
-.glossary-term::after {
+.glossary-tooltip {
   background: var(--ifm-color-emphasis-100);
   border: 1px solid var(--ifm-color-primary-light);
   border-radius: 4px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.16);
   color: var(--ifm-font-color-base);
-  content: attr(data-definition);
   font-size: 0.85rem;
-  font-weight: 400;
-  left: 50%;
   line-height: 1.4;
-  max-width: min(320px, 80vw);
-  opacity: 0;
+  max-width: min(320px, calc(100vw - 2rem));
   padding: 0.65rem 0.75rem;
   pointer-events: none;
-  position: absolute;
+  position: fixed;
   text-align: left;
-  top: calc(100% + 0.6rem);
-  transform: translate(-50%, -0.35rem);
-  transition: opacity 0.15s ease, transform 0.15s ease;
   visibility: hidden;
-  width: max-content;
-  z-index: 10;
+  z-index: 1000;
 }
 
-.glossary-term:hover::after,
-.glossary-term:focus::after {
-  opacity: 1;
-  transform: translate(-50%, 0);
+.glossary-tooltip--visible {
   visibility: visible;
 }
 
-.glossary-term--duplicate {
-  border-bottom: 0;
-  cursor: inherit;
-}
-
-.glossary-term--duplicate::after {
-  display: none;
-}
-
-[data-theme='dark'] .glossary-term::after {
+[data-theme='dark'] .glossary-tooltip {
   background: var(--ifm-background-surface-color);
 }

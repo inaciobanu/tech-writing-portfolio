@@ -110,13 +110,13 @@ const sidebars = {
       type: 'category',
       label: 'FM Operations Sample',
       items: [
-        'fm-operations/intro',
+        'fm-operations/fm-intro',
         'fm-operations/documentation-strategy',
         'fm-operations/ppm-procedure',
       ],
     },
   ],
-  glossarySidebar: ['glossary'],
+  glossarySidebar: ['glossary', 'glossary/glossary-intro'],
 };
 
 module.exports = sidebars;

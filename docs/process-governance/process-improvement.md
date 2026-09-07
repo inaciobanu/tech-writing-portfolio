@@ -12,7 +12,7 @@ Ownership on paper and ownership in practice aren't the same thing. That gap sho
 
 ## Where this breaks down
 
-Naming an owner and setting a review date doesn't hold up on its own, and the gap is a predictable one: the review date sits quietly on the page, with nothing pointing at it. Someone has to remember to check, for every page they own, on a schedule they'd have to track themselves – and almost nobody keeps that up by memory alone, me included. Owners get named, dates get set, and reviews still don't happen on schedule.
+Naming an owner and setting a review date doesn't hold up on its own, and the gap is a predictable one: the review date sits on the page, with nothing pointing at it. Someone has to remember to check, for every page they own, on a schedule they'd have to track themselves – and almost nobody keeps that up by memory alone, me included. Owners get named, dates get set, and reviews still don't happen on schedule.
 
 That's more of a process problem than a documentation one. The pages themselves are fine – it's the thing meant to keep them that way that's missing a trigger.
 

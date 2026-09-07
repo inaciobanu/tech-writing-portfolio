@@ -43,7 +43,7 @@ To ensure scheduled maintenance activities on critical and non-critical building
 - All regions: EMEA, APAC, AMS
 
 **Does not apply to:**
-- Emergency/reactive maintenance (see *SOP: Reactive Maintenance Response*)
+- Emergency/reactive maintenance is covered by a separate SOP.
 - Vendor-managed equipment with separate service agreements
 - Client-specific asset maintenance governed by separate SOWs
 
@@ -161,7 +161,7 @@ Before maintenance can begin, the following **must** be confirmed:
 - Work safely and follow all safety procedures documented for that asset type
 - Note any observations or concerns in the work order
 
-**Decision point – Defect found:** If you find a defect during maintenance, see **Escalation** section below.
+**Decision point – Defect found:** If you find a defect during maintenance, see the [Escalation Matrix](#escalation-matrix) below.
 
 **Decision point – Parts shortage:** If a required part is unavailable, escalate to Maintenance Coordinator before delaying the work.
 
@@ -257,7 +257,7 @@ Before maintenance can begin, the following **must** be confirmed:
 - Confirm all escalations have decisions recorded
 - Update the asset's next scheduled maintenance date (if rescheduled)
 - Archive the work order to the maintenance history
-- Update the compliance audit trail (see **Records & Evidence** section)
+- Update the compliance audit trail (see the [Records & Evidence](#records-evidence) section)
 
 ---
 
@@ -281,7 +281,7 @@ Before maintenance can begin, the following **must** be confirmed:
 **Permit delays prevent scheduled maintenance:**
 - Escalate to Facilities Manager and Compliance Lead
 - Reschedule maintenance for next available permitted window
-- If permits delayed >30 days, escalate to senior management
+- If permits delayed more than 30 days, escalate to senior management
 
 ---
 
@@ -290,10 +290,10 @@ Before maintenance can begin, the following **must** be confirmed:
 | Defect Type | Notification | Timeframe | Decision Authority |
 |---|---|---|---|
 | **Critical (Safety)** | Facilities Manager + Safety Officer | Immediate (same day) | Facilities Manager |
-| **High-risk (Failure likely <1 year)** | Facilities Manager | Within 24 hours | Facilities Manager |
+| **High-risk (Failure likely less than 1 year)** | Facilities Manager | Within 24 hours | Facilities Manager |
 | **Medium-risk (Failure likely 1–3 years)** | Facilities Manager (email) | Within 5 business days | Facilities Manager |
 | **Contractor unavailability** | Maintenance Coordinator → Facilities Manager | Within 4 hours | Maintenance Coordinator + FM |
-| **Permit delays >14 days** | Facilities Manager + Compliance Lead | Within 2 business days | Senior Facilities Manager |
+| **Permit delays longer than 14 days** | Facilities Manager + Compliance Lead | Within 2 business days | Senior Facilities Manager |
 
 ---
 

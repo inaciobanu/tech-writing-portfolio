@@ -17,16 +17,17 @@ The page also demonstrates a reusable documentation pattern: concise term defini
 
 | Abbreviation | Meaning | Used in |
 |---|---|---|
-| <abbr className="glossary-term" tabIndex={0} title="Application programming interface" data-glossary-key="api" data-definition="Application programming interface: a defined way for software systems to communicate.">API</abbr> | Application programming interface | [API documentation](./api/intro) |
-| <abbr className="glossary-term" tabIndex={0} title="Facilities management" data-glossary-key="fm" data-definition="Facilities management: the coordination of buildings, services, and workplace operations.">FM</abbr> | Facilities management | [FM Operations sample](./fm-operations/intro) |
-| <abbr className="glossary-term" tabIndex={0} title="Planned preventive maintenance" data-glossary-key="ppm" data-definition="Planned preventive maintenance: scheduled maintenance performed before equipment failure occurs.">PPM</abbr> | Planned preventive maintenance | [PPM Procedure](./fm-operations/ppm-procedure) |
-| <abbr className="glossary-term" tabIndex={0} title="Standard operating procedure" data-glossary-key="sop" data-definition="Standard operating procedure: an approved, repeatable set of instructions for completing a task.">SOP</abbr> | Standard operating procedure | [PPM Procedure](./fm-operations/ppm-procedure) |
-| <abbr className="glossary-term" tabIndex={0} title="Statement of work" data-glossary-key="sow" data-definition="Statement of work: a document that defines the scope, deliverables, and responsibilities for contracted work.">SOW</abbr> | Statement of work | [PPM Procedure](./fm-operations/ppm-procedure) |
+| <abbr className="glossary-term" tabIndex={0} data-glossary-key="api" data-definition="Application programming interface: a defined way for software systems to communicate.">API</abbr> | Application programming interface | [API documentation](./api/intro) |
+| <abbr className="glossary-term" tabIndex={0} data-glossary-key="fm" data-definition="Facilities management: the coordination of buildings, services, and workplace operations.">FM</abbr> | Facilities management | [FM Operations sample](../fm-operations) |
+| <abbr className="glossary-term" tabIndex={0} data-glossary-key="reo" data-definition="Real Estate Operations: the management of workplace facilities, buildings, sites, and related operational services across a property portfolio.">REO</abbr> | Real Estate Operations | [FM Operations sample](../fm-operations) |
+| <abbr className="glossary-term" tabIndex={0} data-glossary-key="ppm" data-definition="Planned preventive maintenance: scheduled maintenance performed before equipment failure occurs.">PPM</abbr> | Planned preventive maintenance | [PPM Procedure](./fm-operations/ppm-procedure) |
+| <abbr className="glossary-term" tabIndex={0} data-glossary-key="sop" data-definition="Standard operating procedure: an approved, repeatable set of instructions for completing a task.">SOP</abbr> | Standard operating procedure | [PPM Procedure](./fm-operations/ppm-procedure) |
+| <abbr className="glossary-term" tabIndex={0} data-glossary-key="sow" data-definition="Statement of work: a document that defines the scope, deliverables, and responsibilities for contracted work.">SOW</abbr> | Statement of work | [PPM Procedure](./fm-operations/ppm-procedure) |
 
 ## In context
 
 The tooltip pattern is most useful when the surrounding sentence supplies context:
 
-> The <abbr className="glossary-term" tabIndex={0} title="Planned preventive maintenance" data-glossary-key="ppm" data-definition="Planned preventive maintenance: scheduled maintenance performed before equipment failure occurs.">PPM</abbr> schedule is reviewed by the <abbr className="glossary-term" tabIndex={0} title="Facilities manager" data-glossary-key="fm-manager" data-definition="Facilities manager: the person responsible for coordinating facilities services and maintenance operations.">FM</abbr> before work begins.
+> The <abbr className="glossary-term" tabIndex={0} data-glossary-key="ppm" data-definition="Planned preventive maintenance: scheduled maintenance performed before equipment failure occurs.">PPM</abbr> schedule is reviewed by the <abbr className="glossary-term" tabIndex={0} data-glossary-key="fm-manager" data-definition="Facilities manager: the person responsible for coordinating facilities services and maintenance operations.">FM</abbr> before work begins.
 
 The full definitions remain visible in the table, while the inline tooltip supports readers who encounter an abbreviation elsewhere on the site.

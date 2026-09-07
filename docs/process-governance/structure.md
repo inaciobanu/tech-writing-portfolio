@@ -12,13 +12,13 @@ The old space grew by whoever needed a page adding one wherever seemed convenien
 
 ## Who's using it
 
-**Network engineers** use it day to day, looking up a procedure or checking a standard. **New starters** use it to build a mental model of the network in their first few weeks, and they don't yet know what they don't know. **Security, compliance, and project stakeholders** check policy and status, not procedure. And **on-call engineers** during an incident need to find the right runbook in under a minute, because that's the one moment where slow documentation actually costs the business money, not just someone's patience.
+**Network engineers** use it day to day, looking up a procedure, or checking a standard. **New starters** use it to build a mental model of the network in their first few weeks, and they don't yet know what they don't know. **Security, compliance, and project stakeholders** check policy and status, not procedure. And **on-call engineers** during an incident need to find the right runbook in under a minute, because that's the one moment where slow documentation actually costs the business money, not just someone's patience.
 
 ## What I tried first
 
 A couple of structures crossed my mind before I landed on this one, and neither survived scrutiny.
 
-The first was organizing by audience instead of by content type – a section for engineers, one for new starters, one for stakeholders. It lines up neatly with who's actually using the space, but sketching it out further showed the problem: the same content ends up needing to live in two places at once. A stakeholder reading a postmortem still needs the incident SOP; a new starter still needs the architecture overview in their first week. Organizing by audience just meant duplicating pages or cross-linking constantly, which moves the maintenance problem around instead of solving it.
+The first was organizing by audience instead of by content type – a section for engineers, one for new starters, one for stakeholders. It lines up with who's actually using the space, but sketching it out further showed the problem: the same content ends up needing to live in two places at once. A stakeholder reading a postmortem still needs the incident SOP; a new starter still needs the architecture overview in their first week. Organizing by audience just meant duplicating pages or cross-linking constantly, which moves the maintenance problem around instead of solving it.
 
 The second got further before it fell over. I kept architecture and operational runbooks in the same section, on the logic that they're both "how the network works." It held up until I actually pictured using it during an incident: nobody wants to scroll past design rationale to find the steps they need when something's down. That's the moment slow documentation gets expensive, not just annoying. I split them before it ever went out for review.
 
@@ -38,6 +38,6 @@ As a site map, it's flat on purpose – nothing buried more than one level below
 
 ## Why it holds up
 
-The split between architecture and runbooks is the one decision I'd point to first if someone asked why this structure and not another. Everything else follows the same logic: put content where the person who needs it fastest will look first, without making the other three audiences pay much of a price for it.
+The split between architecture and runbooks is the one decision I'd point to first if someone asked why this structure and not another. Everything else follows the same logic: put content where the person who needs it fastest needs to look first, without making the other three audiences pay much of a price for it.
 
 See [Sample SOP Template](./template-sop) for what one of the standardised pages actually looks like, and [Ownership & Review Model](./governance) for how ownership gets maintained once the redesign is finished and nobody's paying close attention anymore.

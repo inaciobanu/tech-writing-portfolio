@@ -27,3 +27,5 @@ This case study shows how I would actually approach this problem—what I'd do f
 
 **Note:** This is a fictional scenario created to demonstrate real-world documentation governance and operational writing.
 
+For the underlying page structure, see the [Sample SOP Template](../documentation-operations/template-sop).
+
