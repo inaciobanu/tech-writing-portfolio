@@ -257,7 +257,7 @@ Before maintenance can begin, the following **must** be confirmed:
 - Confirm all escalations have decisions recorded
 - Update the asset's next scheduled maintenance date (if rescheduled)
 - Archive the work order to the maintenance history
-- Update the compliance audit trail (see the [Records & Evidence](#records-evidence) section)
+- Update the compliance audit trail (see the [Records & Evidence](#records--evidence) section)
 
 ---
 
