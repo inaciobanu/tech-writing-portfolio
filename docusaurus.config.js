@@ -185,7 +185,7 @@ const config = {
             label: 'FM Operations',
             className: 'navbarMegaMenu',
             items: [
-              { label: 'Case Study Overview', to: '/docs/fm-operations' },
+              { label: 'Case Study Overview', to: '/docs/fm-operations', activeBaseRegex: '^/docs/fm-operations/?$' },
               { label: 'Documentation Strategy', to: '/docs/fm-operations/documentation-strategy' },
               { label: 'PPM Procedure Sample', to: '/docs/fm-operations/ppm-procedure' },
             ],
