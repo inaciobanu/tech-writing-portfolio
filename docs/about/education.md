@@ -38,6 +38,12 @@ International exchange scholarship — one of several experiences that establish
 
 ---
 
+## Bachelor's Degree — Banking and Finance
+**Al. I. Cuza University of Iași**
+*Faculty of Economics and Business Administration · 2003–2007*
+
+---
+
 ## Certifications
 
 | Certification | Issuer |
