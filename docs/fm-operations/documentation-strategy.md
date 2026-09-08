@@ -18,7 +18,17 @@ If I walked in on day one with responsibility for all REO documentation, here's 
 
 **What I'd do:**
 
-I'd spend the first two weeks mapping, not fixing. I'd talk to the regional ops leads, find out where documentation lives (Confluence spaces? SharePoint sites? Google Docs? Email?). I'd identify the SMEs who actually know how things work. I'd ask simple questions:
+I'd spend the first two weeks mapping, not fixing. I'd talk to the regional ops leads, find out where documentation lives (Confluence spaces? SharePoint sites? Google Docs? Email? PDFs printed and pinned up at the site itself?). I'd identify the SMEs who actually know how things work.
+
+```mermaid
+flowchart LR
+    A["🌍 EMEA<br/>site engineers' heads · Confluence · PDFs"] --> F(["Discover, inventory<br/>& assess, per region"])
+    B["🌏 APAC<br/>site engineers' heads · SharePoint · email"] --> F
+    C["🌎 AMS<br/>site engineers' heads · Confluence · PDFs"] --> F
+    F --> G["✅ One global<br/>single source of truth"]
+```
+
+I'd ask simple questions:
 
 - What processes do you need documented?
 - Which ones are already written down somewhere?

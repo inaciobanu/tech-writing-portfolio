@@ -16,6 +16,19 @@ The scenario is fictional – built around the kind of network infrastructure do
 
 Picture a Network Infrastructure team's Confluence space that's been running for six years with no dedicated owner. Engineers say they can never find the right page. The people who actually know how things work keep it in their heads, in old tickets, in Slack threads that scroll away. I was brought in to fix that – not by rewriting everything from scratch, but by working out what was actually still true first.
 
+```mermaid
+flowchart TD
+    A["🗣️ Engineers' heads · 📚 Confluence (6 yrs, no owner)<br/>🎫 Old tickets · 💬 Slack threads"] --> B(["Audit: sort<br/>every page"])
+    B --> C["Keep"]
+    B --> D["Update"]
+    B --> E["Merge"]
+    B --> F["Archive"]
+    C --> G["✅ Redesigned,<br/>owned space"]
+    D --> G
+    E --> G
+    F --> G
+```
+
 ## What's in here
 
 - [Auditing an Existing Documentation Space](./audit) – how I worked out what to keep, what to merge, and what to retire
