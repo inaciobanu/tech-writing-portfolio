@@ -8,7 +8,7 @@ slug: /guides/intro
 
 # Developer Guides
 
-These guides walk you through common integration patterns with the PayFlow API — from your first test payment to a production-ready subscription setup.
+These guides walk you through common integration patterns with the PayFlow API – from your first test payment to a production-ready subscription setup.
 
 ## Guides in This Section
 

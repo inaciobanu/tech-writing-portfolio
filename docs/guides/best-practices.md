@@ -28,10 +28,10 @@ If you retry the request with the same key, PayFlow returns the original respons
 Always calculate payment amounts on your server, never from data sent by the client:
 
 ```javascript
-// ❌ Don't do this — a user could manipulate the amount
+// ❌ Don't do this – a user could manipulate the amount
 const { amount } = req.body;
 
-// ✅ Do this instead — look up the price server-side
+// ✅ Do this instead – look up the price server-side
 const product = await db.products.findById(req.body.productId);
 const amount = product.price;
 ```

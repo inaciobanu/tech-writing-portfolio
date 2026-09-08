@@ -1,14 +1,14 @@
 ---
 id: intro
 title: User Manual
-description: "The PayFlow Dashboard user manual — managing payments, customers, and account settings."
+description: "The PayFlow Dashboard user manual – managing payments, customers, and account settings."
 sidebar_label: Overview
 slug: /manuals/intro
 ---
 
-# PayFlow Dashboard — User Manual
+# PayFlow Dashboard – User Manual
 
-Welcome to the PayFlow Dashboard. This manual covers everything you need to manage payments, customers, and your account settings — no technical knowledge required.
+Welcome to the PayFlow Dashboard. This manual covers everything you need to manage payments, customers, and your account settings – no technical knowledge required.
 
 ## What You Can Do in the Dashboard
 

@@ -14,11 +14,11 @@ All contributors are expected to follow our [Code of Conduct](https://github.com
 
 ## Ways to Contribute
 
-- 🐛 **Report a bug** — open a GitHub issue
-- 💡 **Propose a feature** — start a GitHub Discussion
-- 📖 **Improve documentation** — edit any `.md` file and open a pull request
-- 🧪 **Add tests** — increase coverage for edge cases
-- 🔧 **Fix a bug or implement a feature** — see the workflow below
+- 🐛 **Report a bug** – open a GitHub issue
+- 💡 **Propose a feature** – start a GitHub Discussion
+- 📖 **Improve documentation** – edit any `.md` file and open a pull request
+- 🧪 **Add tests** – increase coverage for edge cases
+- 🔧 **Fix a bug or implement a feature** – see the workflow below
 
 ## Reporting Bugs
 
@@ -29,7 +29,7 @@ When reporting a bug, include:
 - **Logpilot version** (`npm list logpilot`)
 - **Node.js version** (`node --version`)
 - **Operating system**
-- **Minimal reproduction** — the smallest possible code that reproduces the issue
+- **Minimal reproduction** – the smallest possible code that reproduces the issue
 - **Expected vs actual behaviour**
 
 Use the [bug report template](https://github.com/logpilot/logpilot/issues/new?template=bug_report.md) to get started.
@@ -142,4 +142,4 @@ Before submitting, confirm your PR:
 
 ## Review Process
 
-A maintainer will review your pull request within **3–5 business days**. We may request changes — please don't take this personally. Once approved, a maintainer will merge your PR and credit you in the changelog.
+A maintainer will review your pull request within **3–5 business days**. We may request changes – please don't take this personally. Once approved, a maintainer will merge your PR and credit you in the changelog.

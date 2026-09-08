@@ -4,7 +4,7 @@ const { themes } = require('prism-react-renderer');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Ina Ciobanu | Senior Technical Writer',
-  tagline: 'Clear documentation for complex products — APIs, developer tools, and beyond.',
+  tagline: 'Clear documentation for complex products – APIs, developer tools, and beyond.',
   favicon: 'img/favicon.png',
 
   // Update this to your GitHub Pages URL once deployed
@@ -92,7 +92,7 @@ const config = {
         { name: 'twitter:card', content: 'summary_large_image' },
       ],
       navbar: {
-        title: 'Ina Ciobanu',
+        title: 'Home',
         logo: {
           alt: 'Portfolio Logo',
           src: 'img/logo.svg',
@@ -164,7 +164,7 @@ const config = {
           {
             type: 'dropdown',
             position: 'left',
-            label: 'Documentation Operations',
+            label: 'Process & Governance',
             className: 'navbarMegaMenu',
             items: [
               { label: 'Overview', to: '/docs/documentation-operations/intro' },
@@ -209,7 +209,7 @@ const config = {
               { label: 'Developer Guides', to: '/docs/guides/intro' },
               { label: 'User Manuals', to: '/docs/manuals/intro' },
               { label: 'Open Source Docs', to: '/docs/opensource/intro' },
-              { label: 'Documentation Operations', to: '/docs/documentation-operations/intro' },
+              { label: 'Process & Governance', to: '/docs/documentation-operations/intro' },
               { label: 'FM Operations', to: '/docs/fm-operations' },
               { label: 'Glossary', to: '/docs/glossary' },
             ],

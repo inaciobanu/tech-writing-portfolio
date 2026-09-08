@@ -13,6 +13,8 @@ This glossary defines abbreviations used throughout the portfolio. Hover over or
 
 The page also demonstrates a reusable documentation pattern: concise term definitions, accessible keyboard interaction, and contextual explanations that keep readers in flow.
 
+For the full list of terms used across the FM Operations and Process Governance case study, see the [documentation glossary](/docs/glossary/reference).
+
 ## Abbreviations
 
 | Abbreviation | Meaning | Used in |
@@ -23,6 +25,10 @@ The page also demonstrates a reusable documentation pattern: concise term defini
 | <abbr className="glossary-term" tabIndex={0} data-glossary-key="ppm" data-definition="Planned preventive maintenance: scheduled maintenance performed before equipment failure occurs.">PPM</abbr> | Planned preventive maintenance | [PPM Procedure](./fm-operations/ppm-procedure) |
 | <abbr className="glossary-term" tabIndex={0} data-glossary-key="sop" data-definition="Standard operating procedure: an approved, repeatable set of instructions for completing a task.">SOP</abbr> | Standard operating procedure | [PPM Procedure](./fm-operations/ppm-procedure) |
 | <abbr className="glossary-term" tabIndex={0} data-glossary-key="sow" data-definition="Statement of work: a document that defines the scope, deliverables, and responsibilities for contracted work.">SOW</abbr> | Statement of work | [PPM Procedure](./fm-operations/ppm-procedure) |
+| <abbr className="glossary-term" tabIndex={0} data-glossary-key="emea" data-definition="Europe, Middle East, Africa: the region covering operations and documentation for EMEA markets and facilities.">EMEA</abbr> | Europe, Middle East, Africa | [PPM Procedure](./fm-operations/ppm-procedure) |
+| <abbr className="glossary-term" tabIndex={0} data-glossary-key="apac" data-definition="Asia-Pacific: the region covering operations and documentation for APAC markets and facilities.">APAC</abbr> | Asia-Pacific | [PPM Procedure](./fm-operations/ppm-procedure) |
+| <abbr className="glossary-term" tabIndex={0} data-glossary-key="ams" data-definition="Americas: the region covering operations and documentation for North, Central, and South American markets.">AMS</abbr> | Americas | [PPM Procedure](./fm-operations/ppm-procedure) |
+| <abbr className="glossary-term" tabIndex={0} data-glossary-key="sme" data-definition="Subject matter expert: the person with authoritative knowledge of a process, system, or domain, who validates that documentation reflects how things actually work.">SME</abbr> | Subject matter expert | [Documentation Strategy](./fm-operations/documentation-strategy) |
 
 ## In context
 

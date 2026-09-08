@@ -14,8 +14,8 @@ You have two types of API keys:
 
 | Key Type | Prefix | Use |
 |---|---|---|
-| **Live key** | `sk_live_` | Production requests — charges real cards |
-| **Test key** | `sk_test_` | Development and testing — no real charges |
+| **Live key** | `sk_live_` | Production requests – charges real cards |
+| **Test key** | `sk_test_` | Development and testing – no real charges |
 
 :::warning Keep your keys secret
 Never expose API keys in client-side code, public repositories, or logs. If a key is compromised, rotate it immediately from the Dashboard.

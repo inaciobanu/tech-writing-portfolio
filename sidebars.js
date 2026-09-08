@@ -23,7 +23,7 @@ const sidebars = {
           type: 'category',
           label: 'API Reference',
           link: { type: 'doc', id: 'api/reference/payflow-api' },
-          // Generated from openapi/payflow.yaml — run `npm run gen-api-docs`
+          // Generated from openapi/payflow.yaml – run `npm run gen-api-docs`
           // after editing the spec, then keep this list in sync with the
           // output of docs/api/reference/sidebar.ts.
           items: [
@@ -49,7 +49,7 @@ const sidebars = {
         },
         'api/errors',
         'api/rate-limits',
-        'api/kdbai-sample',
+        'api/rotko-sample',
         'api/connect-api-sample',
       ],
     },
@@ -94,7 +94,7 @@ const sidebars = {
   processGovernanceSidebar: [
     {
       type: 'category',
-      label: 'Documentation Operations',
+      label: 'Process & Governance',
       items: [
         'process-governance/intro',
         'process-governance/audit',

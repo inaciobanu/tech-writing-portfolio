@@ -107,6 +107,6 @@ Confirm it in your Dashboard under **Payments → Test Payments**.
 
 ## What's Next?
 
-- [Integration Guide](./integration) — add PayFlow to a real application
-- [API Reference](../api/reference/payflow-api) — full reference for all available endpoints
-- [Error Handling](../api/errors) — handle failures gracefully
+- [Integration Guide](./integration) – add PayFlow to a real application
+- [API Reference](../api/reference/payflow-api) – full reference for all available endpoints
+- [Error Handling](../api/errors) – handle failures gracefully

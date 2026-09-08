@@ -10,6 +10,8 @@ slug: /glossary/reference
 
 Key terms and definitions used throughout the portfolio documentation.
 
+Many of these terms also appear as interactive pop-ups: the first time a term shows up on a page, it's underlined, and hovering or focusing it surfaces the definition inline, right where the reader needs it, without a trip to this page. See the [interactive glossary](/docs/glossary) for how the pattern works.
+
 ## Documentation & Governance
 
 **Approval**
@@ -82,6 +84,9 @@ A set of step-by-step instructions for completing a task or process. May include
 **Rollback**
 Steps to reverse or undo a procedure if it fails or needs to be stopped midway. Procedures that make changes often include rollback steps to restore the system to its previous state.
 
+**Statement of work (SOW)**
+A document that defines the scope, deliverables, and responsibilities for contracted work. Contractors perform maintenance work against an SOW.
+
 **Step**
 A single action or instruction within a procedure. Steps are numbered, sequential, and actionable (the reader knows what to do after reading the step).
 
@@ -129,6 +134,9 @@ A procedure step or rule that differs by region due to legal, regulatory, or cli
 **Real Estate Operations (REO)**
 The management of workplace facilities, buildings, sites, and related operational services across a property portfolio.
 
+**Facilities management (FM)**
+The coordination of buildings, services, and workplace operations. The overarching discipline that REO documentation and PPM procedures support.
+
 ---
 
 ## Documentation Strategy
@@ -137,7 +145,7 @@ The management of workplace facilities, buildings, sites, and related operationa
 The phase where you evaluate documentation for quality, accuracy, completeness, consistency, ownership, currency, usability, and control. Output is a detailed gap analysis.
 
 **Discover**
-The initial phase of understanding the documentation landscape—where docs live, who maintains them, what's documented vs. undocumented, and what regulations apply.
+The initial phase of understanding the documentation landscape – where docs live, who maintains them, what's documented vs. undocumented, and what regulations apply.
 
 **Govern**
 The final phase where you establish ownership, approval, version control, review cycles, and change management processes to keep documentation current over time.
@@ -193,20 +201,20 @@ Microsoft's content management and collaboration platform; commonly used for org
 A simple spreadsheet documenting all procedures, their metadata, ownership, and notes. Useful for tracking why variations exist or for small documentation estates.
 
 **Style guide**
-A set of conventions for writing and formatting documentation—tone, voice, terminology, structure, grammar. Ensures consistency across a documentation estate.
+A set of conventions for writing and formatting documentation – tone, voice, terminology, structure, grammar. Ensures consistency across a documentation estate.
 
 ---
 
 ## Maintenance & Operations
 
 **Asset**
-Physical infrastructure managed by facilities teams—buildings, systems, equipment, utilities. Each asset has maintenance requirements and a maintenance history.
+Physical infrastructure managed by facilities teams – buildings, systems, equipment, utilities. Each asset has maintenance requirements and a maintenance history.
 
 **Critical asset**
 An asset whose failure significantly impacts operations, safety, or service delivery. Critical assets typically receive more frequent maintenance and escalation procedures.
 
 **Defect**
-A problem or damage found during maintenance inspection—corrosion, wear, malfunction, or safety issue. Severity determines whether it's escalated or deferred.
+A problem or damage found during maintenance inspection – corrosion, wear, malfunction, or safety issue. Severity determines whether it's escalated or deferred.
 
 **Escalation**
 The process of raising a maintenance issue or defect to a manager or higher authority for decision-making or resource allocation.

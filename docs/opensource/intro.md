@@ -6,7 +6,7 @@ sidebar_label: Overview
 slug: /opensource/intro
 ---
 
-# Logpilot — Open Source Documentation
+# Logpilot – Open Source Documentation
 
 **Logpilot** is a lightweight, open source structured logging library for Node.js. It outputs clean, queryable JSON logs with zero configuration and pluggable transports for common destinations (stdout, files, cloud logging services).
 
@@ -39,14 +39,14 @@ log.info('Server started', { port: 3000, env: 'production' });
 
 Most Node.js logging libraries require significant configuration before they produce useful output. Logpilot works out of the box with sensible defaults, while remaining fully configurable for production environments.
 
-- **Zero config** — structured JSON logs immediately
-- **Tiny footprint** — under 8KB minified, zero production dependencies  
-- **Pluggable transports** — stdout, file, HTTP, or write your own
-- **TypeScript support** — full type definitions included
-- **Tested** — 98% code coverage
+- **Zero config** – structured JSON logs immediately
+- **Tiny footprint** – under 8KB minified, zero production dependencies  
+- **Pluggable transports** – stdout, file, HTTP, or write your own
+- **TypeScript support** – full type definitions included
+- **Tested** – 98% code coverage
 
 ## Community
 
-- [GitHub Issues](https://github.com/logpilot/logpilot/issues) — bug reports and feature requests
-- [Discussions](https://github.com/logpilot/logpilot/discussions) — questions and ideas
-- [Discord](https://discord.gg/logpilot) — real-time chat with maintainers and contributors
+- [GitHub Issues](https://github.com/logpilot/logpilot/issues) – bug reports and feature requests
+- [Discussions](https://github.com/logpilot/logpilot/discussions) – questions and ideas
+- [Discord](https://discord.gg/logpilot) – real-time chat with maintainers and contributors

@@ -153,7 +153,7 @@ I'd define what every procedure must have:
 
 For each high-priority procedure, I'd:
 
-1. **Interview the SME.** Not "tell me what the procedure should say"—but "walk me through what you actually do." I'd take notes, ask clarifying questions, understand the real workflow.
+1. **Interview the SME.** Not "tell me what the procedure should say" – but "walk me through what you actually do." I'd take notes, ask clarifying questions, understand the real workflow.
 
 2. **Write it down.** Using the template, in plain language, with decision points and exceptions clearly marked.
 

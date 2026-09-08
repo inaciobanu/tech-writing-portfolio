@@ -9,9 +9,9 @@ sidebar_label: "Connect API Developer Portal (Sample)"
 This is a **portfolio writing sample** demonstrating developer portal documentation for a fintech API. It reflects the style and scope of the Connect API Developer Portal I owned at PrimaryBid.
 :::
 
-# PrimaryBid Connect API — Developer Portal
+# PrimaryBid Connect API – Developer Portal
 
-The **Connect API** allows distribution partners and institutional clients to integrate PrimaryBid's IPO and follow-on offering access directly into their own platforms. With Connect, your users can browse live offers, submit indications of interest, and receive allocations — all without leaving your product.
+The **Connect API** allows distribution partners and institutional clients to integrate PrimaryBid's IPO and follow-on offering access directly into their own platforms. With Connect, your users can browse live offers, submit indications of interest, and receive allocations – all without leaving your product.
 
 **Base URL:** `https://connect.primarybid.com/api/v1`
 
@@ -140,7 +140,7 @@ Submits a retail investor's indication of interest for an active offer.
 | `investor_id` | ✅ | Your platform's identifier for this investor |
 | `amount` | ✅ | Gross investment amount in minor currency units |
 | `currency` | ✅ | ISO 4217 code (`gbp`, `eur`) |
-| `terms_accepted` | ✅ | Must be `true` — investor has accepted current terms |
+| `terms_accepted` | ✅ | Must be `true` – investor has accepted current terms |
 | `terms_version` | ✅ | Version of terms accepted (retrieve from `/terms`) |
 
 ---
@@ -158,7 +158,7 @@ PrimaryBid fires webhook events for key lifecycle changes. Configure your endpoi
 | `allocation.confirmed` | An investor receives a confirmed allocation |
 | `allocation.scaled` | An allocation is scaled back due to oversubscription |
 
-**Example payload — `allocation.confirmed`:**
+**Example payload – `allocation.confirmed`:**
 
 ```json
 {
@@ -195,14 +195,14 @@ def verify_webhook(payload_body: bytes, signature: str, secret: str) -> bool:
 
 ## Changelog
 
-### v1.4.0 — 2026-01-10
+### v1.4.0 – 2026-01-10
 - Added `allocation.scaled` webhook event
 - `GET /offers` now supports `type` filter parameter
 - Improved error messages for invalid `terms_version` submissions
 
-### v1.3.0 — 2025-09-15
+### v1.3.0 – 2025-09-15
 - Added `offer.closing_soon` webhook (1-hour warning before close)
 - Rate limit increased to 100 requests/minute for Growth tier partners
 
-### v1.2.0 — 2025-06-01
+### v1.2.0 – 2025-06-01
 - Initial public release of Connect API

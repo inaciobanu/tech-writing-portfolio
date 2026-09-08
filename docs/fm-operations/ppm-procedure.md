@@ -317,11 +317,15 @@ The following **must** be retained for audit and compliance purposes:
 
 ## Related Documents
 
+:::note Some related documents are illustrative
+Italicized items below are companion documents that would exist in a real documentation set (other SOPs, policies, schedules) but aren't part of this portfolio sample, so they aren't linked. Linked items point to real pages on this site.
+:::
+
 - *SOP: Reactive Maintenance Response* – how to handle emergency/unplanned maintenance
 - *SOP: Contractor Management & Vetting* – contractor qualification and performance tracking
 - *Policy: Safety Lockout/Tagout* – safe shutdown procedures for equipment maintenance
 - *Policy: Permit & Statutory Compliance* – regulatory requirements by asset type and region
-- *Ownership & Review Model* – ownership, approval, and review cycle for all SOPs
+- [Ownership & Review Model](/docs/documentation-operations/governance) – ownership, approval, and review cycle for all SOPs
 - *PPM Schedule (Annual)* – approved schedule for all planned maintenance
 - *Asset Management Register* – master record of all building assets and maintenance requirements
 

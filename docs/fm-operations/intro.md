@@ -23,7 +23,7 @@ Imagine you've just been given responsibility for all Real Estate Operations doc
 
 Your first instinct might be to start rewriting. That would be wrong.
 
-This case study shows how I would actually approach this problem—what I'd do first, why, and how I'd move from chaos to controlled documentation in a way that sticks.
+This case study shows how I would actually approach this problem – what I'd do first, why, and how I'd move from chaos to controlled documentation in a way that sticks.
 
 **Note:** This is a fictional scenario created to demonstrate real-world documentation governance and operational writing.
 

@@ -10,7 +10,7 @@ Solutions to the most common issues with the PayFlow Dashboard.
 
 ## Payments
 
-### A payment shows as "Pending" — what does that mean?
+### A payment shows as "Pending" – what does that mean?
 
 **Pending** means the payment has been initiated but not yet confirmed by the customer's bank. This is normal for certain payment methods (such as bank transfers) and usually resolves within 1–3 business days.
 
@@ -20,9 +20,9 @@ If a payment has been pending for more than 5 business days, contact support.
 
 This can happen if:
 
-- The payment is still processing — wait a few minutes and refresh
-- The payment failed after the bank authorised it — check the customer's bank statement for a pending charge that should drop off within 3–5 days
-- The customer used a different email address — search by card last four digits instead
+- The payment is still processing – wait a few minutes and refresh
+- The payment failed after the bank authorised it – check the customer's bank statement for a pending charge that should drop off within 3–5 days
+- The customer used a different email address – search by card last four digits instead
 
 If you still can't find the payment, contact support with the customer's name and the approximate charge amount and date.
 
@@ -60,9 +60,9 @@ Yes, but refunds older than 90 days must be processed manually. Contact support 
 
 Verification delays are usually caused by:
 
-- **Missing documents** — check your email for a request from our compliance team
-- **Document quality** — resubmit if documents were blurry or expired
-- **High verification volume** — occasionally processing takes longer during busy periods
+- **Missing documents** – check your email for a request from our compliance team
+- **Document quality** – resubmit if documents were blurry or expired
+- **High verification volume** – occasionally processing takes longer during busy periods
 
 Check **Settings → Business Profile** for the current status and any action required.
 

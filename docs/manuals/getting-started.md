@@ -15,7 +15,7 @@ This guide walks you through creating your PayFlow account and processing your f
 3. Click **Create Account**
 4. Check your email for a verification link and click it
 
-Your account starts in **test mode** — you can explore all features without processing real payments.
+Your account starts in **test mode** – you can explore all features without processing real payments.
 
 ## Complete Your Business Profile
 
@@ -42,7 +42,7 @@ Once you're logged in:
 4. Use the test card number `4242 4242 4242 4242` with any future expiry date and any 3-digit CVC
 5. Click **Charge**
 
-The payment appears in your **Payments** list with a **Test** badge. Congratulations — you've processed your first payment!
+The payment appears in your **Payments** list with a **Test** badge. Congratulations – you've processed your first payment!
 
 ## Switch to Live Mode
 

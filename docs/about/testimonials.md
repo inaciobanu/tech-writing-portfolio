@@ -15,7 +15,7 @@ description: "What colleagues, managers, and collaborators at KX and PrimaryBid 
 ### Gareth Forshaw
 **Content Leader · Managed Ina directly at KX · November 2025**
 
-> "I had the pleasure of working closely with Ina while at KX — she is truly an exceptional technical writer and team member. Her dedication to producing high quality documentation is matched only by her genuine passion for helping users succeed.
+> "I had the pleasure of working closely with Ina while at KX – she is truly an exceptional technical writer and team member. Her dedication to producing high quality documentation is matched only by her genuine passion for helping users succeed.
 >
 > Ina brings an impressive blend of clarity, precision, and speed to her work. She is a solid writer, a fast and thoughtful editor, and someone who consistently delivers with attention to detail.
 >
@@ -41,11 +41,11 @@ description: "What colleagues, managers, and collaborators at KX and PrimaryBid 
 ### Lionel Wong
 **Solutions Engineer Lead · Managed Ina directly at PrimaryBid · August 2023**
 
-> "As PrimaryBid's founding Technical Writer, Ina accomplished a significant number of outcomes within a short span of time — laying the groundwork for our technical documentation and content ecosystem, delivering and growing an API-first Developer Portal, and producing well-tailored product enablement content for our core customers and partners.
+> "As PrimaryBid's founding Technical Writer, Ina accomplished a significant number of outcomes within a short span of time – laying the groundwork for our technical documentation and content ecosystem, delivering and growing an API-first Developer Portal, and producing well-tailored product enablement content for our core customers and partners.
 >
 > Ina is effective, organised, and detail-oriented. She executes at the highest level and has a rigorous approach towards her deliverables. More importantly, she takes a lot of pride in her work and consistently strives for excellence, which has been appreciated by her peers and stakeholders across the board.
 >
-> Ina adopts a strong growth mindset and consistently looks for opportunities to upskill herself — having completed various technical courses that have deepened her understanding of the wider technology ecosystem, allowing her to produce richer and better-tailored content.
+> Ina adopts a strong growth mindset and consistently looks for opportunities to upskill herself – having completed various technical courses that have deepened her understanding of the wider technology ecosystem, allowing her to produce richer and better-tailored content.
 >
 > Ina is also very passionate about building a strong and healthy work culture outside of her core remit. She helped with organising and facilitating Engineering events and even led the roll-out of PrimaryBid's tech blog. Ina is an amazing team player, incredibly collaborative, and never says no to lending a helping hand across her areas of expertise. She has been an absolute joy to work with and I cannot recommend her enough."
 
@@ -54,11 +54,11 @@ description: "What colleagues, managers, and collaborators at KX and PrimaryBid 
 ### Gerry McQuade
 **Senior Technical Customer Success · Senior stakeholder at PrimaryBid · December 2023**
 
-> "Working with Ina really highlighted the depths of research and planning that she put into her work, and the tireless, methodical way in which she enacted it. Ultimately, Ina built our Developer Portal out from nothing — now award-nominated.
+> "Working with Ina really highlighted the depths of research and planning that she put into her work, and the tireless, methodical way in which she enacted it. Ultimately, Ina built our Developer Portal out from nothing – now award-nominated.
 >
-> Unlike other writers I have worked with in the past, she did this by learning the platform and product and then writing for developers, as a developer — a truly great skill.
+> Unlike other writers I have worked with in the past, she did this by learning the platform and product and then writing for developers, as a developer – a truly great skill.
 >
-> Anyone would be blessed to have Ina onboard — between her work ethic and the vast experience she brings to the table."
+> Anyone would be blessed to have Ina onboard – between her work ethic and the vast experience she brings to the table."
 
 ---
 

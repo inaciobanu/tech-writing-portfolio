@@ -49,7 +49,7 @@ The PayFlow API uses standard HTTP status codes. When an error occurs, the respo
 | Code | Description |
 |---|---|
 | `invalid_api_key` | The API key provided is not valid |
-| `api_key_expired` | The API key has expired — rotate it in the Dashboard |
+| `api_key_expired` | The API key has expired – rotate it in the Dashboard |
 | `no_api_key` | No API key was provided in the request |
 
 ### Payment Errors
@@ -87,5 +87,5 @@ try:
 
 except requests.exceptions.HTTPError as e:
     error = e.response.json().get("error", {})
-    print(f"Error {e.response.status_code}: {error.get('code')} — {error.get('message')}")
+    print(f"Error {e.response.status_code}: {error.get('code')} – {error.get('message')}")
 ```

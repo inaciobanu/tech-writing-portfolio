@@ -1,30 +1,30 @@
 ---
 id: education
 title: Education
-description: "Ina Ciobanu's academic background — two bachelor's degrees and three master's degrees across arts, PR, law, and finance."
+description: "Ina Ciobanu's academic background – two bachelor's degrees and three master's degrees across arts, PR, law, and finance."
 ---
 
 # Education
 
-## 2nd Bachelor's Degree — History and Theory of Arts
+## 2nd Bachelor's Degree – History and Theory of Arts
 **George Enescu University of Arts**
 *Faculty of Visual Arts and Design · 2013–2016*
 
 ---
 
-## Master's Degree — Public Relations and Advertising
+## Master's Degree – Public Relations and Advertising
 **Al. I. Cuza University of Iași**
 *Faculty of Philosophy · 2010–2012*
 
 ---
 
-## Master's Degree — European Law
+## Master's Degree – European Law
 **Al. I. Cuza University of Iași**
 *Faculty of Law · 2009–2011*
 
 ---
 
-## Postgraduate Studies — Financial-Banking Management
+## Postgraduate Studies – Financial-Banking Management
 **Al. I. Cuza University of Iași**
 *Faculty of Economics and Business Administration · 2007–2008*
 
@@ -34,11 +34,11 @@ description: "Ina Ciobanu's academic background — two bachelor's degrees and t
 **Socrates Erasmus Scholarship**
 *Finance · 2007 (5 months)*
 
-International exchange scholarship — one of several experiences that established a foundation in European finance and a working knowledge of Portuguese.
+International exchange scholarship – one of several experiences that established a foundation in European finance and a working knowledge of Portuguese.
 
 ---
 
-## Bachelor's Degree — Banking and Finance
+## Bachelor's Degree – Banking and Finance
 **Al. I. Cuza University of Iași**
 *Faculty of Economics and Business Administration · 2003–2007*
 

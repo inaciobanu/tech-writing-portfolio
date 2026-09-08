@@ -6,7 +6,7 @@ sidebar_label: Overview
 slug: /api/intro
 ---
 
-# PayFlow API — Reference Documentation
+# PayFlow API – Reference Documentation
 
 **Version:** 2.4.0 · **Base URL:** `https://api.payflow.io/v2`
 
@@ -64,7 +64,7 @@ curl https://api.payflow.io/v2/payments \
 
 ## Next Steps
 
-- [Authentication](./authentication) — get your API keys and set up auth
-- [API Reference](./reference/payflow-api) — generated from the OpenAPI spec, every endpoint with live request/response examples
-- [Error Codes](./errors) — understand and handle API errors
-- [Rate Limits](./rate-limits) — avoid hitting request limits
+- [Authentication](./authentication) – get your API keys and set up auth
+- [API Reference](./reference/payflow-api) – generated from the OpenAPI spec, every endpoint with live request/response examples
+- [Error Codes](./errors) – understand and handle API errors
+- [Rate Limits](./rate-limits) – avoid hitting request limits

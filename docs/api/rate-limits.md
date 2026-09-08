@@ -58,6 +58,6 @@ def request_with_backoff(url, headers, data, max_retries=5):
 ## Tips for Staying Under Limits
 
 - **Batch requests** where possible rather than making individual calls
-- **Cache responses** — avoid re-fetching data you already have
+- **Cache responses** – avoid re-fetching data you already have
 - **Use webhooks** instead of polling for status updates
 - **Implement idempotency keys** to safely retry failed requests without duplicate charges

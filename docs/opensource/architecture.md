@@ -6,7 +6,7 @@ description: "How Logpilot is structured internally, for anyone contributing cod
 
 # Architecture
 
-This page explains how Logpilot is structured internally — useful if you're contributing code or building a custom transport.
+This page explains how Logpilot is structured internally – useful if you're contributing code or building a custom transport.
 
 ## Overview
 
@@ -71,8 +71,8 @@ function jsonFormatter(entry) {
 
 Logpilot ships two built-in formatters:
 
-- **`jsonFormatter`** (default) — compact single-line JSON, ideal for production and log aggregation tools
-- **`prettyFormatter`** — colourised, human-readable output for local development
+- **`jsonFormatter`** (default) – compact single-line JSON, ideal for production and log aggregation tools
+- **`prettyFormatter`** – colourised, human-readable output for local development
 
 ## Transports
 

@@ -6,15 +6,15 @@ description: "Work history covering technical writing roles at KX and PrimaryBid
 
 # Work Experience
 
-## KX — Senior Technical Writer
+## KX – Senior Technical Writer
 **February 2024 – Present · London**
 
 KX is the creator of kdb+, the world's fastest time-series database, widely used in high-frequency trading, capital markets, and AI-driven analytics.
 
 As Senior Technical Writer, I own documentation for two flagship products:
 
-- **KDB.AI** — a real-time vector database designed for AI and machine learning workloads
-- **PyKX** — a Python interface to kdb+ enabling high-performance analytics for Python developers
+- **KDB.AI** – a real-time vector database designed for AI and machine learning workloads
+- **PyKX** – a Python interface to kdb+ enabling high-performance analytics for Python developers
 
 **Key responsibilities:**
 
@@ -28,19 +28,19 @@ As Senior Technical Writer, I own documentation for two flagship products:
 
 ---
 
-## PrimaryBid — Technical Writer II
+## PrimaryBid – Technical Writer II
 **November 2022 – December 2023 · Greater London**
 
 PrimaryBid is a fintech platform that democratises access to IPOs and share offerings for retail investors.
 
 - Wrote **45,000 words** of user guides for internal apps and external web platforms, client-facing emails, UX content, and product content
-- Owned the **Connect API Developer Portal** — a readme.io site with API documentation, code samples, and changelogs for software engineers self-serving API adoption
+- Owned the **Connect API Developer Portal** – a readme.io site with API documentation, code samples, and changelogs for software engineers self-serving API adoption
 - Collaborated cross-functionally with Engineering, Legal, Compliance, and Product teams as an embedded Agile technical writer
 - Tools: LucidChart · VS Code · Monday · Git / GitHub / GitLab · Docs-as-code · Jira/Kanban · Confluence · Postman · Swagger · Markdown · Figma
 
 ---
 
-## SEOzon Prime — Founder & Amazon Keyword Optimizer
+## SEOzon Prime – Founder & Amazon Keyword Optimizer
 **May 2018 – December 2023 · London**
 
 Founded and grew a trademarked Amazon keyword optimisation and copywriting service from scratch to a multi-award-winning business.
@@ -51,7 +51,7 @@ Founded and grew a trademarked Amazon keyword optimisation and copywriting servi
 
 ---
 
-## Upwork — Technical Writer, SaaS Copywriter & Branding Consultant
+## Upwork – Technical Writer, SaaS Copywriter & Branding Consultant
 **July 2013 – November 2022 · Remote**
 
 Nearly a decade of freelance technical writing and content strategy across a wide range of industries.
@@ -59,13 +59,13 @@ Nearly a decade of freelance technical writing and content strategy across a wid
 - Delivered over **2,000,000 words** of content for medical, legal, fintech, SaaS, e-commerce, investment, digital banking, and telecom clients
 - Deliverables included: app release notes, in-app UX copy, FAQs, how-to guides, branding manuals, security and data privacy tutorial scripts
 - Long-term clients included:
-  - **Infopay** — Public Information Database Records (Boston, MA)
-  - **Zistemo** — Business Management Software (Switzerland)
-  - **Linqto** — Personal Banker App (San Jose, CA)
+  - **Infopay** – Public Information Database Records (Boston, MA)
+  - **Zistemo** – Business Management Software (Switzerland)
+  - **Linqto** – Personal Banker App (San Jose, CA)
 
 ---
 
-## getLaunched.io — Senior Content Writer & Branding Consultant
+## getLaunched.io – Senior Content Writer & Branding Consultant
 **March 2015 – January 2016 · London**
 
 Startup supporting aspiring entrepreneurs to launch their businesses.
@@ -76,7 +76,7 @@ Startup supporting aspiring entrepreneurs to launch their businesses.
 
 ---
 
-## Fantasy High Street — Production Assistant
+## Fantasy High Street – Production Assistant
 **June 2015 – September 2015 · London**
 
 - Researched, budgeted, and wrote creative proposals for major UK events including the Oxford Christmas Light Festival, Kew Summer Festival 2016, and Peckham Square Event Programme
@@ -84,14 +84,14 @@ Startup supporting aspiring entrepreneurs to launch their businesses.
 
 ---
 
-## Scoompy, Inc — Technical Copywriter
+## Scoompy, Inc – Technical Copywriter
 **July 2013 – February 2014 · San Diego (Remote)**
 
 - Website and blog content writing with specialisms in legal and medical writing
 
 ---
 
-## Impact Hub Vienna — Marketing Communications Officer
+## Impact Hub Vienna – Marketing Communications Officer
 **February 2013 – June 2013 · Vienna, Austria**
 
 Erasmus Young Entrepreneurs Programme internship.
@@ -101,7 +101,7 @@ Erasmus Young Entrepreneurs Programme internship.
 
 ---
 
-## Harte-Hanks — Eloqua Marketing Automation Programme Manager
+## Harte-Hanks – Eloqua Marketing Automation Programme Manager
 **January 2012 – January 2013**
 
 *Also served as Deputy Team Leader from September 2012.*
@@ -112,7 +112,7 @@ Erasmus Young Entrepreneurs Programme internship.
 
 ---
 
-## OPP Media Ltd — Marketing Assistant & News Editor
+## OPP Media Ltd – Marketing Assistant & News Editor
 **October 2011 – January 2012 · Twickenham**
 
 Overseas Property Professional (OPP) Magazine and website.
@@ -123,7 +123,7 @@ Overseas Property Professional (OPP) Magazine and website.
 
 ---
 
-## UniCredit Business Integrated Solutions — Senior Specialist, Accounting & Finance
+## UniCredit Business Integrated Solutions – Senior Specialist, Accounting & Finance
 **November 2007 – October 2011 · Bucharest, Romania**
 
 - Processed financial transactions including SWIFT payments, Moneygram reconciliation, and foreign exchanges within UniCredit Group's outsourced financial services

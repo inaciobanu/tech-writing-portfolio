@@ -44,7 +44,7 @@ const impactItems = [
   },
   {
     metric: "0 → 1",
-    desc: "built PrimaryBid's Connect API Developer Portal from scratch — now award-nominated",
+    desc: "built PrimaryBid's Connect API Developer Portal from scratch – now award-nominated",
   },
 ];
 
@@ -60,7 +60,7 @@ const portfolioSections = [
     emoji: '🤖',
     title: 'Data & AI Platform Docs',
     desc: 'Documentation for real-time vector search and AI/data platforms.',
-    href: '/docs/api/kdbai-sample',
+    href: '/docs/api/rotko-sample',
     tags: ['Vector Search', 'AI/ML', 'Python Client'],
   },
   {
@@ -94,10 +94,18 @@ const portfolioSections = [
   },
   {
     emoji: '🗂️',
-    title: 'Documentation Systems & Operations',
+    title: 'Process & Governance',
     desc: 'Audits, information architecture, ownership, and review workflows for healthy docs.',
     href: '/docs/documentation-operations/intro',
     tags: ['Confluence', 'Documentation Ops', 'Process Analysis'],
+    isNew: true,
+  },
+  {
+    emoji: '🏢',
+    title: 'Facilities Management Case Study',
+    desc: 'Auditing and transforming fragmented global facilities documentation across three regions.',
+    href: '/docs/fm-operations',
+    tags: ['Facilities Management', 'Global Rollout', 'SOP Design'],
     isNew: true,
   },
 ];
@@ -105,13 +113,13 @@ const portfolioSections = [
 const thinkingItems = [
   {
     problem: "API onboarding unclear for distribution partners",
-    action: "Restructured the Connect API Developer Portal from scratch — added task-based navigation, code samples in multiple languages, and clearer error handling",
+    action: "Restructured the Connect API Developer Portal from scratch – added task-based navigation, code samples in multiple languages, and clearer error handling",
     result: "Faster partner integration, fewer support queries, portal now award-nominated",
     company: "PrimaryBid",
   },
   {
     problem: "Complex AI/data platform with no existing documentation ecosystem",
-    action: "Built documentation architecture for KDB.AI and PyKX from first principles — collaborating directly with engineers and data scientists to capture accurate, user-focused content",
+    action: "Built documentation architecture for KDB.AI and PyKX from first principles – collaborating directly with engineers and data scientists to capture accurate, user-focused content",
     result: "Developer resources that empower quants and engineers to self-serve advanced platform capabilities",
     company: "KX",
   },
@@ -124,12 +132,12 @@ const thinkingItems = [
 ];
 
 const approachItems = [
-  "Restructure for task-based navigation — users come with goals, not curiosity",
-  "Reduce cognitive load in API docs — one concept per page, examples before explanation",
-  "Align documentation with release cycles — ship docs with the feature, not after",
+  "Restructure for task-based navigation – users come with goals, not curiosity",
+  "Reduce cognitive load in API docs – one concept per page, examples before explanation",
+  "Align documentation with release cycles – ship docs with the feature, not after",
   "Write for real user workflows, not feature lists",
-  "Test documentation like a user — if I can't follow it, neither can they",
-  "Treat the doc site as a product — information architecture matters as much as prose",
+  "Test documentation like a user – if I can't follow it, neither can they",
+  "Treat the doc site as a product – information architecture matters as much as prose",
 ];
 
 const techEnv = [
@@ -148,7 +156,7 @@ const testimonialItems = [
     title: "Content Leader · KX",
   },
   {
-    quote: "Ina built our Developer Portal out from nothing — now award-nominated. She learned the platform and product and then wrote for developers, as a developer. A truly great skill.",
+    quote: "Ina built our Developer Portal out from nothing – now award-nominated. She learned the platform and product and then wrote for developers, as a developer. A truly great skill.",
     name: "Gerry McQuade",
     title: "Senior Technical Customer Success · PrimaryBid",
   },
@@ -237,7 +245,7 @@ export default function Home() {
           {/* Portfolio sections */}
           <h2 className={styles.sectionHeading}>Portfolio</h2>
           <p className={styles.sectionSubheading}>
-            Writing samples grouped by documentation type — not just file format.
+            Writing samples grouped by documentation type – not just file format.
           </p>
           <div className={clsx('portfolio-grid', styles.section)}>
             {portfolioSections.map((item) => (
@@ -260,7 +268,7 @@ export default function Home() {
           {/* How I think */}
           <h2 className={styles.sectionHeading}>How I Think About Documentation</h2>
           <p className={styles.sectionSubheading}>
-            Real problems I've solved — context, approach, and outcome.
+            Real problems I've solved – context, approach, and outcome.
           </p>
           <div className={clsx(styles.thinkingList, styles.section)}>
             {thinkingItems.map((item) => (
