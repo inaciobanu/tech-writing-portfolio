@@ -36,7 +36,7 @@ As a site map, it's flat on purpose – nothing buried more than one level below
 
 ![Confluence space structure: Home, Architecture, SOPs, and Policies in the top row; Onboarding, Projects, and Troubleshoot in the second row; a cross-cutting standards panel underneath listing named owner per page, review-due date shown, consistent templates, and labels for filtering](/img/process-governance-structure.svg)
 
-## What an Architecture & Design page contains
+## What an architecture and design page contains
 
 The **SOPs / Runbooks** category has [Sample SOP Template](./template-sop) as its worked example. **Architecture & Design** deserves the same treatment – a page that's mostly a diagram, with just enough prose to explain the reasoning a diagram can't carry on its own:
 

@@ -318,7 +318,7 @@ The following **must** be retained for audit and compliance purposes:
 ## Related Documents
 
 :::note Some related documents are illustrative
-Italicized items below are companion documents that would exist in a real documentation set (other SOPs, policies, schedules) but aren't part of this portfolio sample, so they aren't linked. Linked items point to real pages on this site.
+Italic items below are companion documents that would exist in a real documentation set (other SOPs, policies, schedules) but aren't part of this portfolio sample, so they aren't linked. Linked items point to real pages on this site.
 :::
 
 - *SOP: Reactive Maintenance Response* – how to handle emergency/unplanned maintenance

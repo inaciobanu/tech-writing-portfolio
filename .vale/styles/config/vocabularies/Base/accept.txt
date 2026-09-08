@@ -23,3 +23,5 @@ Zapier
 [Oo]nboarding
 [Oo]ffboarding
 [Oo]wnerless
+[Cc]olo[s]?
+[Ff]ailover[s]?

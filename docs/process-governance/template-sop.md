@@ -70,7 +70,7 @@ If validation fails and the issue can't be resolved within the change window:
 ## Related pages
 
 :::note Some related pages are illustrative
-Italicized items below are pages that would exist in a real documentation space (architecture references, policy pages, other runbooks) but aren't part of this portfolio sample, so they aren't linked. Linked items point to real pages on this site.
+Italic items below are pages that would exist in a real documentation space (architecture references, policy pages, other runbooks) but aren't part of this portfolio sample, so they aren't linked. Linked items point to real pages on this site.
 :::
 
 - [Ownership & Review Model](./governance) – ownership and review policy for this page
