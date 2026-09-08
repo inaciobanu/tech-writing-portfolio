@@ -36,6 +36,14 @@ As a site map, it's flat on purpose – nothing buried more than one level below
 
 ![Confluence space structure: Home, Architecture, SOPs, and Policies in the top row; Onboarding, Projects, and Troubleshoot in the second row; a cross-cutting standards panel underneath listing named owner per page, review-due date shown, consistent templates, and labels for filtering](/img/process-governance-structure.svg)
 
+## What an Architecture & Design page contains
+
+The **SOPs / Runbooks** category has [Sample SOP Template](./template-sop) as its worked example. **Architecture & Design** deserves the same treatment – a page that's mostly a diagram, with just enough prose to explain the reasoning a diagram can't carry on its own:
+
+![Representative network architecture diagram: three exchange or venue connections cross-connect into a primary, active colo containing market data feed handlers and an order routing and trading engine; a dashed failover replication link connects the primary colo to a standby secondary colo in DR mode with the same warm-standby components; the primary colo connects down through a firewall and gateway, labelled monitoring and change access only, to a segmented corporate network containing office, research, and development, which has no direct path to production](/img/process-governance-architecture.svg)
+
+This is the level of detail that actually gets used during an incident: which venues connect where, what fails over to what, and – just as important – where the corporate network's access stops. That last boundary is usually the one line nobody thought to draw until an audit asked for it.
+
 ## Why it holds up
 
 The split between architecture and runbooks is the one decision I'd point to first if someone asked why this structure and not another. Everything else follows the same logic: put content where the person who needs it fastest needs to look first, without making the other three audiences pay much of a price for it.
