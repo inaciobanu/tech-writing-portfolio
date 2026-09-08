@@ -199,7 +199,7 @@ I'd update based on feedback. Not every suggestion gets implemented (scope creep
 
 ## Week 16: Establish Ownership & Review Cycles
 
-**Goal:** Set up the structures that keep documentation from decaying again.
+**Goal:** Introduce version control, approvals, and defined ownership, so documentation is audit-ready, controlled, and consistently maintained. Support implementation with practical guidance, and establish ongoing review cycles so standards stay embedded in operations and current over time.
 
 **What I'd do:**
 
@@ -221,6 +221,8 @@ I'd make this visible. The owner's name goes on the document itself. The review 
 ---
 
 ## Throughout: Handle Global vs. Local Variation
+
+**Goal:** Engage regions to align requirements, balancing global consistency with essential local considerations.
 
 **The mistake:** Assuming every regional difference is a documentation problem.
 
@@ -284,3 +286,35 @@ Each step informs the next:
 - **Validation without ownership** = The documentation will decay within a year
 
 Each phase is short (1-2 weeks), focused, and produces concrete output.
+
+---
+
+## Where AI Tooling Fits
+
+The 16-week timeline above assumes manual work throughout. In practice, I'd use AI coding and writing assistants (Claude Code, Codex-style agents) for the mechanical, high-volume parts of this work – not for the parts that depend on people.
+
+**Where it helps:**
+
+- **Inventory** – Bulk-scanning Confluence/SharePoint exports, tagging metadata, and flagging likely duplicates faster than manual cataloguing
+- **Assess** – Comparing documents against each other and against what SMEs described, to surface contradictions, staleness, and gaps – procedures that are referenced but don't exist, or steps nobody wrote down
+- **Standardise** – Drafting a first-pass template structure from the target format, for a human to refine
+- **Rewrite** – Drafting first-pass rewrites from SME interview transcripts against the approved template, for a human to edit and verify
+- **Govern (ongoing)** – Once the framework exists, automating the recurring mechanics: flagging documents past their review date, catching broken cross-references, and drafting the audit-trail entry for a completed review
+
+**Where it doesn't:**
+
+Discover, Prioritise, and Validate are paced by stakeholder calendars and trust, not authoring speed. An AI-assisted draft still needs a human in the room to confirm it's actually correct – the tool speeds up producing a draft, not earning the buy-in. Establishing ownership itself is the same story: naming an accountable person and getting their sign-off is a conversation, not a task to automate – automation earns its keep afterward, keeping that structure running.
+
+| Phase | Without AI | With AI |
+|---|---|---|
+| Discover | 2 wks | 2 wks |
+| Inventory | 2 wks | ~1 wk |
+| Assess | 2 wks | ~1 wk |
+| Prioritise | 2 wks | 2 wks |
+| Standardise | 2 wks | ~1.5 wks |
+| Rewrite | 4 wks | ~2.5 wks |
+| Validate | 1 wk | 1 wk |
+| Govern | 1 wk | 1 wk |
+| **Total** | **16 wks** | **~12 wks** |
+
+Roughly 25% faster overall, concentrated entirely in the phases where speed was ever the bottleneck. The phases that determine whether documentation actually sticks – interviews, validation, ownership – stay the same length, because no tool shortens the time it takes to earn someone's trust.
