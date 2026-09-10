@@ -14,7 +14,10 @@
     { key: 'apac', term: 'APAC', definition: 'Asia-Pacific: the region covering operations and documentation for APAC markets and facilities.' },
     { key: 'ams', term: 'AMS', definition: 'Americas: the region covering operations and documentation for North, Central, and South American markets.' },
     { key: 'sme', term: 'SME', definition: 'Subject matter expert: the person with authoritative knowledge of a process, system, or domain, who validates that documentation reflects how things actually work.' },
-    { key: 'dmaic', term: 'DMAIC', definition: 'Define, Measure, Analyze, Improve, Control: a Six Sigma framework for diagnosing and fixing a broken process.' }
+    { key: 'dmaic', term: 'DMAIC', definition: 'Define, Measure, Analyze, Improve, Control: a Six Sigma framework for diagnosing and fixing a broken process.' },
+    { key: 'colo', term: 'colo', definition: 'Colocation facility: a third-party data center where an organization rents space, power, and connectivity for its own servers and network equipment.' },
+    { key: 'dr', term: 'DR', definition: 'Disaster recovery: the standby systems and procedures that let operations fail over to a secondary site if the primary one goes down.' },
+    { key: 'wan', term: 'WAN', definition: 'Wide area network: the connectivity that links sites together across locations, as opposed to a local network within one site.' }
   ];
 
   // Pages that already author glossary terms by hand and shouldn't be auto-tagged.

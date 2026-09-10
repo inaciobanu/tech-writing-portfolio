@@ -142,6 +142,19 @@ The coordination of buildings, services, and workplace operations. The overarchi
 
 ---
 
+## Network & Infrastructure
+
+**Colo** (Colocation facility)
+A third-party data center where an organization rents space, power, and connectivity for its own servers and network equipment, rather than running its own building.
+
+**DR** (Disaster recovery)
+The standby systems and procedures that let operations fail over to a secondary site if the primary one goes down. Used in the [Process & Governance case study](/docs/process-governance/structure) to describe the standby colocation facility mirroring the primary trading site.
+
+**WAN** (Wide area network)
+The connectivity that links sites together across locations, as opposed to a local network within one site. Referenced throughout the [Sample SOP Template](/docs/process-governance/template-sop) for site provisioning.
+
+---
+
 ## Documentation Strategy
 
 **Assess**
