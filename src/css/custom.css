@@ -165,3 +165,58 @@ tr:nth-child(even) td { background: #f5f5f5; }
 [data-theme='dark'] .glossary-tooltip {
   background: var(--ifm-background-surface-color);
 }
+
+/* Vertical timeline for the right-hand "On this page" TOC on Experience and Education,
+   whose sections are chronological entries rather than a topic outline. */
+html.docs-doc-id-about\/experience .theme-doc-toc-desktop .table-of-contents,
+html.docs-doc-id-about\/education .theme-doc-toc-desktop .table-of-contents {
+  border-left: none;
+  margin-left: 0;
+}
+
+html.docs-doc-id-about\/experience .theme-doc-toc-desktop .table-of-contents li,
+html.docs-doc-id-about\/education .theme-doc-toc-desktop .table-of-contents li {
+  position: relative;
+  margin: 0;
+  padding: 0.45rem 0 0.45rem 1.3rem;
+}
+
+html.docs-doc-id-about\/experience .theme-doc-toc-desktop .table-of-contents li::after,
+html.docs-doc-id-about\/education .theme-doc-toc-desktop .table-of-contents li::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 9px;
+  width: 2px;
+  background: var(--ifm-color-emphasis-300);
+}
+
+html.docs-doc-id-about\/experience .theme-doc-toc-desktop .table-of-contents li:first-child::after,
+html.docs-doc-id-about\/education .theme-doc-toc-desktop .table-of-contents li:first-child::after {
+  top: 1.05rem;
+}
+
+html.docs-doc-id-about\/experience .theme-doc-toc-desktop .table-of-contents li:last-child::after,
+html.docs-doc-id-about\/education .theme-doc-toc-desktop .table-of-contents li:last-child::after {
+  bottom: calc(100% - 1.05rem);
+}
+
+html.docs-doc-id-about\/experience .theme-doc-toc-desktop .table-of-contents li::before,
+html.docs-doc-id-about\/education .theme-doc-toc-desktop .table-of-contents li::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 1.05rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--ifm-color-emphasis-300);
+  border: 2px solid var(--ifm-background-color);
+  z-index: 1;
+}
+
+html.docs-doc-id-about\/experience .theme-doc-toc-desktop .table-of-contents li:has(.table-of-contents__link--active)::before,
+html.docs-doc-id-about\/education .theme-doc-toc-desktop .table-of-contents li:has(.table-of-contents__link--active)::before {
+  background: var(--ifm-color-primary);
+}

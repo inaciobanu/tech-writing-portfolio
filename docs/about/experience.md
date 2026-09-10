@@ -6,7 +6,7 @@ description: "Work history covering technical writing roles at KX and PrimaryBid
 
 # Work Experience
 
-## KX – Senior Technical Writer
+## KX – Senior Technical Writer (2024–Present)
 **February 2024 – Present · London**
 
 KX is the creator of kdb+, the world's fastest time-series database, widely used in high-frequency trading, capital markets, and AI-driven analytics.
@@ -28,8 +28,8 @@ As Senior Technical Writer, I own documentation for two flagship products:
 
 ---
 
-## PrimaryBid – Technical Writer II
-**November 2022 – December 2023 · Greater London**
+## PrimaryBid – Technical Writer II (2022–2023)
+**November 2022 – December 2023 · London**
 
 PrimaryBid is a fintech platform that democratises access to IPOs and share offerings for retail investors.
 
@@ -40,7 +40,7 @@ PrimaryBid is a fintech platform that democratises access to IPOs and share offe
 
 ---
 
-## SEOzon Prime – Founder & Amazon Keyword Optimizer
+## SEOzon Prime – Founder & Amazon Keyword Optimizer (2018–2023)
 **May 2018 – December 2023 · London**
 
 Founded and grew a trademarked Amazon keyword optimisation and copywriting service from scratch to a multi-award-winning business.
@@ -51,7 +51,7 @@ Founded and grew a trademarked Amazon keyword optimisation and copywriting servi
 
 ---
 
-## Upwork – Technical Writer, SaaS Copywriter & Branding Consultant
+## Upwork – Technical Writer, SaaS Copywriter & Branding Consultant (2013–2022)
 **July 2013 – November 2022 · Remote**
 
 Nearly a decade of freelance technical writing and content strategy across a wide range of industries.
@@ -65,7 +65,7 @@ Nearly a decade of freelance technical writing and content strategy across a wid
 
 ---
 
-## getLaunched.io – Senior Content Writer & Branding Consultant
+## getLaunched.io – Senior Content Writer & Branding Consultant (2015–2016)
 **March 2015 – January 2016 · London**
 
 Startup supporting aspiring entrepreneurs to launch their businesses.
@@ -76,7 +76,7 @@ Startup supporting aspiring entrepreneurs to launch their businesses.
 
 ---
 
-## Fantasy High Street – Production Assistant
+## Fantasy High Street – Production Assistant (2015)
 **June 2015 – September 2015 · London**
 
 - Researched, budgeted, and wrote creative proposals for major UK events including the Oxford Christmas Light Festival, Kew Summer Festival 2016, and Peckham Square Event Programme
@@ -84,14 +84,14 @@ Startup supporting aspiring entrepreneurs to launch their businesses.
 
 ---
 
-## Scoompy, Inc – Technical Copywriter
+## Scoompy, Inc – Technical Copywriter (2013–2014)
 **July 2013 – February 2014 · San Diego (Remote)**
 
 - Website and blog content writing with specialisms in legal and medical writing
 
 ---
 
-## Impact Hub Vienna – Marketing Communications Officer
+## Impact Hub Vienna – Marketing Communications Officer (2013)
 **February 2013 – June 2013 · Vienna, Austria**
 
 Erasmus Young Entrepreneurs Programme internship.
@@ -101,7 +101,7 @@ Erasmus Young Entrepreneurs Programme internship.
 
 ---
 
-## Harte-Hanks – Eloqua Marketing Automation Programme Manager
+## Harte-Hanks – Eloqua Marketing Automation Programme Manager (2012–2013)
 **January 2012 – January 2013**
 
 *Also served as Deputy Team Leader from September 2012.*
@@ -112,8 +112,8 @@ Erasmus Young Entrepreneurs Programme internship.
 
 ---
 
-## OPP Media Ltd – Marketing Assistant & News Editor
-**October 2011 – January 2012 · Twickenham**
+## OPP Media Ltd – Marketing Assistant & News Editor (2011–2012)
+**October 2011 – January 2012 · London**
 
 Overseas Property Professional (OPP) Magazine and website.
 
@@ -123,7 +123,7 @@ Overseas Property Professional (OPP) Magazine and website.
 
 ---
 
-## UniCredit Business Integrated Solutions – Senior Specialist, Accounting & Finance
+## UniCredit Business Integrated Solutions – Senior Specialist, Accounting & Finance (2007–2011)
 **November 2007 – October 2011 · Bucharest, Romania**
 
 - Processed financial transactions including SWIFT payments, Moneygram reconciliation, and foreign exchanges within UniCredit Group's outsourced financial services

@@ -8,7 +8,7 @@ description: "Ina Ciobanu's academic background – two bachelor's degrees and t
 
 On paper, none of this reads as a technical writer's education. In practice, each degree taught a different piece of the same job: reading structure before prose, treating a rule as literally as a lawyer would, writing for people who didn't ask to be addressed, and understanding the systems I document instead of translating them secondhand.
 
-## 2nd Bachelor's Degree – History and Theory of Arts
+## 2nd Bachelor's Degree – History and Theory of Arts (2013–2016)
 **George Enescu University of Arts**
 *Faculty of Visual Arts and Design · 2013–2016*
 
@@ -16,7 +16,7 @@ I spent three years studying visual grammar and structural composition, learning
 
 ---
 
-## Master's Degree – Public Relations and Advertising
+## Master's Degree – Public Relations and Advertising (2010–2012)
 **Al. I. Cuza University of Iași**
 *Faculty of Philosophy · 2010–2012*
 
@@ -24,7 +24,7 @@ I learned to write for an audience that didn't ask for the message – exactly w
 
 ---
 
-## Master's Degree – European Law
+## Master's Degree – European Law (2009–2011)
 **Al. I. Cuza University of Iași**
 *Faculty of Law · 2009–2011*
 
@@ -32,7 +32,7 @@ I spent years interpreting statutory language, learning to draw a hard line betw
 
 ---
 
-## Postgraduate Studies – Financial-Banking Management
+## Postgraduate Studies – Financial-Banking Management (2007–2008)
 **Al. I. Cuza University of Iași**
 *Faculty of Economics and Business Administration · 2007–2008*
 
@@ -40,7 +40,7 @@ I learned how transactional and risk systems actually operate, not just how they
 
 ---
 
-## Universidade do Algarve, Faro, Portugal
+## Universidade do Algarve, Faro, Portugal (2007)
 **Socrates Erasmus Scholarship**
 *Finance · 2007 (5 months)*
 
@@ -48,7 +48,7 @@ International exchange scholarship – one of several experiences that establish
 
 ---
 
-## Bachelor's Degree – Banking and Finance
+## Bachelor's Degree – Banking and Finance (2003–2007)
 **Al. I. Cuza University of Iași**
 *Faculty of Economics and Business Administration · 2003–2007*
 
