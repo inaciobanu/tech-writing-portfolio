@@ -18,7 +18,7 @@ This follows the standard procedure template from the [Ownership and review mode
 
 ## Purpose
 
-This procedure provisions a new site – an office, data centre, or remote point of presence – onto the corporate network, from initial network allocation through to go-live and handover to operations.
+This procedure provisions a new site – an office, data center, or remote point of presence – onto the corporate network, from initial network allocation through to go-live and handover to operations.
 
 ## Scope
 

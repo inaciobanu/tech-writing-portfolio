@@ -93,7 +93,7 @@ High-scoring documents are high-risk. The assessment tells me which procedures p
 
 ---
 
-## Week 7-8: Prioritise Based on Real Impact
+## Week 7-8: Prioritize Based on Real Impact
 
 **Goal:** Focus on highest-impact work first; avoid trying to fix everything.
 
@@ -119,7 +119,7 @@ I'd present this prioritization to the Senior Facilities Manager with realistic 
 
 ---
 
-## Week 9-10: Standardise on a Single Template & Style
+## Week 9-10: Standardize on a Single Template & Style
 
 **Goal:** Establish consistency so all future procedures follow the same model.
 
@@ -146,6 +146,7 @@ I'd define what every procedure must have:
 - Warnings labeled as "Caution" or "Important"
 - Numbered steps for sequences
 - Decision trees where the path depends on conditions
+- US English spelling, consistently – with teams in EMEA, APAC, and AMS all reading the same procedures, one spelling convention beats three
 
 **Why this matters:** If every SOP looks the same, readers learn the layout once and can navigate all of them. If every SOP is different, I'm forcing people to relearn the structure every time.
 
@@ -307,21 +308,21 @@ The 16-week timeline above assumes manual work throughout. In practice, I'd use 
 
 - **Inventory** – Bulk-scanning Confluence/SharePoint exports, tagging metadata, and flagging likely duplicates faster than manual cataloguing
 - **Assess** – Comparing documents against each other and against what SMEs described, to surface contradictions, staleness, and gaps – procedures that are referenced but don't exist, or steps nobody wrote down
-- **Standardise** – Drafting a first-pass template structure from the target format, for a human to refine
+- **Standardize** – Drafting a first-pass template structure from the target format, for a human to refine
 - **Rewrite** – Drafting first-pass rewrites from SME interview transcripts against the approved template, for a human to edit and verify
 - **Govern (ongoing)** – Once the framework exists, automating the recurring mechanics: flagging documents past their review date, catching broken cross-references, and drafting the audit-trail entry for a completed review
 
 **Where it doesn't:**
 
-Discover, Prioritise, and Validate are paced by stakeholder calendars and trust, not authoring speed. An AI-assisted draft still needs a human in the room to confirm it's actually correct – the tool speeds up producing a draft, not earning the buy-in. Establishing ownership itself is the same story: naming an accountable person and getting their sign-off is a conversation, not a task to automate – automation earns its keep afterward, keeping that structure running.
+Discover, Prioritize, and Validate are paced by stakeholder calendars and trust, not authoring speed. An AI-assisted draft still needs a human in the room to confirm it's actually correct – the tool speeds up producing a draft, not earning the buy-in. Establishing ownership itself is the same story: naming an accountable person and getting their sign-off is a conversation, not a task to automate – automation earns its keep afterward, keeping that structure running.
 
 | Phase | Without AI | With AI |
 |---|---|---|
 | Discover | 2 wks | 2 wks |
 | Inventory | 2 wks | ~1 wk |
 | Assess | 2 wks | ~1 wk |
-| Prioritise | 2 wks | 2 wks |
-| Standardise | 2 wks | ~1.5 wks |
+| Prioritize | 2 wks | 2 wks |
+| Standardize | 2 wks | ~1.5 wks |
 | Rewrite | 4 wks | ~2.5 wks |
 | Validate | 1 wk | 1 wk |
 | Govern | 1 wk | 1 wk |

@@ -14,7 +14,7 @@ Before I touched the structure, I needed to know what was actually in the space.
 
 83 pages, going back six years, no single owner across the whole space. A few things stood out fast.
 
-Three separate pages walked through "how to add a new site," each written by a different engineer at a different point, and each one slightly wrong about something the others got right. The topology diagrams hadn't been touched since a data-centre migration two years earlier, and they were still linked from the space's homepage as if they were current. Nineteen pages had no owner listed at all – either the field was left blank, or the person who wrote them had since moved teams. And the procedure people actually followed for a couple of common tasks wasn't written down anywhere; it lived in a Slack channel and in two engineers' heads.
+Three separate pages walked through "how to add a new site," each written by a different engineer at a different point, and each one slightly wrong about something the others got right. The topology diagrams hadn't been touched since a data-center migration two years earlier, and they were still linked from the space's homepage as if they were current. Nineteen pages had no owner listed at all – either the field was left blank, or the person who wrote them had since moved teams. And the procedure people actually followed for a couple of common tasks wasn't written down anywhere; it lived in a Slack channel and in two engineers' heads.
 
 None of that's unusual for a space that's grown for six years without anyone responsible for its upkeep.
 
@@ -57,12 +57,12 @@ When auditing a documentation space, I use a systematic framework to identify wh
 
 ### Audit methodology
 
-**Inventory → Assess → Risk-Rate → Prioritise → Remediate → Approve → Monitor**
+**Inventory → Assess → Risk-Rate → Prioritize → Remediate → Approve → Monitor**
 
 1. **Inventory** – Catalog every document with its metadata (owner, last update, audience, criticality)
 2. **Assess** – Evaluate each document against quality criteria
 3. **Risk-Rate** – Score each document by risk impact
-4. **Prioritise** – Focus on highest-risk items first
+4. **Prioritize** – Focus on highest-risk items first
 5. **Remediate** – Fix accuracy, structure, ownership, review cycles
 6. **Approve** – Get sign-off from owner before publishing
 7. **Monitor** – Track changes and refresh cycles ongoing

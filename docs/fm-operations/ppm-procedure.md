@@ -43,7 +43,7 @@ To ensure scheduled maintenance activities on critical and non-critical building
 - All regions: EMEA, APAC, AMS
 
 **Does not apply to:**
-- Emergency/reactive maintenance is covered by a separate SOP.
+- Emergency/reactive maintenance (covered by a separate SOP)
 - Vendor-managed equipment with separate service agreements
 - Client-specific asset maintenance governed by separate SOWs
 

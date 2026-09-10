@@ -44,10 +44,10 @@ The **SOPs / Runbooks** category has [Sample SOP Template](./template-sop) as it
 
 This is the level of detail that actually gets used during an incident: which venues connect where, what fails over to what, and – just as important – where the corporate network's access stops. That last boundary is usually the one line nobody thought to draw until an audit asked for it.
 
-Two details in that diagram carry more weight than the picture alone shows. The corporate-to-production firewall is stateful, not just an IP-and-port allow list: it tracks each monitoring session so return traffic gets through, but nothing on the corporate side can open a new connection into production on its own. And the replication link to the DR colo runs over a dedicated circuit rather than a VPN over the public internet – a trading firm pays for that because a few milliseconds of jitter is the difference between a clean failover and a stale one, and a dedicated line gives predictable latency a shared internet path can't guarantee.
+Two details in this diagram carry more weight than the picture alone shows. The corporate-to-production firewall is stateful, not just an IP-and-port allow list: it tracks each monitoring session so return traffic gets through, but nothing on the corporate side can open a new connection into production on its own. And the replication link to the DR colo runs over a dedicated circuit rather than a VPN over the public internet – a trading firm pays for that because a few milliseconds of jitter is the difference between a clean failover and a stale one, and a dedicated line gives predictable latency a shared internet path can't guarantee.
 
 ## Why it holds up
 
 The split between architecture and runbooks is the one decision I'd point to first if someone asked why this structure and not another. Everything else follows the same logic: put content where the person who needs it fastest needs to look first, without making the other three audiences pay much of a price for it.
 
-See [Sample SOP Template](./template-sop) for what one of the standardised pages actually looks like, and [Ownership & Review Model](./governance) for how ownership gets maintained once the redesign is finished and nobody's paying close attention anymore.
+See [Sample SOP Template](./template-sop) for what one of the standardized pages actually looks like, and [Ownership & Review Model](./governance) for how ownership gets maintained once the redesign is finished and nobody's paying close attention anymore.
