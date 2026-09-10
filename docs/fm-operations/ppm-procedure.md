@@ -6,6 +6,9 @@ sidebar_label: PPM Procedure Sample
 slug: /fm-operations/ppm-procedure
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # SOP: Planned Preventive Maintenance
 
 **Sample procedure demonstrating documentation governance and operational writing for facilities management environments.**
@@ -206,25 +209,43 @@ Before maintenance can begin, the following **must** be confirmed:
 
 **If you found a defect, apply this logic:**
 
-**Critical defect (safety-critical or causes unavailability):**
+| Severity | Threshold |
+|---|---|
+| **Critical** | Safety-critical, or causes unavailability |
+| **High-risk** | Likely to fail within 6–12 months |
+| **Medium-risk** | Monitor; likely to need repair within 2–3 years |
+| **Low-risk** | Cosmetic; no performance impact |
+
+<Tabs>
+<TabItem value="critical" label="Critical">
+
 - **Action:** Escalate to Facilities Manager immediately (same day)
 - **Example:** Gas leak, electrical fault, safety system failure
 - **Evidence required:** Photograph + detailed description in work order
 
-**High-risk defect (likely to fail within 6–12 months):**
+</TabItem>
+<TabItem value="high" label="High-risk">
+
 - **Action:** Escalate to Facilities Manager with recommendation for urgent repair
 - **Example:** Significant corrosion, leaking seals, worn bearings
 - **Evidence required:** Photograph + condition assessment
 - **Guidance:** Recommend scheduling repair within 30 days
 
-**Medium-risk defect (monitor, likely to need repair within 2–3 years):**
+</TabItem>
+<TabItem value="medium" label="Medium-risk">
+
 - **Action:** Record in work order; add to next quarter's maintenance review
 - **Example:** Minor corrosion, wearing paint, loose fittings
 - **Guidance:** Recommend including in next planned maintenance cycle
 
-**Low-risk observation (cosmetic, no performance impact):**
+</TabItem>
+<TabItem value="low" label="Low-risk">
+
 - **Action:** Record in work order; no escalation required
 - **Example:** Cosmetic wear, minor dents, paint chips
+
+</TabItem>
+</Tabs>
 
 ---
 
