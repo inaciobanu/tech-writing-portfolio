@@ -96,7 +96,7 @@ const portfolioSections = [
     emoji: '🗂️',
     title: 'Process & Governance',
     desc: 'Audits, information architecture, ownership, and review workflows for healthy docs.',
-    href: '/docs/documentation-operations/intro',
+    href: '/docs/process-governance/intro',
     tags: ['Confluence', 'Documentation Ops', 'Process Analysis'],
     isNew: true,
   },

@@ -3,7 +3,7 @@ id: intro
 title: Documentation Systems & Operations Case Study
 description: "A case study on auditing and redesigning a Network Infrastructure documentation space, from information architecture through ownership and automation."
 sidebar_label: Overview
-slug: /documentation-operations/intro
+slug: /process-governance/intro
 ---
 
 # Documentation systems and operations: A network infrastructure case study

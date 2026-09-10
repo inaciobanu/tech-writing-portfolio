@@ -75,7 +75,7 @@ The spreadsheet becomes my north star. Every decision for the next 4 months refe
 
 **What I'd do:**
 
-I'd go through each document and score it across seven dimensions (see [Documentation Audit](/docs/documentation-operations/audit) for the full framework):
+I'd go through each document and score it across seven dimensions (see [Documentation Audit](/docs/process-governance/audit) for the full framework):
 
 - Accuracy (Is this still correct?)
 - Completeness (Are critical steps missing?)

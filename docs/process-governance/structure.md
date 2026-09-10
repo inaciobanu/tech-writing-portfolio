@@ -3,7 +3,7 @@ id: structure
 title: Redesigning the Space Structure
 description: "Redesigning a documentation space's information architecture around what its user groups actually need to find."
 sidebar_label: Structure
-slug: /documentation-operations/structure
+slug: /process-governance/structure
 ---
 
 # Redesigning the space structure

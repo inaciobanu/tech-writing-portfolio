@@ -3,7 +3,7 @@ id: governance
 title: Ownership & Review Model
 description: "The ownership, review-cycle, and escalation model that keeps a documentation space from decaying again."
 sidebar_label: Ownership & Review Model
-slug: /documentation-operations/governance
+slug: /process-governance/governance
 ---
 
 # Ownership and review model
