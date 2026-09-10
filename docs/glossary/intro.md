@@ -38,6 +38,9 @@ Documentation that has defined ownership, version control, approval, and review 
 **Decision point**
 A step in a procedure where the reader must choose which path to follow based on conditions. Procedures with decision points guide users when the "right" action depends on context.
 
+**DMAIC**
+Define, Measure, Analyze, Improve, Control: a Six Sigma framework for diagnosing and fixing a broken process. Used in the [Process & Governance case study](/docs/process-governance/intro) to structure the documentation audit and redesign.
+
 **Document control**
 The metadata and processes that keep a document current and traceable. Includes owner, approver, version, effective date, review date, and change history.
 
@@ -230,4 +233,4 @@ A formal record of a maintenance task, including what work was done, when, by wh
 
 ---
 
-*Last updated: 2026-09-07*
+*Last updated: 2026-09-10*

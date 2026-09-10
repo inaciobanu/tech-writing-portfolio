@@ -29,6 +29,7 @@ For the full list of terms used across the FM Operations and Process Governance 
 | <abbr className="glossary-term" tabIndex={0} data-glossary-key="apac" data-definition="Asia-Pacific: the region covering operations and documentation for APAC markets and facilities.">APAC</abbr> | Asia-Pacific | [PPM Procedure](./fm-operations/ppm-procedure) |
 | <abbr className="glossary-term" tabIndex={0} data-glossary-key="ams" data-definition="Americas: the region covering operations and documentation for North, Central, and South American markets.">AMS</abbr> | Americas | [PPM Procedure](./fm-operations/ppm-procedure) |
 | <abbr className="glossary-term" tabIndex={0} data-glossary-key="sme" data-definition="Subject matter expert: the person with authoritative knowledge of a process, system, or domain, who validates that documentation reflects how things actually work.">SME</abbr> | Subject matter expert | [Documentation Strategy](./fm-operations/documentation-strategy) |
+| <abbr className="glossary-term" tabIndex={0} data-glossary-key="dmaic" data-definition="Define, Measure, Analyze, Improve, Control: a Six Sigma framework for diagnosing and fixing a broken process.">DMAIC</abbr> | Define, Measure, Analyze, Improve, Control | [Process & Governance case study](./process-governance/intro) |
 
 ## In context
 

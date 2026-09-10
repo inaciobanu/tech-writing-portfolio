@@ -13,7 +13,8 @@
     { key: 'emea', term: 'EMEA', definition: 'Europe, Middle East, Africa: the region covering operations and documentation for EMEA markets and facilities.' },
     { key: 'apac', term: 'APAC', definition: 'Asia-Pacific: the region covering operations and documentation for APAC markets and facilities.' },
     { key: 'ams', term: 'AMS', definition: 'Americas: the region covering operations and documentation for North, Central, and South American markets.' },
-    { key: 'sme', term: 'SME', definition: 'Subject matter expert: the person with authoritative knowledge of a process, system, or domain, who validates that documentation reflects how things actually work.' }
+    { key: 'sme', term: 'SME', definition: 'Subject matter expert: the person with authoritative knowledge of a process, system, or domain, who validates that documentation reflects how things actually work.' },
+    { key: 'dmaic', term: 'DMAIC', definition: 'Define, Measure, Analyze, Improve, Control: a Six Sigma framework for diagnosing and fixing a broken process.' }
   ];
 
   // Pages that already author glossary terms by hand and shouldn't be auto-tagged.

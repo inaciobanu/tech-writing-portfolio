@@ -37,4 +37,8 @@ flowchart TD
 - [Ownership & Review Model](./governance) – how the space stays accurate after I'm not the one checking it every week
 - [Finding and Fixing a Broken Process](./process-improvement) – a workflow problem worth watching for, and the fix I put in place for it
 
+## How this maps to DMAIC
+
+I'm not Six Sigma certified, but the shape of this work follows the DMAIC framework closely enough that it's worth naming: **Define** the problem (no owner, duplicated and contradicted pages – see the [audit](./audit)), **Measure** the scope of it (83 pages assessed, 19 ownerless, each scored across seven risk dimensions – also in the [audit](./audit)), **Analyze** why it kept happening even after ownership was assigned on paper (see [Finding and Fixing a Broken Process](./process-improvement)), **Improve** with a redesigned structure and a working template (see [Structure](./structure) and the [SOP Template](./template-sop)), and **Control** it with a review cycle and escalation model built to survive me not being the one checking it (see [Ownership & Review Model](./governance)). I didn't set out to run a DMAIC cycle – it's just what auditing and fixing a broken system tends to look like once you name the steps.
+
 This is representative work, not a real employer's confidential content. I built it to show how I think through documentation systems and operations work, end to end.
