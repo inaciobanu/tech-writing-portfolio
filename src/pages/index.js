@@ -12,20 +12,39 @@ const personSchema = {
   name: 'Ina Ciobanu',
   jobTitle: 'Senior Technical Writer',
   url: 'https://inaciobanu.github.io/tech-writing-portfolio/',
-  worksFor: {
-    '@type': 'Organization',
-    name: 'KX',
-  },
+  image: 'https://inaciobanu.github.io/tech-writing-portfolio/img/og-image.png',
+  description:
+    "Senior Technical Writer based in London, specializing in API documentation, developer portals, and information architecture for AI and data-platform products.",
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'London',
     addressCountry: 'GB',
   },
+  knowsAbout: [
+    'Vector databases',
+    'Retrieval-augmented generation',
+    'Embeddings',
+    'Similarity search',
+    'Time-series databases',
+    'Python SDK documentation',
+    'Documentation for AI systems',
+    'Developer experience',
+    'API documentation',
+    'OpenAPI',
+    'Developer portals',
+    'Docs as code',
+    'Docusaurus',
+    'CI/CD for documentation',
+    'Documentation engineering',
+    'Information architecture',
+    'Technical writing',
+  ],
   sameAs: [
     'https://www.linkedin.com/in/inaciobanu',
     'https://github.com/inaciobanu',
     'https://medium.com/@ina_ciobanu',
     'https://x.com/ina_ciobanu',
+    'https://www.codecademy.com/profiles/inaciobanu',
   ],
 };
 
@@ -170,7 +189,7 @@ function HomepageHero() {
           <p className={styles.heroEyebrow}>Technical writer · systems thinker</p>
           <h1 className="hero__title">Ina Ciobanu</h1>
           <p className="hero__subtitle">
-            Senior Technical Writer · KX · London
+            Senior Technical Writer · London
           </p>
           <p className={styles.heroDescription}>
             I turn complex systems into clear documentation that helps engineers ship, integrate, and adopt new technology faster.
