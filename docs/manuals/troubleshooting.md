@@ -1,7 +1,7 @@
 ---
 id: troubleshooting
 title: Troubleshooting
-description: "Solutions to the most common issues reported by PayFlow Dashboard users."
+description: "Solutions to the most common issues with the PayFlow Dashboard."
 ---
 
 # Troubleshooting

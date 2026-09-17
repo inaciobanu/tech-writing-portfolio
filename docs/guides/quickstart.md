@@ -20,7 +20,7 @@ Never use your live key (`sk_live_...`) during development. Test keys process no
 
 ## Step 2: Make Your First Request
 
-Replace `YOUR_TEST_KEY` with your actual test key:
+Replace `YOUR_TEST_KEY` with your test key:
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
