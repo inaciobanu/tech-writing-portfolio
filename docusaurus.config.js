@@ -1,6 +1,14 @@
 // @ts-check
 const { themes } = require('prism-react-renderer');
 
+// Pull request previews are published under previews/pr-<number>/ on the
+// main site (see .github/workflows/pr-preview.yml), so the base URL has to
+// include that folder for the preview's links and assets to resolve.
+const isPR = process.env.IS_PR_BUILD === 'true';
+const baseUrl = isPR
+  ? `/tech-writing-portfolio/previews/pr-${process.env.PR_NUMBER}/`
+  : '/tech-writing-portfolio/';
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Ina Ciobanu | Senior Technical Writer',
@@ -9,7 +17,7 @@ const config = {
 
   // Update this to your GitHub Pages URL once deployed
   url: 'https://inaciobanu.github.io',
-  baseUrl: '/tech-writing-portfolio/',
+  baseUrl: baseUrl,
 
   organizationName: 'inaciobanu',
   projectName: 'tech-writing-portfolio',
@@ -88,8 +96,11 @@ const config = {
   ],
 
   scripts: [
-    { src: '/tech-writing-portfolio/js/glossary.js', defer: true },
+    { src: `${baseUrl}js/glossary.js`, defer: true },
   ],
+
+  // Keep search engines away from preview builds.
+  headTags: isPR ? [{ tagName: 'meta', attributes: { name: 'robots', content: 'noindex, nofollow' } }] : [],
 
   themes: ['docusaurus-theme-openapi-docs', '@docusaurus/theme-mermaid'],
 
