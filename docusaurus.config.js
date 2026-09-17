@@ -1,3 +1,10 @@
+const isPR = process.env.IS_PR_BUILD === 'true';
+const prNumber = process.env.PR_NUMBER;
+
+const baseUrl = isPR 
+  ? `/tech-writing-portfolio/previews/pr-${prNumber}/` 
+  : '/tech-writing-portfolio/';
+
 // @ts-check
 const { themes } = require('prism-react-renderer');
 
@@ -9,7 +16,7 @@ const config = {
 
   // Update this to your GitHub Pages URL once deployed
   url: 'https://inaciobanu.github.io',
-  baseUrl: '/tech-writing-portfolio/',
+  baseUrl: baseUrl,
 
   organizationName: 'inaciobanu',
   projectName: 'tech-writing-portfolio',

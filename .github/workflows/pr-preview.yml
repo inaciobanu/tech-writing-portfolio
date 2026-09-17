@@ -1,0 +1,68 @@
+name: Deploy PR Preview
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  deploy-preview:
+    if: github.event.action != 'closed'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Generate OpenAPI Docs
+        run: npm run gen-api-docs
+
+      - name: Build Docusaurus for PR Preview
+        env:
+          IS_PR_BUILD: 'true'
+          PR_NUMBER: ${{ github.event.number }}
+        run: npm run build
+
+      - name: Deploy Preview to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build
+          target-folder: previews/pr-${{ github.event.number }}
+          branch: gh-pages
+          preserve-order: true
+
+      - name: Comment on PR
+        uses: thollander/actions-comment-pull-request@v2
+        with:
+          message: |
+            🚀 **Docusaurus Preview Environment Deployed!**
+            🔗 [Click here to review the documentation changes](https://github.io{{ github.event.number }}/)
+          comment_tag: preview-url
+
+  cleanup-preview:
+    if: github.event.action == 'closed'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+
+      - name: Delete PR Folder
+        run: |
+          rm -rf previews/pr-${{ github.event.number }}
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@://github.com"
+          git add .
+          git diff-index --quiet HEAD || (git commit -m "Wipe out preview folder for PR #${{ github.event.number }}" && git push)
