@@ -1,5 +1,16 @@
 name: Deploy PR Preview
 
+# Builds the site for a pull request and publishes it under
+# https://inaciobanu.github.io/tech-writing-portfolio/previews/pr-<number>/
+#
+# How it works:
+#   1. The PR build is stored on the gh-pages branch in previews/pr-<number>/.
+#   2. The main deploy workflow is triggered. It builds the site from main,
+#      copies every stored preview into the build, and publishes the whole
+#      thing to GitHub Pages. GitHub Pages only serves what that workflow
+#      uploads, so the gh-pages branch is storage, not the live site.
+#   3. When the PR is closed the folder is removed and the site is republished.
+
 on:
   pull_request:
     types: [opened, synchronize, reopened, closed]
@@ -7,6 +18,11 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  actions: write
+
+concurrency:
+  group: pr-preview-${{ github.event.number }}
+  cancel-in-progress: true
 
 jobs:
   deploy-preview:
@@ -19,36 +35,42 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
-          cache: 'npm'
+          node-version: 20
+          cache: npm
 
-      - name: Install Dependencies
+      - name: Install dependencies
         run: npm ci
 
-      - name: Generate OpenAPI Docs
-        run: npm run gen-api-docs
-
-      - name: Build Docusaurus for PR Preview
+      - name: Build site for PR preview
         env:
           IS_PR_BUILD: 'true'
           PR_NUMBER: ${{ github.event.number }}
         run: npm run build
 
-      - name: Deploy Preview to GitHub Pages
+      - name: Store preview on gh-pages branch
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: build
-          target-folder: previews/pr-${{ github.event.number }}
           branch: gh-pages
-          preserve-order: true
-          clean: false
+          target-folder: previews/pr-${{ github.event.number }}
+          # Cleaning is scoped to target-folder, so this only removes files
+          # from earlier pushes of this same PR. Other previews are untouched.
+          clean: true
+          commit-message: 'Store preview for PR #${{ github.event.number }}'
+
+      - name: Republish site with previews
+        run: gh workflow run deploy.yml --ref main
+        env:
+          GH_TOKEN: ${{ github.token }}
 
       - name: Comment on PR
         uses: thollander/actions-comment-pull-request@v2
         with:
           message: |
-            🚀 **Docusaurus Preview Environment Deployed!**
-            🔗 [Click here to review the documentation changes](https://inaciobanu.github.io/tech-writing-portfolio/previews/pr-${{ github.event.number }}/)
+            🚀 **Preview deployed**
+            🔗 [Review the documentation changes](https://inaciobanu.github.io/tech-writing-portfolio/previews/pr-${{ github.event.number }}/)
+
+            The link goes live once the "Deploy to GitHub Pages" workflow finishes (a couple of minutes).
           comment_tag: preview-url
 
   cleanup-preview:
@@ -60,10 +82,19 @@ jobs:
         with:
           ref: gh-pages
 
-      - name: Delete PR Folder
+      - name: Remove preview folder and republish site
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PREVIEW_DIR: previews/pr-${{ github.event.number }}
         run: |
-          rm -rf previews/pr-${{ github.event.number }}
+          if [ ! -d "$PREVIEW_DIR" ]; then
+            echo "No preview stored for this PR, nothing to clean up."
+            exit 0
+          fi
+          rm -rf "$PREVIEW_DIR"
           git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@://github.com"
-          git add .
-          git diff-index --quiet HEAD || (git commit -m "Wipe out preview folder for PR #${{ github.event.number }}" && git push)
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Remove preview for PR #${{ github.event.number }}"
+          git push
+          gh workflow run deploy.yml --ref main

@@ -34,6 +34,19 @@ jobs:
       - name: Build site
         run: npm run build
 
+      # PR previews are stored on the gh-pages branch under previews/pr-<n>/
+      # by the pr-preview workflow. GitHub Pages only serves what this
+      # workflow uploads, so copy them into the build before publishing.
+      - name: Include PR previews
+        run: |
+          if git fetch --depth=1 origin gh-pages; then
+            git archive origin/gh-pages previews 2>/dev/null | tar -x -C build \
+              && echo "Included previews: $(ls build/previews)" \
+              || echo "No previews stored on gh-pages."
+          else
+            echo "No gh-pages branch, skipping previews."
+          fi
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
