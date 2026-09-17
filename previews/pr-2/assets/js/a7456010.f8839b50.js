@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunktech_writing_portfolio=globalThis.webpackChunktech_writing_portfolio||[]).push([[1235],{88552(t){t.exports=JSON.parse('{"name":"docusaurus-plugin-content-pages","id":"default"}')}}]);

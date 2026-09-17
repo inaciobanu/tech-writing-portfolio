@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://inaciobanu.github.io/tech-writing-portfolio/sitemap.xml
