@@ -47,7 +47,7 @@ jobs:
         with:
           message: |
             🚀 **Docusaurus Preview Environment Deployed!**
-            🔗 [Click here to review the documentation changes](https://github.io{{ github.event.number }}/)
+            🔗 [Click here to review the documentation changes](https://inaciobanu.github.io/tech-writing-portfolio/previews/pr-${{ github.event.number }}/)
           comment_tag: preview-url
 
   cleanup-preview:
