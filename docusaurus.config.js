@@ -1,8 +1,7 @@
 const isPR = process.env.IS_PR_BUILD === 'true';
-const prNumber = process.env.PR_NUMBER;
 
 const baseUrl = isPR 
-  ? `/tech-writing-portfolio/previews/pr-${prNumber}/` 
+  ? `/tech-writing-portfolio/ 
   : '/tech-writing-portfolio/';
 
 // @ts-check
