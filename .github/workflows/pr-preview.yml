@@ -41,7 +41,7 @@ jobs:
           target-folder: previews/pr-${{ github.event.number }}
           branch: gh-pages
           preserve-order: true
-          clean-exclude: previews/
+          clean: false
 
       - name: Comment on PR
         uses: thollander/actions-comment-pull-request@v2
