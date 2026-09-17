@@ -25,6 +25,7 @@ This isn't just written content – the repo enforces it:
 
 - **Prose linting in CI** ([`vale`](https://vale.sh/)) – the Process & Governance section is checked against the Google and Microsoft developer documentation style guides on every push, gated on `error`-level findings (see `.vale.ini` for what's deliberately excluded and why)
 - **Broken-link CI gate** – `onBrokenLinks` and `onBrokenMarkdownLinks` are set to `throw`, not `warn`, so a dangling internal link fails the build instead of shipping silently
+- **PR preview deployments** – every pull request publishes its own rendered copy of the site under `previews/pr-<n>/` and posts the link as a PR comment, so reviewers see built pages rather than a Markdown diff; the preview is removed when the PR closes
 - **Spec-driven API reference** – `openapi/payflow.yaml` generates the entire API endpoint reference via `docusaurus-plugin-openapi-docs`; the spec is the source of truth, not the rendered page
 - **Git-based freshness** – every doc page shows a "last updated" date pulled straight from git history, not a manually maintained timestamp
 - **Code example maintenance** – the Code in Docs guide defines language labels, copy-safe samples, verification status, ownership, review triggers, audits, and reader feedback loops
@@ -94,30 +95,13 @@ vale docs/process-governance/
 
 ## Deploy to GitHub Pages
 
-This portfolio is configured for GitHub Pages deployment.
+The site is published by GitHub Actions – GitHub Pages must be set to deploy from **GitHub Actions** (**Settings → Pages → Source**), not from a branch.
 
-### One-time setup
+- **`deploy.yml`** – runs on every push to `main`, builds the site, and deploys it to GitHub Pages. To republish without a merge, run this workflow manually from the **Actions** tab.
+- **`pr-preview.yml`** – runs on every pull request, builds it with a `previews/pr-<n>/` base URL, and posts the preview link as a PR comment. Preview builds are stored on the `gh-pages` branch, which `deploy.yml` folds into the live site. When the PR closes, the preview is removed and the site is republished.
+- **`lint.yml`** – runs Vale on every push and pull request.
 
-1. In `docusaurus.config.js`, replace the placeholder values:
-
-```js
-url: 'https://inaciobanu.github.io',
-baseUrl: '/tech-writing-portfolio/',
-organizationName: 'inaciobanu',
-projectName: 'tech-writing-portfolio',
-```
-
-2. Push the repo to GitHub
-
-3. In your GitHub repo, go to **Settings → Pages → Source** and select **GitHub Actions**
-
-### Deploy
-
-```bash
-npm run deploy
-```
-
-Or push to `main` and let the GitHub Actions workflow handle it automatically (see `.github/workflows/deploy.yml`). A separate workflow, `.github/workflows/lint.yml`, runs Vale on every push and pull request.
+Don't use `npm run deploy` – it pushes a build straight to the `gh-pages` branch, which isn't how the site is published and would overwrite the stored previews.
 
 ---
 
@@ -144,7 +128,8 @@ tech-writing-portfolio/
 ├── .vale.ini                    # Vale config: styles, vocab, rule exclusions
 ├── .vale/styles/config/vocabularies/Base/accept.txt  # Custom technical vocabulary
 ├── .github/workflows/
-│   ├── deploy.yml               # Build + deploy to GitHub Pages
+│   ├── deploy.yml               # Build + deploy to GitHub Pages (includes stored PR previews)
+│   ├── pr-preview.yml           # Build + publish a preview for each pull request
 │   └── lint.yml                 # Vale prose linting
 ├── src/
 │   ├── css/custom.css           # Custom styling
