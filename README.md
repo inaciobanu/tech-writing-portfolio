@@ -23,7 +23,7 @@ A Docusaurus-powered technical writing portfolio showcasing API documentation, d
 
 This isn't just written content – the repo enforces it:
 
-- **Prose linting in CI** ([`vale`](https://vale.sh/)) – the Process & Governance section is checked against the Google and Microsoft developer documentation style guides on every push, gated on `error`-level findings (see `.vale.ini` for what's deliberately excluded and why)
+- **Prose linting in CI** ([`vale`](https://vale.sh/)) – every hand-written page is checked on every push and pull request against the Google and Microsoft developer documentation style guides plus a house style in `.vale/styles/Portfolio/` – a rule that enforces the site's spaced en dash and one that bans aspirational self-description. Gated on `error`-level findings; `.vale.ini` documents what's deliberately excluded and why
 - **Broken-link CI gate** – `onBrokenLinks` and `onBrokenMarkdownLinks` are set to `throw`, not `warn`, so a dangling internal link fails the build instead of shipping silently
 - **PR preview deployments** – every pull request publishes its own rendered copy of the site under `previews/pr-<n>/` and posts the link as a PR comment, so reviewers see built pages rather than a Markdown diff; the preview is removed when the PR closes
 - **Spec-driven API reference** – `openapi/payflow.yaml` generates the entire API endpoint reference via `docusaurus-plugin-openapi-docs`; the spec is the source of truth, not the rendered page
@@ -88,7 +88,7 @@ Requires the [Vale CLI](https://vale.sh/docs/install) installed separately (not 
 
 ```bash
 vale sync   # fetches the Google/Microsoft style packages
-vale docs/process-governance/
+vale docs/
 ```
 
 ---

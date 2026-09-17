@@ -68,7 +68,7 @@ Nearly a decade of freelance technical writing and content strategy across a wid
 ## getLaunched.io – Senior Content Writer & Branding Consultant (2015–2016)
 **March 2015 – January 2016 · London**
 
-Startup supporting aspiring entrepreneurs to launch their businesses.
+Startup helping first-time founders launch their businesses.
 
 - Defined the website concept and established tone of voice from scratch
 - Wrote web pages, sales landing pages, email marketing campaigns, and press releases

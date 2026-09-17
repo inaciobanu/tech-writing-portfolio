@@ -289,7 +289,7 @@ document.addEventListener('click', (event) => {
 
 The control must provide visible feedback, work with keyboard focus, and have a non-JavaScript fallback. Do not silently strip characters from arbitrary code blocks: only opt in blocks whose metadata says that prompts are present.
 
-## Long samples: structure before collapse
+## Long samples: Structure before collapse
 
 Do not use a collapsible block to conceal a confusing example. First split the sample into meaningful steps, remove irrelevant setup, and link to the complete source. Collapse only material that is useful but not needed for the first successful path.
 

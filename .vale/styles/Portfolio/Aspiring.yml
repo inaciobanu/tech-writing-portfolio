@@ -1,0 +1,12 @@
+# Portfolio copy states what was done, not what's hoped for. Aspirational
+# and cliché self-descriptions are flagged wherever they appear.
+extends: existence
+message: "Don't describe yourself as '%s'. Say what you do and what you've shipped."
+level: error
+ignorecase: true
+tokens:
+  - aspiring
+  - wordsmith
+  - guru
+  - ninja
+  - rockstar
