@@ -32,7 +32,10 @@ jobs:
         run: npm ci
 
       - name: Build site
-        run: npm run build
+        run: |
+          npm install
+          npm run gen-api-docs  # 🔌 Generates fresh markdown pages from the synced openapi/payflow.yaml file!
+          npm run build
 
       # PR previews are stored on the gh-pages branch under previews/pr-<n>/
       # by the pr-preview workflow. GitHub Pages only serves what this
