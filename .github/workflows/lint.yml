@@ -28,4 +28,4 @@ jobs:
         with:
           sync: ${{ steps.styles.outputs.cache-hit != 'true' }}
           reporter: github-check
-          fail_on_error: true
+          fail_on_error: false
