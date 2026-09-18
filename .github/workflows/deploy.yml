@@ -34,7 +34,8 @@ jobs:
       - name: Build site
         run: |
           npm install
-          npm run gen-api-docs  # 🔌 Generates fresh markdown pages from the synced openapi/payflow.yaml file!
+          rm -rf docs/api/reference          # 🧹 Force-wipes the old cached reference folder!
+          npm run gen-api-docs               # 🔌 Generates pristine markdown files from the synced spec
           npm run build
 
       # PR previews are stored on the gh-pages branch under previews/pr-<n>/
