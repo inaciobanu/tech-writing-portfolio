@@ -32,7 +32,7 @@ Every document follows this lifecycle from creation through retirement:
 
 Every page has a named owner and a backup, both visible on the page itself, not buried in a separate spreadsheet nobody opens. The owner is accountable for accuracy and does the review when it comes due. The backup covers it if the owner is out, moves teams, or leaves – a page should never be more than one departure away from going ownerless again, which is exactly what happened to nineteen pages before this.
 
-Reassigning pages is now a standing step in offboarding, not something left for the next audit to catch. That step doesn't always get followed, though, so it has a backstop: the [review-reminder workflow](./process-improvement) also checks whether an owner's account is still active and flags the page directly if it isn't.
+Reassigning pages is now a standing step in offboarding, not something left for the next audit to catch. That step doesn't always get followed, though, which is the gap a directory active-account check would close automatically – it's on the roadmap for the [review-reminder rule](./process-improvement), once it's running on a tier with room for it.
 
 ## Review cycles
 

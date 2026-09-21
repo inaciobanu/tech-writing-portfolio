@@ -18,19 +18,29 @@ That's more of a process problem than a documentation one. The pages themselves 
 
 ## Mapping it
 
-I sketched out the state this tends to fall into, next to the shorter future state I'd want instead:
+I sketched out the state this tends to fall into, next to the shorter state I wanted instead:
 
-![Review-reminder process before and after: current state shows a review date set on a page, nothing checks it, the page goes overdue unnoticed, and it's found by chance or the next audit; future state shows a review date set on a page, a weekly automated check, the owner nudged two weeks before it's due, and a second nudge if it goes overdue](/img/process-governance-reminder-flow.svg)
+![Review-reminder process before and after: current state shows a review date set on a page, nothing checks it, the page goes overdue unnoticed, and it's found by chance or the next audit; target state shows a review date set on a page, a scheduled automated check, and the owner nudged directly once a page is overdue](/img/process-governance-reminder-flow.svg)
 
 Three of the four steps on the left involve nobody doing anything, which is usually the sign that a process is relying on a person's memory instead of a system.
 
 ## What I built
 
-A small scheduled workflow – the kind of thing you'd put together in n8n or Tines rather than anything custom-coded – that reads the review-due date on every page in the space once a week, and posts a message to the owner directly when a page is within two weeks of its due date, with a second, more pointed message if it goes overdue. It's not sophisticated. It doesn't need to be. It just moves the trigger off a person's memory and onto a clock.
+I built it as a rule in Confluence's own Automation rather than reaching for a separate tool – the space already lived there, and it kept the whole thing on one platform instead of adding an integration to maintain. The rule branches over each page in the space, checks whether it's past its review date and has an owner's email on record, and sends that owner a flagged email directly:
 
-The same weekly check also looks up whether each owner's account is still active in the directory. If it isn't, the page gets flagged for reassignment straight away, instead of waiting on the standing [offboarding step](./governance) to catch it. That's the specific gap that left nineteen pages ownerless before any of this existed – someone leaves, the offboarding checklist gets missed or half-followed, and the page just sits there until the next audit finds it.
+![Confluence Automation rule canvas: a scheduled trigger runs monthly, branches for each inactive page, checks the page author's email address is not empty, then sends a customised review email to the owner](/img/process-improvement/confluence-automation-canvas.png)
 
-Overdue reviews dropped off within a month of turning it on. Not because anyone got better at remembering – because they stopped having to.
+It's not sophisticated. It doesn't need to be. It just moves the trigger off a person's memory and onto a clock.
+
+One real constraint shaped the current version: the free Automation tier caps a space at around ten rule-runs a month, so this runs monthly rather than weekly, and it's a single flag rather than the two-stage early-warning-then-overdue nudge in the sketch above. Here's it firing end to end – the scheduled trigger, the branch over inactive pages, the smart-value check, and the send, each step confirmed:
+
+![Confluence Automation audit log, expanded: Scheduled, Branch flow for each inactive page, Advanced branching, smart values condition, and Send customised email, all marked successful](/img/process-improvement/confluence-automation-audit-trail.jpg)
+
+And here's what actually landed in the owner's inbox – ten pages that hadn't been touched in a while, each one linked directly with its review status and last-updated date, rather than making the owner go hunting for it:
+
+![Email titled "For review: These pages may need updating", sent from Confluence automation, listing ten pages with their review status (review due or published) and last-updated date, each linked directly](/img/process-improvement/confluence-automation-email.png)
+
+The second nudge and the directory active-account check from the original sketch aren't in this version – they'd need either a paid Automation tier with a higher run quota, or moving the logic to a general-purpose tool like n8n or Tines that isn't capped by page-count the way Confluence's own automation is. That's the honest gap between what I mapped and what I shipped first: I built the smallest version that proved the mechanism, not the full design.
 
 ## The other half of this: Capturing what people actually do
 
@@ -42,4 +52,4 @@ Neither of these looked like documentation problems on the surface – the sympt
 
 ## What's next
 
-The reminder system was the first automation I put in, not the last one I'd want. Two more are on my list: nudging new-page authors toward the right template before a page goes live, instead of catching drift at the next review, and automatically drafting a Troubleshooting page from a closed ticket the moment something new gets resolved, so the write-up starts before anyone has to remember to do it. Neither is built yet – the reminder system got the time first because it was the most widespread problem.
+The reminder rule was the first automation I put in, not the last one I'd want. Three more are on my list: extending the reminder itself to a two-stage nudge with a directory active-account check once it's on a tier with room for weekly runs; nudging new-page authors toward the right template before a page goes live, instead of catching drift at the next review; and automatically drafting a Troubleshooting page from a closed ticket the moment something new gets resolved, so the write-up starts before anyone has to remember to do it. None of the three are built yet – the reminder rule got the time first because it was the most widespread problem.
