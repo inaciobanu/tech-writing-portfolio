@@ -29,4 +29,4 @@ Welcome to the PayFlow Dashboard. This manual covers everything you need to mana
 
 ## Getting help
 
-If you can't find the answer you need here, contact our support team at **support@payflow.io** or use the in-app chat (click the **?** icon in the bottom right of the Dashboard).
+If you can't find the answer you need here, contact our support team at **support@payflow.io** or use the in-app chat (select the **?** icon in the bottom right of the Dashboard).

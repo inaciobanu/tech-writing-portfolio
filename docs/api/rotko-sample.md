@@ -21,7 +21,7 @@ This reference documents the vector search endpoints – used to insert, index, 
 
 ### Embeddings and vector search
 
-A **vector embedding** is a numerical representation of data – text, images, audio, or time-series – produced by a machine learning model. Similar items produce embeddings that are geometrically close in high-dimensional space.
+A **vector embedding** is a numeric representation of data – text, images, audio, or time-series – produced by a machine learning model. Similar items produce embeddings that are geometrically close in high-dimensional space.
 
 **Vector search** (also called similarity search or approximate nearest neighbour search) retrieves the embeddings closest to a query vector. This powers use cases including:
 

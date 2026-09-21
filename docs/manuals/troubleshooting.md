@@ -31,7 +31,7 @@ If you still can't find the payment, contact support with the customer's name an
 If the payment status is **Authorised** (not yet captured):
 
 1. Open the payment
-2. Click **Cancel Authorisation**
+2. Select **Cancel Authorisation**
 3. Confirm the cancellation
 
 The held amount is released to the customer immediately, though it may take a few days to appear on their statement.

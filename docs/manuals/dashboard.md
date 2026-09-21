@@ -17,15 +17,15 @@ The **Payments** page lists all transactions, newest first. Use the search bar a
 - Date range
 - Status (Succeeded / Failed / Pending / Refunded)
 
-Click any payment to see its full details, including the card used, timestamps, and any associated metadata.
+Select any payment to see its full details, including the card used, timestamps, and any associated metadata.
 
 ### Issuing a refund
 
 1. Open the payment you want to refund
-2. Click **Refund** in the top right
+2. Select **Refund** in the top right
 3. Choose **Full refund** or enter a partial amount
 4. Select a reason (optional)
-5. Click **Confirm Refund**
+5. Select **Confirm Refund**
 
 Refunds typically appear on the customer's statement within **5–10 business days**, depending on their bank.
 

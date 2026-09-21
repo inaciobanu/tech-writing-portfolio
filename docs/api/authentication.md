@@ -55,7 +55,7 @@ headers = {
 If you suspect a key has been compromised:
 
 1. Go to **Dashboard → Settings → API Keys**
-2. Click **Rotate** next to the compromised key
+2. Select **Rotate** next to the compromised key
 3. Update your environment variables with the new key
 4. The old key is invalidated immediately
 
