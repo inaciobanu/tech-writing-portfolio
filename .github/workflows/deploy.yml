@@ -78,7 +78,7 @@ jobs:
           args: >-
             --no-progress
             --exclude-loopback
-            --base build
+            --base ${{ github.workspace }}/build
             './build/**/*.html'
           fail: true
 
