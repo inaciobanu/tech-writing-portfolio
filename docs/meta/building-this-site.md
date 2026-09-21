@@ -1,10 +1,10 @@
 ---
-id: how-this-site-is-built
-title: How This Site Is Built
+id: building-this-site
+title: Building This Site
 description: "The pipelines behind this portfolio: spec-driven API reference generation, a cross-repo sync from a live mock API, a Vale prose gate with house rules, and PR previews built on a storage trick."
 ---
 
-# How This Site Is Built
+# Building This Site
 
 This is a Docusaurus site, but the parts worth explaining aren't the theme – they're the build. Six pieces keep the content honest without me touching it by hand: the API reference, the prose gate, the PR previews, the cross-repo sync, the social images, and the agent-facing export.
 

@@ -239,8 +239,8 @@ const config = {
             position: 'left',
           },
           {
-            label: 'How This Site Is Built',
-            to: '/docs/meta/how-this-site-is-built',
+            label: 'Building This Site',
+            to: '/docs/meta/building-this-site',
             position: 'left',
           },
           {
@@ -264,7 +264,7 @@ const config = {
               { label: 'Process & Governance', to: '/docs/process-governance/intro' },
               { label: 'FM Operations', to: '/docs/fm-operations' },
               { label: 'Glossary', to: '/docs/glossary' },
-              { label: 'How This Site Is Built', to: '/docs/meta/how-this-site-is-built' },
+              { label: 'Building This Site', to: '/docs/meta/building-this-site' },
             ],
           },
           {
