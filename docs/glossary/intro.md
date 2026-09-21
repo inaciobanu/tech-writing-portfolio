@@ -60,7 +60,7 @@ Step-by-step instructions for performing a regular task. Usually high-traffic, t
 Assignment of responsibility for a document to a named person or team. Ownership makes accountability explicit; an ownerless document tends to decay.
 
 **Review cycle**
-The scheduled frequency at which a document is reviewed for accuracy and currency. Different document types carry different risks; review cycles are tiered accordingly (e.g., SOPs quarterly, policies annually).
+The scheduled frequency at which a document is reviewed for accuracy and currency. Different document types carry different risks; review cycles are tiered accordingly (for example, SOPs quarterly, policies annually).
 
 **Version**
 A numbered or dated snapshot of a document. Versions allow readers to know which edition they're reading and provide a history of changes.
@@ -129,7 +129,7 @@ Europe, Middle East, Africa region (operations/documentation that serves EMEA ma
 A procedure that applies the same way in all regions. Global procedures have no regional variation (or only minor, clearly noted variations).
 
 **Locally configurable**
-A procedure element that can be adapted by region for operational reasons (e.g., tool names, contact lists, business hours) without changing the underlying process.
+A procedure element that can be adapted by region for operational reasons (for example, tool names, contact lists, business hours) without changing the underlying process.
 
 **Regional requirement**
 A procedure step or rule that differs by region due to legal, regulatory, or client-specific requirements. Must be documented separately for each region.
@@ -205,7 +205,7 @@ Atlassian's wiki/documentation platform; commonly used for team documentation, S
 A specialized system for managing controlled documentation, including version control, approval workflows, access control, and retention policies.
 
 **Git** / **Version control**
-A system for tracking changes to files over time, maintaining a complete history, and managing branches (e.g., global vs. regional versions).
+A system for tracking changes to files over time, maintaining a complete history, and managing branches (for example, global vs. regional versions).
 
 **Markdown**
 A lightweight plain-text format that can be converted to HTML, PDF, or other formats. Often used for documentation stored in Git or static site generators.

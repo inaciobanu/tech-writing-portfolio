@@ -13,7 +13,7 @@ slug: /api/intro
 This reference documents the PayFlow REST API. Use the PayFlow API to process payments, manage subscriptions, issue refunds, and retrieve transaction history programmatically.
 
 :::tip Who is this for?
-This reference is written for backend developers integrating PayFlow into a web or mobile application. You should be comfortable with REST APIs and HTTP request/response patterns.
+This reference is written for back-end developers integrating PayFlow into a web or mobile application. You should be comfortable with REST APIs and HTTP request/response patterns.
 :::
 
 ## What You Can Do
@@ -34,7 +34,7 @@ The PayFlow API follows REST conventions:
 - Request and response bodies use **JSON**
 - Standard **HTTP status codes** indicate success or failure
 - All timestamps are returned in **ISO 8601** format (`2026-03-18T09:00:00Z`)
-- Monetary values are expressed in **minor currency units** (e.g. pence for GBP, cents for USD)
+- Monetary values are expressed in **minor currency units** (for example, pence for GBP, cents for USD)
 
 ## Quick Example
 

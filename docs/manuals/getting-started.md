@@ -38,11 +38,11 @@ Once you're logged in:
 
 1. Click **Payments** in the left sidebar
 2. Click **+ New Payment** in the top right
-3. Enter a test amount (e.g. `£25.00`)
+3. Enter a test amount (for example, `£25.00`)
 4. Use the test card number `4242 4242 4242 4242` with any future expiry date and any 3-digit CVC
 5. Click **Charge**
 
-The payment appears in your **Payments** list with a **Test** badge. Congratulations – you've processed your first payment!
+The payment appears in your **Payments** list with a **Test** badge. Congratulations – you've processed your first payment.
 
 ## Switch to Live Mode
 

@@ -1,0 +1,14 @@
+# House style: a spaced en dash ( – ) is the only dash used as punctuation.
+# Em dashes, double hyphens, and en dashes spaced on one side only are
+# flagged, as is an unspaced en dash between two lowercase words. Ranges
+# (1–3 days, 2013–2016, 2023–Present, Mon–Fri) keep an unspaced en dash.
+extends: existence
+message: "Use a spaced en dash ( – ) for punctuation, not '%s'."
+level: error
+nonword: true
+tokens:
+  - '—'
+  - '\s--\s'
+  - '[a-z]–[a-z]'
+  - '\S–\s'
+  - '\s–\S'

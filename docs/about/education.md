@@ -8,7 +8,7 @@ description: "Ina Ciobanu's academic background – two bachelor's degrees and t
 
 On paper, none of this reads as a technical writer's education. In practice, each degree taught a different piece of the same job: reading structure before prose, treating a rule as literally as a lawyer would, writing for people who didn't ask to be addressed, and understanding the systems I document instead of translating them secondhand.
 
-## 2nd Bachelor's Degree – History and Theory of Arts (2013–2016)
+## Second Bachelor's Degree – History and Theory of Arts (2013–2016)
 **George Enescu University of Arts**
 *Faculty of Visual Arts and Design · 2013–2016*
 

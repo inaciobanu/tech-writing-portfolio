@@ -51,7 +51,7 @@ I'd ask simple questions:
 
 I'd build a spreadsheet (or set up a documentation management system) with every document:
 
-| Document | Type | Owner | Last Updated | Region(s) | Status | Notes |
+| Document | Type | Owner | Last Updated | Regions | Status | Notes |
 |----------|------|-------|--------------|-----------|--------|-------|
 | Maintenance Approval Process | SOP | – (unknown) | Mar 2023 | EMEA | Active | No owner; 18 months old |
 | Site Provisioning v1 | SOP | John S. | Jun 2024 | EMEA | Active | John left; nobody covering |
@@ -318,14 +318,14 @@ Discover, Prioritize, and Validate are paced by stakeholder calendars and trust,
 
 | Phase | Without AI | With AI |
 |---|---|---|
-| Discover | 2 wks | 2 wks |
-| Inventory | 2 wks | ~1 wk |
-| Assess | 2 wks | ~1 wk |
-| Prioritize | 2 wks | 2 wks |
-| Standardize | 2 wks | ~1.5 wks |
-| Rewrite | 4 wks | ~2.5 wks |
+| Discover | 2 weeks | 2 weeks |
+| Inventory | 2 weeks | ~1 wk |
+| Assess | 2 weeks | ~1 wk |
+| Prioritize | 2 weeks | 2 weeks |
+| Standardize | 2 weeks | ~1.5 weeks |
+| Rewrite | 4 weeks | ~2.5 weeks |
 | Validate | 1 wk | 1 wk |
 | Govern | 1 wk | 1 wk |
-| **Total** | **16 wks** | **~12 wks** |
+| **Total** | **16 weeks** | **~12 weeks** |
 
 Roughly 25% faster overall, concentrated entirely in the phases where speed was ever the bottleneck. The phases that determine whether documentation actually sticks – interviews, validation, ownership – stay the same length, because no tool shortens the time it takes to earn someone's trust.

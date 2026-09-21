@@ -98,7 +98,7 @@ These are the principles I apply to every project – not as a checklist, but as
 - 🏆 **Greater London Enterprise Awards 2020** – Best Specialised eCommerce Copywriting & SEO Service of the Year
 - 🏆 Most Outstanding Specialist eCommerce SEO Service
 - 🏆 Best Specialist eCommerce SEO Optimization Service Provider
-- 📸 6th Overall Winner – Ealing Wildlife Group Annual Photo Competition
+- 📸 Sixth Overall Winner – Ealing Wildlife Group Annual Photo Competition
 
 ---
 

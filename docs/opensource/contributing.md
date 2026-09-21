@@ -138,7 +138,7 @@ Before submitting, confirm your PR:
 - [ ] Follows the existing code style (`npm run lint` passes)
 - [ ] Updates documentation if behaviour has changed
 - [ ] Has a clear title following the Conventional Commits format
-- [ ] References any related issues (e.g. `Fixes #42`)
+- [ ] References any related issues (for example, `Fixes #42`)
 
 ## Review Process
 
