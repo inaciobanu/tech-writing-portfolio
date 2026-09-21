@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 580" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+
+  <!-- Exchange / venue connectivity -->
+  <text x="430" y="24" font-size="13" font-weight="700" fill="#6D28D9" text-anchor="middle">EXCHANGE / VENUE CONNECTIVITY</text>
+  <g>
+    <rect x="180" y="34" width="140" height="64" rx="10" fill="#F1ECFB" stroke="#D6C7F5" stroke-width="1.5"/>
+    <text x="250" y="61" font-size="13" font-weight="700" fill="#6D28D9" text-anchor="middle">Exchange A</text>
+    <text x="250" y="80" font-size="11" fill="#7C6AA8" text-anchor="middle">Cross-connect</text>
+  </g>
+  <g>
+    <rect x="360" y="34" width="140" height="64" rx="10" fill="#F1ECFB" stroke="#D6C7F5" stroke-width="1.5"/>
+    <text x="430" y="61" font-size="13" font-weight="700" fill="#6D28D9" text-anchor="middle">Exchange B</text>
+    <text x="430" y="80" font-size="11" fill="#7C6AA8" text-anchor="middle">Cross-connect</text>
+  </g>
+  <g>
+    <rect x="540" y="34" width="140" height="64" rx="10" fill="#F1ECFB" stroke="#D6C7F5" stroke-width="1.5"/>
+    <text x="610" y="61" font-size="13" font-weight="700" fill="#6D28D9" text-anchor="middle">Exchange C</text>
+    <text x="610" y="80" font-size="11" fill="#7C6AA8" text-anchor="middle">Cross-connect</text>
+  </g>
+
+  <!-- Lines: exchanges to primary colo -->
+  <path d="M250,98 L250,130 L230,130 L230,160" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
+  <path d="M430,98 L430,160" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
+  <path d="M610,98 L610,130 L230,130" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
+
+  <!-- Production trading network label -->
+  <text x="40" y="154" font-size="13" font-weight="700" fill="#374151">PRODUCTION TRADING NETWORK</text>
+
+  <!-- Primary colo -->
+  <rect x="40" y="160" width="380" height="200" rx="14" fill="#EAF1FC" stroke="#BBD3F5" stroke-width="1.5"/>
+  <text x="60" y="188" font-size="14" font-weight="700" fill="#2154C9">Primary colo – active</text>
+  <rect x="60" y="204" width="340" height="60" rx="10" fill="#FFFFFF" stroke="#BBD3F5" stroke-width="1.5"/>
+  <text x="230" y="229" font-size="12.5" font-weight="600" fill="#2154C9" text-anchor="middle">Market data feed handlers</text>
+  <text x="230" y="248" font-size="11" fill="#5B6B82" text-anchor="middle">Redundant multicast feeds</text>
+  <rect x="60" y="276" width="340" height="60" rx="10" fill="#FFFFFF" stroke="#BBD3F5" stroke-width="1.5"/>
+  <text x="230" y="301" font-size="12.5" font-weight="600" fill="#2154C9" text-anchor="middle">Order routing / trading engine</text>
+  <text x="230" y="320" font-size="11" fill="#5B6B82" text-anchor="middle">Low-latency path to venues</text>
+
+  <!-- Secondary colo -->
+  <rect x="440" y="160" width="380" height="200" rx="14" fill="#F3F4F6" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="460" y="188" font-size="14" font-weight="700" fill="#64748B">Secondary colo – standby / DR</text>
+  <rect x="460" y="204" width="340" height="60" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="630" y="229" font-size="12.5" font-weight="600" fill="#64748B" text-anchor="middle">Market data feed handlers</text>
+  <text x="630" y="248" font-size="11" fill="#94A3B8" text-anchor="middle">Warm standby</text>
+  <rect x="460" y="276" width="340" height="60" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="630" y="301" font-size="12.5" font-weight="600" fill="#64748B" text-anchor="middle">Order routing / trading engine</text>
+  <text x="630" y="320" font-size="11" fill="#94A3B8" text-anchor="middle">Activated on failover</text>
+
+  <!-- Failover replication link -->
+  <path d="M420,260 L440,260" fill="none" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <text x="430" y="252" font-size="10.5" fill="#64748B" text-anchor="middle">failover</text>
+
+  <!-- Line: primary colo down to firewall -->
+  <path d="M230,360 L230,400" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
+
+  <!-- Firewall / segmented gateway -->
+  <rect x="150" y="400" width="160" height="66" rx="10" fill="#FEF2F2" stroke="#FECACA" stroke-width="1.5"/>
+  <text x="230" y="428" font-size="13" font-weight="700" fill="#B91C1C" text-anchor="middle">Firewall / gateway</text>
+  <text x="230" y="447" font-size="11" fill="#C2837E" text-anchor="middle">Monitoring &amp; change access only</text>
+
+  <!-- Line: firewall down to corporate network -->
+  <path d="M230,466 L230,496" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
+
+  <!-- Corporate network -->
+  <text x="40" y="500" font-size="13" font-weight="700" fill="#374151">CORPORATE NETWORK – SEGMENTED</text>
+  <rect x="90" y="510" width="280" height="60" rx="10" fill="#FDF3E7" stroke="#F0D9B5" stroke-width="1.5"/>
+  <text x="230" y="536" font-size="13" font-weight="700" fill="#B45309" text-anchor="middle">Office · Research &amp; Dev</text>
+  <text x="230" y="554" font-size="11" fill="#C79552" text-anchor="middle">No direct path to production</text>
+
+</svg>
