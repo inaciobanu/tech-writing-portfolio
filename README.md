@@ -154,7 +154,7 @@ tech-writing-portfolio/
 ## Built With
 
 - [Docusaurus 3](https://docusaurus.io/) – documentation framework by Meta
-- [docusaurus-plugin-openapi-docs](https://github.com/PaloAltoNetworks/docusaurus-openapi-docs) – generates API reference pages from an OpenAPI spec
+- [`docusaurus-plugin-openapi-docs`](https://github.com/PaloAltoNetworks/docusaurus-openapi-docs) – generates API reference pages from an OpenAPI spec
 - [Vale](https://vale.sh/) – prose linter, enforcing the Google and Microsoft style guides in CI
 - [GitHub Pages](https://pages.github.com/) – free static site hosting
 - [Prism](https://prismjs.com/) – syntax highlighting

@@ -84,7 +84,7 @@ A transport is an object with a `write(formattedString)` method. It receives the
 |---|---|
 | `StdoutTransport` | Writes to `process.stdout` (default) |
 | `FileTransport` | Appends to a log file with optional rotation |
-| `HttpTransport` | POSTs log batches to an HTTP endpoint |
+| `HttpTransport` | `POSTs` log batches to an HTTP endpoint |
 
 ### Writing a Custom Transport
 

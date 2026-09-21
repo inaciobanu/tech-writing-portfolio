@@ -18,14 +18,17 @@ Cuza
 Cyber
 [Dd]eliverables
 Dev
+devDependency
 [Dd]iscoverability
 Docusaurus
 Dreamweaver
+eCommerce
 Eloqua
 else
 [Ee]nablement
 Enescu
 [Ff]ailover[s]?
+favicon
 Figma
 [Ff]intech
 [Ff]ormatters
@@ -63,6 +66,7 @@ PyKX
 [Rr]eachability
 [Rr]enderer
 [Rr]epo
+RESTful
 [Rr]ollout
 [Rr]otko
 [Rr]uleset[s]?
@@ -73,6 +77,7 @@ SEOzon
 SMEs
 SOP
 SOPs
+SOWs
 stdout
 [Ss]ubnet[s]?
 [Tt]elecom
