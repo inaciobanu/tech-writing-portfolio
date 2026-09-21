@@ -49,8 +49,8 @@ Version 2.0 includes breaking changes. See the [migration guide](#migrating-from
 ## [1.3.2] – 2025-11-20
 
 ### Fixed
-- `StdoutTransport` was not flushing the buffer before process exit on Windows ([#61](https://github.com/logpilot/logpilot/issues/61))
-- Circular references in metadata no longer throw – they are replaced with `[Circular]`
+- `StdoutTransport` wasn't flushing the buffer before process exit on Windows ([#61](https://github.com/logpilot/logpilot/issues/61))
+- Circular references in metadata no longer throw – they're replaced with `[Circular]`
 
 ---
 

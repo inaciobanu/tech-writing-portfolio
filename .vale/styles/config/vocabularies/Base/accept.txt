@@ -61,6 +61,7 @@ PDFs
 Peckham
 Photoshop
 [Pp]luggable
+PNGs
 PyKX
 [Qq]ueryable
 [Rr]eachability
@@ -80,12 +81,14 @@ SOPs
 SOWs
 stdout
 [Ss]ubnet[s]?
+SVGs
 [Tt]elecom
 [Tt]imeframe
 Tines
 [Tt]oolchain
 [Tt]ooltip
 [Tt]riaging
+[Uu]ncontracted
 Udemy
 [Uu]nconfigured
 Universidade
@@ -95,5 +98,6 @@ VLAN
 [Ww]alkthrough
 WAN
 [Ww]ebhook[s]?
+whatever's
 Zapier
 Zistemo

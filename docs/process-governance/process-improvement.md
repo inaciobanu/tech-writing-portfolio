@@ -32,7 +32,7 @@ I built it as a rule in Confluence's own Automation rather than reaching for a s
 
 It's not sophisticated. It doesn't need to be. It just moves the trigger off a person's memory and onto a clock.
 
-One real constraint shaped the current version: the free Automation tier caps a space at around ten rule-runs a month, so this runs monthly rather than weekly, and it's a single flag rather than the two-stage early-warning-then-overdue nudge in the sketch above. Here's it firing end to end – the scheduled trigger, the branch over inactive pages, the smart-value check, and the send, each step confirmed:
+One real constraint shaped the current version: the free Automation tier caps a space at around ten rule-runs a month, so this runs monthly rather than weekly, and it's a single flag rather than the two-stage nudge – an early warning, then overdue – in the sketch above. Here's it firing end to end – the scheduled trigger, the branch over inactive pages, the smart-value check, and the send, each step confirmed:
 
 ![Confluence Automation audit log, expanded: Scheduled, Branch flow for each inactive page, Advanced branching, smart values condition, and Send customised email, all marked successful](/img/process-improvement/confluence-automation-audit-trail.jpg)
 

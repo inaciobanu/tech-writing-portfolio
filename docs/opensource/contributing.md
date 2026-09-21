@@ -10,7 +10,7 @@ Thank you for your interest in contributing to Logpilot. This guide covers how t
 
 ## Code of conduct
 
-All contributors are expected to follow our [Code of Conduct](https://github.com/logpilot/logpilot/blob/main/CODE_OF_CONDUCT.md). We are committed to maintaining a welcoming and inclusive community.
+All contributors are expected to follow our [Code of Conduct](https://github.com/logpilot/logpilot/blob/main/CODE_OF_CONDUCT.md). We're committed to maintaining a welcoming and inclusive community.
 
 ## Ways to contribute
 

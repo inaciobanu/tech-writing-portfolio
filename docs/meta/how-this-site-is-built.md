@@ -51,4 +51,4 @@ That export is a plain-text reader, though, not a browser: it reads whatever's o
 
 The fix was to drop that page back to a plain link to the [API Reference](/docs/api/reference/payflow-api) – which already prints its version as static text, regenerated fresh by `gen-api-docs` on every build – rather than duplicate it with something clever that only works for a browser. 
 
-One honest gap remains: the reference pages themselves are still full of the OpenAPI theme's own React components (schema tabs, the API explorer), so their raw `.md` exports are noisier than the hand-written pages. Vale already excludes that folder from prose linting for the same underlying reason; the llms export doesn't have an equivalent exclusion yet.
+One honest gap remains: the reference pages themselves are still full of the OpenAPI theme's own React components (schema tabs, the API explorer), so their raw `.md` exports are noisier than the hand-written pages. Vale already excludes that folder from prose linting for the same underlying reason; the LLMs export doesn't have an equivalent exclusion yet.
