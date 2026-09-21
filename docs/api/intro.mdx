@@ -6,9 +6,20 @@ sidebar_label: Overview
 slug: /api/intro
 ---
 
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+
 # PayFlow API – Reference Documentation
 
-**Version:** 2.4.0 · **Base URL:** `https://api.payflow.io/v2`
+export const ApiVersionAndBaseUrl = () => {
+  const { siteConfig } = useDocusaurusContext();
+  return (
+    <>
+      <strong>Version:</strong> {siteConfig.customFields.apiVersion} · <strong>Base URL:</strong> <code>{siteConfig.customFields.apiBaseUrl}</code>
+    </>
+  );
+};
+
+<ApiVersionAndBaseUrl />
 
 This reference documents the PayFlow REST API. Use the PayFlow API to process payments, manage subscriptions, issue refunds, and retrieve transaction history programmatically.
 

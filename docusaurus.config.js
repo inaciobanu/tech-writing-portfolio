@@ -1,4 +1,6 @@
 // @ts-check
+const fs = require('fs');
+const yaml = require('js-yaml');
 const { themes } = require('prism-react-renderer');
 
 // Pull request previews are published under previews/pr-<number>/ on the
@@ -8,6 +10,14 @@ const isPR = process.env.IS_PR_BUILD === 'true';
 const baseUrl = isPR
   ? `/tech-writing-portfolio/previews/pr-${process.env.PR_NUMBER}/`
   : '/tech-writing-portfolio/';
+
+// openapi/payflow.yaml is the source of truth for the API version and base
+// URL. Pages that mention either read them from customFields below instead
+// of hardcoding them, so an automated spec sync can't leave prose pages
+// stating a stale version or URL.
+const payflowSpec = yaml.load(fs.readFileSync('openapi/payflow.yaml', 'utf8'));
+const apiVersion = payflowSpec.info.version;
+const apiBaseUrl = payflowSpec.servers[0].url;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -25,6 +35,11 @@ const config = {
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
+
+  customFields: {
+    apiVersion,
+    apiBaseUrl,
+  },
 
   markdown: {
     mermaid: true,
