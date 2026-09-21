@@ -1,6 +1,4 @@
 // @ts-check
-const fs = require('fs');
-const yaml = require('js-yaml');
 const { themes } = require('prism-react-renderer');
 
 // Pull request previews are published under previews/pr-<number>/ on the
@@ -10,14 +8,6 @@ const isPR = process.env.IS_PR_BUILD === 'true';
 const baseUrl = isPR
   ? `/tech-writing-portfolio/previews/pr-${process.env.PR_NUMBER}/`
   : '/tech-writing-portfolio/';
-
-// openapi/payflow.yaml is the source of truth for the API version and base
-// URL. Pages that mention either read them from customFields below instead
-// of hardcoding them, so an automated spec sync can't leave prose pages
-// stating a stale version or URL.
-const payflowSpec = yaml.load(fs.readFileSync('openapi/payflow.yaml', 'utf8'));
-const apiVersion = payflowSpec.info.version;
-const apiBaseUrl = payflowSpec.servers[0].url;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -35,11 +25,6 @@ const config = {
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
-
-  customFields: {
-    apiVersion,
-    apiBaseUrl,
-  },
 
   markdown: {
     mermaid: true,
@@ -92,6 +77,19 @@ const config = {
         },
       };
     },
+    [
+      'docusaurus-plugin-llms',
+      {
+        // Zero-config other than the site metadata: writes /llms.txt and
+        // /llms-full.txt, plus a raw .md file per page, as part of this
+        // same production build – so the agent-facing surface comes from
+        // the same source as the human one, gated by the same link check.
+        title: 'Ina Ciobanu | Senior Technical Writer',
+        description:
+          'Portfolio of API documentation, developer guides, user manuals, open source docs, and documentation-governance case studies.',
+        generateMarkdownFiles: true,
+      },
+    ],
     [
       'docusaurus-plugin-openapi-docs',
       {
@@ -241,6 +239,11 @@ const config = {
             position: 'left',
           },
           {
+            label: 'How This Site Is Built',
+            to: '/docs/meta/how-this-site-is-built',
+            position: 'left',
+          },
+          {
             href: 'https://github.com/inaciobanu/tech-writing-portfolio',
             label: 'GitHub',
             position: 'right',
@@ -261,6 +264,7 @@ const config = {
               { label: 'Process & Governance', to: '/docs/process-governance/intro' },
               { label: 'FM Operations', to: '/docs/fm-operations' },
               { label: 'Glossary', to: '/docs/glossary' },
+              { label: 'How This Site Is Built', to: '/docs/meta/how-this-site-is-built' },
             ],
           },
           {

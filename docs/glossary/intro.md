@@ -12,7 +12,7 @@ Key terms and definitions used throughout the portfolio documentation.
 
 Many of these terms also appear as interactive pop-ups: the first time a term shows up on a page, it's underlined, and hovering or focusing it surfaces the definition inline, right where the reader needs it, without a trip to this page. See the [interactive glossary](/docs/glossary) for how the pattern works.
 
-## Documentation & Governance
+## Documentation & governance
 
 **Approval**
 Formal sign-off by an authorized person (usually a manager or compliance lead) that a document is accurate and ready to be published. Approval date and approver name are part of document control.
@@ -27,10 +27,10 @@ A table or log documenting every version of a document, including the date, auth
 The formal process for approving, implementing, and tracking changes to procedures, systems, or documentation. Ensures changes don't break existing workflows.
 
 **Compliance**
-Adherence to relevant laws, regulations, standards, or organizational policies. Documentation in regulated environments must be audit-ready and maintain evidence trails.
+Adherence to relevant laws, regulations, standards, or organisational policies. Documentation in regulated environments must be audit-ready and maintain evidence trails.
 
 **Content inventory**
-A catalog of all documents in a documentation space, including metadata (owner, version, last reviewed date, audience, type). Makes the documentation estate visible.
+A catalogue of all documents in a documentation space, including metadata (owner, version, last reviewed date, audience, type). Makes the documentation estate visible.
 
 **Controlled documentation**
 Documentation that has defined ownership, version control, approval, and review cycles. The opposite of documents that exist but are unmaintained.
@@ -67,7 +67,7 @@ A numbered or dated snapshot of a document. Versions allow readers to know which
 
 ---
 
-## Procedures & Process
+## Procedures & process
 
 **Backup owner**
 A secondary person assigned to a document who covers review and updates when the primary owner is unavailable. Prevents documents from becoming ownerless if an owner leaves or is out.
@@ -95,13 +95,13 @@ A single action or instruction within a procedure. Steps are numbered, sequentia
 
 ---
 
-## Risk & Compliance
+## Risk & compliance
 
 **Audit-ready documentation**
 Documentation that maintains sufficient evidence (approvals, reviews, change history, ownership records) to satisfy regulatory audits and compliance reviews.
 
 **Compliance gap**
-A difference between how a procedure is documented and how it should be documented to meet regulatory or organizational requirements.
+A difference between how a procedure is documented and how it should be documented to meet regulatory or organisational requirements.
 
 **Operational risk**
 Risk that something will go wrong in day-to-day operations because the procedure is incomplete, ambiguous, or incorrect. Identified through user testing and SME review.
@@ -114,7 +114,7 @@ Focusing remediation effort on highest-risk problems first, based on: **Risk × 
 
 ---
 
-## Regional & Global
+## Regional & global
 
 **APAC**
 Asia-Pacific region (operations/documentation that serves APAC markets and facilities).
@@ -142,10 +142,10 @@ The coordination of buildings, services, and workplace operations. The overarchi
 
 ---
 
-## Network & Infrastructure
+## Network & infrastructure
 
 **Colo** (Colocation facility)
-A third-party data center where an organization rents space, power, and connectivity for its own servers and network equipment, rather than running its own building.
+A third-party data centre where an organisation rents space, power, and connectivity for its own servers and network equipment, rather than running its own building.
 
 **DR** (Disaster recovery)
 The standby systems and procedures that let operations fail over to a secondary site if the primary one goes down. Used in the [Process & Governance case study](/docs/process-governance/structure) to describe the standby colocation facility mirroring the primary trading site.
@@ -155,7 +155,7 @@ The connectivity that links sites together across locations, as opposed to a loc
 
 ---
 
-## Documentation Strategy
+## Documentation strategy
 
 **Assess**
 The phase where you evaluate documentation for quality, accuracy, completeness, consistency, ownership, currency, usability, and control. Output is a detailed gap analysis.
@@ -167,9 +167,9 @@ The initial phase of understanding the documentation landscape – where docs li
 The final phase where you establish ownership, approval, version control, review cycles, and change management processes to keep documentation current over time.
 
 **Inventory**
-The phase where you create a master catalog of all documents with metadata (owner, type, version, last reviewed, audience, related docs, regulatory dependencies). Makes the estate visible.
+The phase where you create a master catalogue of all documents with metadata (owner, type, version, last reviewed, audience, related docs, regulatory dependencies). Makes the estate visible.
 
-**Prioritise** / **Prioritize**
+**Prioritise**
 The phase where you score documentation problems by risk and operational importance, then focus remediation on highest-impact work first.
 
 **Rewrite**
@@ -183,7 +183,7 @@ The phase where you confirm rewritten documentation is operationally correct by 
 
 ---
 
-## SME & Stakeholder
+## SME & stakeholder
 
 **SME** (Subject Matter Expert)
 The person with authoritative knowledge of a process, system, or domain. SMEs validate that documentation accurately reflects how things actually work.
@@ -193,7 +193,7 @@ Anyone affected by or responsible for documentation: SMEs, field teams, managers
 
 ---
 
-## Tools & Systems
+## Tools & systems
 
 **Approval workflow**
 An automated or manual process for routing a document to an approver, tracking their sign-off, and preventing publication until approval is complete.
@@ -211,7 +211,7 @@ A system for tracking changes to files over time, maintaining a complete history
 A lightweight plain-text format that can be converted to HTML, PDF, or other formats. Often used for documentation stored in Git or static site generators.
 
 **SharePoint**
-Microsoft's content management and collaboration platform; commonly used for organizational documentation and approval workflows.
+Microsoft's content management and collaboration platform; commonly used for organisational documentation and approval workflows.
 
 **Spreadsheet registry**
 A simple spreadsheet documenting all procedures, their metadata, ownership, and notes. Useful for tracking why variations exist or for small documentation estates.
@@ -221,7 +221,7 @@ A set of conventions for writing and formatting documentation – tone, voice, t
 
 ---
 
-## Maintenance & Operations
+## Maintenance & operations
 
 **Asset**
 Physical infrastructure managed by facilities teams – buildings, systems, equipment, utilities. Each asset has maintenance requirements and a maintenance history.

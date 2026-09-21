@@ -8,7 +8,7 @@ description: "A step-by-step guide to integrating the PayFlow API into a Node.js
 
 This guide walks through integrating PayFlow into a Node.js Express application. The same patterns apply to other languages and frameworks.
 
-## Project Setup
+## Project setup
 
 Install the PayFlow Node.js SDK:
 
@@ -22,7 +22,7 @@ Create a `.env` file:
 PAYFLOW_SECRET_KEY=sk_test_your_key_here
 ```
 
-## Initialise the Client
+## Initialise the client
 
 ```javascript
 // payflow.js
@@ -34,7 +34,7 @@ const payflow = new PayFlow(process.env.PAYFLOW_SECRET_KEY);
 module.exports = payflow;
 ```
 
-## Create a Payment Endpoint
+## Create a payment endpoint
 
 ```javascript
 // routes/payments.js
@@ -67,7 +67,7 @@ router.post('/charge', async (req, res) => {
 module.exports = router;
 ```
 
-## Handle Webhooks
+## Handle webhooks
 
 PayFlow sends webhook events for asynchronous payment updates. Set up a webhook endpoint to listen for these:
 
@@ -111,7 +111,7 @@ router.post('/', express.raw({ type: 'application/json' }), (req, res) => {
 module.exports = router;
 ```
 
-## Register Your Webhook
+## Register your webhook
 
 In the Dashboard, go to **Settings → Webhooks → Add endpoint** and add your webhook URL. Select the events you want to receive.
 

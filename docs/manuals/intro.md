@@ -10,7 +10,7 @@ slug: /manuals/intro
 
 Welcome to the PayFlow Dashboard. This manual covers everything you need to manage payments, customers, and your account settings – no technical knowledge required.
 
-## What You Can Do in the Dashboard
+## What you can do in the dashboard
 
 - **View and search** all your payments and refunds
 - **Manage customers** and their payment methods
@@ -19,7 +19,7 @@ Welcome to the PayFlow Dashboard. This manual covers everything you need to mana
 - **Download reports** for accounting and reconciliation
 - **Configure webhooks** and API keys
 
-## In This Manual
+## In this manual
 
 | Section | Description |
 |---|---|
@@ -27,6 +27,6 @@ Welcome to the PayFlow Dashboard. This manual covers everything you need to mana
 | [Dashboard Overview](./dashboard) | A guided tour of every section |
 | [Troubleshooting](./troubleshooting) | Fix common issues |
 
-## Getting Help
+## Getting help
 
 If you can't find the answer you need here, contact our support team at **support@payflow.io** or use the in-app chat (click the **?** icon in the bottom right of the Dashboard).

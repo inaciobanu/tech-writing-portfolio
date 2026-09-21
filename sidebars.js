@@ -117,6 +117,7 @@ const sidebars = {
     },
   ],
   glossarySidebar: ['glossary', 'glossary/glossary-intro'],
+  metaSidebar: ['meta/how-this-site-is-built'],
 };
 
 module.exports = sidebars;

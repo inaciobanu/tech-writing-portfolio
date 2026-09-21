@@ -8,11 +8,11 @@ description: "How to report bugs, propose features, and submit pull requests to 
 
 Thank you for your interest in contributing to Logpilot. This guide covers how to report bugs, propose new features, and submit pull requests.
 
-## Code of Conduct
+## Code of conduct
 
 All contributors are expected to follow our [Code of Conduct](https://github.com/logpilot/logpilot/blob/main/CODE_OF_CONDUCT.md). We are committed to maintaining a welcoming and inclusive community.
 
-## Ways to Contribute
+## Ways to contribute
 
 - 🐛 **Report a bug** – open a GitHub issue
 - 💡 **Propose a feature** – start a GitHub Discussion
@@ -20,7 +20,7 @@ All contributors are expected to follow our [Code of Conduct](https://github.com
 - 🧪 **Add tests** – increase coverage for edge cases
 - 🔧 **Fix a bug or implement a feature** – see the workflow below
 
-## Reporting Bugs
+## Reporting bugs
 
 Before opening an issue, please search existing issues to avoid duplicates.
 
@@ -34,7 +34,7 @@ When reporting a bug, include:
 
 Use the [bug report template](https://github.com/logpilot/logpilot/issues/new?template=bug_report.md) to get started.
 
-## Development Setup
+## Development setup
 
 ### Prerequisites
 
@@ -42,7 +42,7 @@ Use the [bug report template](https://github.com/logpilot/logpilot/issues/new?te
 - npm 9 or higher
 - Git
 
-### Fork and Clone
+### Fork and clone
 
 ```bash
 # 1. Fork the repo on GitHub, then clone your fork
@@ -56,7 +56,7 @@ git remote add upstream https://github.com/logpilot/logpilot.git
 npm install
 ```
 
-### Run Tests
+### Run tests
 
 ```bash
 # Run the full test suite
@@ -71,7 +71,7 @@ npm run coverage
 
 All pull requests must maintain **≥95% code coverage**.
 
-### Project Structure
+### Project structure
 
 ```
 logpilot/
@@ -91,7 +91,7 @@ logpilot/
 └── package.json
 ```
 
-## Pull Request Workflow
+## Pull request workflow
 
 1. **Sync your fork** with the latest upstream changes:
 
@@ -128,7 +128,7 @@ git commit -m "docs: add transport configuration examples"
 
 6. **Push** your branch and **open a pull request** against `main`
 
-## Pull Request Checklist
+## Pull request checklist
 
 Before submitting, confirm your PR:
 
@@ -140,6 +140,6 @@ Before submitting, confirm your PR:
 - [ ] Has a clear title following the Conventional Commits format
 - [ ] References any related issues (for example, `Fixes #42`)
 
-## Review Process
+## Review process
 
 A maintainer will review your pull request within **3–5 business days**. We may request changes – please don't take this personally. Once approved, a maintainer will merge your PR and credit you in the changelog.

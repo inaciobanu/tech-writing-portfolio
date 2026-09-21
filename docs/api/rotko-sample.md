@@ -19,7 +19,7 @@ This reference documents the vector search endpoints – used to insert, index, 
 
 ## Concepts
 
-### Embeddings and Vector Search
+### Embeddings and vector search
 
 A **vector embedding** is a numerical representation of data – text, images, audio, or time-series – produced by a machine learning model. Similar items produce embeddings that are geometrically close in high-dimensional space.
 
@@ -56,7 +56,7 @@ Tokens are generated in the Rotko Cloud console under **Settings → API Tokens*
 
 ## Endpoints
 
-### Insert Vectors
+### Insert vectors
 
 ```
 POST /v1/tables/{table}/insert
@@ -110,7 +110,7 @@ curl -X POST https://api.rotko.io/v1/tables/earnings_docs/insert \
 
 ---
 
-### Query (Similarity Search)
+### Query (similarity search)
 
 ```
 POST /v1/tables/{table}/query
@@ -167,7 +167,7 @@ Returns the `n` vectors most similar to the query vector, ranked by distance.
 
 ---
 
-### Delete Vectors
+### Delete vectors
 
 ```
 DELETE /v1/tables/{table}/vectors
@@ -212,7 +212,7 @@ print(results)
 
 ---
 
-## Error Codes
+## Error codes
 
 | Code | Meaning |
 |---|---|

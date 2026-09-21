@@ -35,6 +35,8 @@ const personSchema = {
     'Docs as code',
     'Docusaurus',
     'CI/CD for documentation',
+    'GitHub Actions',
+    'Docker',
     'Documentation engineering',
     'Information architecture',
     'Technical writing',

@@ -15,7 +15,7 @@ import TabItem from '@theme/TabItem';
 
 ---
 
-## Document Control
+## Document control
 
 | Element | Value |
 |---------|-------|
@@ -52,7 +52,7 @@ To ensure scheduled maintenance activities on critical and non-critical building
 
 ---
 
-## Roles & Responsibilities
+## Roles & responsibilities
 
 | Role | Responsibility |
 |------|-----------------|
@@ -65,7 +65,7 @@ To ensure scheduled maintenance activities on critical and non-critical building
 
 ---
 
-## Mandatory Requirements
+## Mandatory requirements
 
 **Engineers MUST:**
 
@@ -306,7 +306,7 @@ Before maintenance can begin, the following **must** be confirmed:
 
 ---
 
-## Escalation Matrix
+## Escalation matrix
 
 | Defect Type | Notification | Timeframe | Decision Authority |
 |---|---|---|---|
@@ -318,7 +318,7 @@ Before maintenance can begin, the following **must** be confirmed:
 
 ---
 
-## Records & Evidence
+## Records & evidence
 
 The following **must** be retained for audit and compliance purposes:
 
@@ -336,7 +336,7 @@ The following **must** be retained for audit and compliance purposes:
 
 ---
 
-## Related Documents
+## Related documents
 
 :::note Some related documents are illustrative
 Italic items below are companion documents that would exist in a real documentation set (other SOPs, policies, schedules) but aren't part of this portfolio sample, so they aren't linked. Linked items point to real pages on this site.
@@ -352,7 +352,7 @@ Italic items below are companion documents that would exist in a real documentat
 
 ---
 
-## Document Change History
+## Document change history
 
 | Version | Date | Author | Change | Approver |
 |---------|------|--------|--------|----------|

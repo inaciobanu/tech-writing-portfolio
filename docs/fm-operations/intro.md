@@ -8,7 +8,7 @@ slug: /fm-operations
 
 # Facilities Management Documentation Transformation
 
-## The Scenario
+## The scenario
 
 Imagine you've just been given responsibility for all Real Estate Operations documentation across three regions (EMEA, APAC, AMS). You inherit:
 

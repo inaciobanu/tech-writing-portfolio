@@ -25,7 +25,7 @@ All notable changes to Logpilot are documented here. This project follows [Seman
 
 ## [2.0.0] – 2026-01-15
 
-### Breaking Changes
+### Breaking changes
 
 :::caution Migrating from v1?
 Version 2.0 includes breaking changes. See the [migration guide](#migrating-from-v1) below.

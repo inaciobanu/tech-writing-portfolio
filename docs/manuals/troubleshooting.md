@@ -54,7 +54,7 @@ Yes, but refunds older than 90 days must be processed manually. Contact support 
 
 ---
 
-## Account & Verification
+## Account & verification
 
 ### My account verification has been pending for more than 2 business days
 
@@ -72,7 +72,7 @@ Contact support immediately at **support@payflow.io** from your registered email
 
 ---
 
-## Still Need Help?
+## Still need help?
 
 | Channel | Response time | Best for |
 |---|---|---|

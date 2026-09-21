@@ -14,7 +14,7 @@ slug: /opensource/intro
 [![license](https://img.shields.io/github/license/logpilot/logpilot)](https://github.com/logpilot/logpilot/blob/main/LICENSE)
 [![build](https://img.shields.io/github/actions/workflow/status/logpilot/logpilot/ci.yml)](https://github.com/logpilot/logpilot/actions)
 
-## Quick Install
+## Quick install
 
 ```bash
 npm install logpilot
@@ -27,7 +27,7 @@ log.info('Server started', { port: 3000, env: 'production' });
 // → {"level":"info","message":"Server started","port":3000,"env":"production","timestamp":"2026-03-18T09:00:00Z"}
 ```
 
-## In This Section
+## In this section
 
 | Page | Description |
 |---|---|

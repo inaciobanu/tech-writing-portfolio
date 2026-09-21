@@ -8,7 +8,7 @@ description: "PayFlow API rate limits by plan, and how to handle rate-limit erro
 
 PayFlow enforces rate limits to ensure API stability for all users.
 
-## Limits by Plan
+## Limits by plan
 
 | Plan | Requests per second | Requests per day |
 |---|---|---|
@@ -16,7 +16,7 @@ PayFlow enforces rate limits to ensure API stability for all users.
 | **Growth** | 50 | 500,000 |
 | **Enterprise** | Custom | Custom |
 
-## Rate Limit Headers
+## Rate limit headers
 
 Every API response includes headers showing your current usage:
 
@@ -32,7 +32,7 @@ X-RateLimit-Reset: 1742291400
 | `X-RateLimit-Remaining` | Requests remaining in the current window |
 | `X-RateLimit-Reset` | Unix timestamp when the limit resets |
 
-## Handling 429 Errors
+## Handling 429 errors
 
 When you exceed your rate limit, the API returns `429 Too Many Requests`. Implement exponential backoff:
 
@@ -55,7 +55,7 @@ def request_with_backoff(url, headers, data, max_retries=5):
     raise Exception("Max retries exceeded")
 ```
 
-## Tips for Staying Under Limits
+## Tips for staying under limits
 
 - **Batch requests** where possible rather than making individual calls
 - **Cache responses** – avoid re-fetching data you already have

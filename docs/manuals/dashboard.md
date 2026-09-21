@@ -19,7 +19,7 @@ The **Payments** page lists all transactions, newest first. Use the search bar a
 
 Click any payment to see its full details, including the card used, timestamps, and any associated metadata.
 
-### Issuing a Refund
+### Issuing a refund
 
 1. Open the payment you want to refund
 2. Click **Refund** in the top right

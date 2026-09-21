@@ -31,6 +31,7 @@ This isn't just written content – the repo enforces it:
 - **Spec-driven API reference** – `openapi/payflow.yaml` generates the entire API endpoint reference via `docusaurus-plugin-openapi-docs`; the spec is the source of truth, not the rendered page
 - **Git-based freshness** – every doc page shows a "last updated" date pulled straight from git history, not a manually maintained timestamp
 - **Code example maintenance** – the Code in Docs guide defines language labels, copy-safe samples, verification status, ownership, review triggers, audits, and reader feedback loops
+- **Agent-facing export** – `docusaurus-plugin-llms` runs in the same build and writes `/llms.txt`, `/llms-full.txt`, and a raw Markdown file per page, so an LLM reading this site gets the same source the Vale gate checks, not a separate export
 
 ---
 
@@ -38,7 +39,7 @@ This isn't just written content – the repo enforces it:
 
 I'm a London-based technical writer with experience documenting APIs, developer tools, and SaaS products. I work docs-as-code – writing in Markdown, collaborating in Git, and shipping documentation alongside the product.
 
-**Skills:** Docusaurus · MkDocs · OpenAPI/Swagger · Markdown · Git · Postman · Confluence · JIRA · Vale
+**Skills:** Docusaurus · MkDocs · OpenAPI/Swagger · Markdown · Git · GitHub Actions · Docker · Postman · Confluence · JIRA · Vale
 
 **Style guides I follow:** Google Developer Documentation Style Guide · Microsoft Writing Style Guide
 
@@ -122,11 +123,19 @@ tech-writing-portfolio/
 │   ├── manuals/                 # User manuals
 │   ├── opensource/              # Open source project docs
 │   ├── process-governance/      # Documentation systems and operations case study
+│   ├── fm-operations/           # Facilities management documentation case study
+│   ├── glossary/                # Documentation glossary
+│   ├── meta/                    # How this site is built
 │   └── about/                   # Bio, experience, testimonials
 ├── openapi/
 │   └── payflow.yaml             # OpenAPI spec – source of truth for docs/api/reference/
+├── scripts/
+│   └── generate-social-images.js # Renders favicon/og-image PNGs from SVG sources
+├── assets/social/                # Editable SVG sources for the favicon and social preview image
 ├── .vale.ini                    # Vale config: styles, vocab, rule exclusions
-├── .vale/styles/config/vocabularies/Base/accept.txt  # Custom technical vocabulary
+├── .vale/styles/
+│   ├── config/vocabularies/Base/accept.txt  # Custom technical vocabulary
+│   └── Portfolio/               # House style rules (dashes, self-description)
 ├── .github/workflows/
 │   ├── deploy.yml               # Build + deploy to GitHub Pages (includes stored PR previews)
 │   ├── pr-preview.yml           # Build + publish a preview for each pull request

@@ -21,7 +21,7 @@ You have two types of API keys:
 Never expose API keys in client-side code, public repositories, or logs. If a key is compromised, rotate it immediately from the Dashboard.
 :::
 
-## Making Authenticated Requests
+## Making authenticated requests
 
 Include your API key as a Bearer token in every request:
 
@@ -31,7 +31,7 @@ curl https://api.payflow.io/v2/payments \
   -H "Content-Type: application/json"
 ```
 
-## Using Environment Variables
+## Using environment variables
 
 Store your API key in an environment variable rather than hardcoding it:
 
@@ -50,7 +50,7 @@ headers = {
 }
 ```
 
-## Rotating API Keys
+## Rotating API keys
 
 If you suspect a key has been compromised:
 
@@ -59,7 +59,7 @@ If you suspect a key has been compromised:
 3. Update your environment variables with the new key
 4. The old key is invalidated immediately
 
-## Authentication Errors
+## Authentication errors
 
 If authentication fails, the API returns a `401 Unauthorized` response:
 

@@ -8,7 +8,7 @@ description: "Make your first PayFlow API call in under 5 minutes."
 
 Make your first PayFlow API call in under 5 minutes.
 
-## Step 1: Get Your API Key
+## Step 1: Get your API key
 
 1. Log in to the [PayFlow Dashboard](https://dashboard.payflow.io)
 2. Navigate to **Settings → API Keys**
@@ -18,7 +18,7 @@ Make your first PayFlow API call in under 5 minutes.
 Never use your live key (`sk_live_...`) during development. Test keys process no real payments.
 :::
 
-## Step 2: Make Your First Request
+## Step 2: Make your first request
 
 Replace `YOUR_TEST_KEY` with your test key:
 
@@ -88,7 +88,7 @@ console.log(payment);
 </TabItem>
 </Tabs>
 
-## Step 3: Check the Response
+## Step 3: Check the response
 
 A successful payment returns a `200 OK` with a payment object:
 
@@ -105,7 +105,7 @@ A successful payment returns a `200 OK` with a payment object:
 
 Confirm it in your Dashboard under **Payments → Test Payments**.
 
-## What's Next?
+## What's next?
 
 - [Integration Guide](./integration) – add PayFlow to a real application
 - [API Reference](../api/reference/payflow-api) – full reference for all available endpoints

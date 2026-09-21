@@ -12,7 +12,7 @@ slug: /about/intro
 
 ---
 
-## What I Do
+## What I do
 
 I work on complex systems where documentation directly affects how quickly engineers can ship, integrate, and adopt new technology.
 
@@ -34,7 +34,7 @@ Currently at **KX**, I document **KDB.AI** (a real-time vector database for AI w
 
 ---
 
-## How I Work
+## How I work
 
 As a certified front-end developer, I don't just document APIs – I read the code, test the endpoints in Postman, and reproduce the errors before I write about them. This technical depth is what separates documentation that's accurate from documentation that's actually useful.
 
@@ -42,11 +42,12 @@ I work docs-as-code by default: Markdown, Git, pull requests, and CI/CD pipeline
 
 ---
 
-## Technical Environment
+## Technical environment
 
 | Category | Tools & Platforms |
 |---|---|
 | **Docs-as-code** | Markdown · MDX · Git / GitHub / GitLab · VS Code · MkDocs · Docusaurus |
+| **CI/CD & tooling** | GitHub Actions · Docker · Vale |
 | **API tooling** | OpenAPI / Swagger · Postman · REST · JSON · XML · readme.io |
 | **Dev skills** | HTML · CSS · JavaScript · Python basics |
 | **AI/data platforms** | KDB.AI · PyKX · kdb+ · vector databases · time-series data |
@@ -55,7 +56,7 @@ I work docs-as-code by default: Markdown, Git, pull requests, and CI/CD pipeline
 
 ---
 
-## How I Improve Documentation
+## How I improve documentation
 
 These are the principles I apply to every project – not as a checklist, but as how I think:
 

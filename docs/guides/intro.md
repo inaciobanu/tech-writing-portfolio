@@ -10,7 +10,7 @@ slug: /guides/intro
 
 These guides walk you through common integration patterns with the PayFlow API â€“ from your first test payment to a production-ready subscription setup.
 
-## Guides in This Section
+## Guides in this section
 
 | Guide | What you'll learn |
 |---|---|
@@ -18,7 +18,7 @@ These guides walk you through common integration patterns with the PayFlow API â
 | [Integration Guide](./integration) | Set up PayFlow in a Node.js or Python app |
 | [Best Practices](./best-practices) | Idempotency, webhooks, and error handling patterns |
 
-## Before You Start
+## Before you start
 
 You'll need:
 - A PayFlow account ([sign up free](https://payflow.io/signup))

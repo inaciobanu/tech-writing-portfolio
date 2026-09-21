@@ -27,7 +27,7 @@ Your application
 
 Each of these layers is independent and replaceable.
 
-## The Logger
+## The logger
 
 The `Logger` class (`src/logger.js`) is the public-facing API. It:
 
@@ -44,7 +44,7 @@ const logger = new Logger({
 });
 ```
 
-## Log Levels
+## Log levels
 
 Logpilot uses five levels, in ascending severity:
 
@@ -78,7 +78,7 @@ Logpilot ships two built-in formatters:
 
 A transport is an object with a `write(formattedString)` method. It receives the formatted log string and sends it somewhere.
 
-### Built-in Transports
+### Built-in transports
 
 | Transport | Description |
 |---|---|
@@ -86,7 +86,7 @@ A transport is an object with a `write(formattedString)` method. It receives the
 | `FileTransport` | Appends to a log file with optional rotation |
 | `HttpTransport` | `POSTs` log batches to an HTTP endpoint |
 
-### Writing a Custom Transport
+### Writing a custom transport
 
 Implement a `write` method and optionally a `close` method for cleanup:
 
@@ -123,7 +123,7 @@ const log = new Logger({
 });
 ```
 
-## Error Handling
+## Error handling
 
 Logpilot handles transport errors internally so a logging failure never crashes your application. If a transport's `write` method throws, the error is emitted on the logger's `error` event:
 

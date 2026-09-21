@@ -12,7 +12,7 @@ If I walked in on day one with responsibility for all REO documentation, here's 
 
 ---
 
-## Week 1-2: Discover What You Actually Have
+## Week 1-2: Discover what you actually have
 
 **Goal:** Understand the landscape without judgment or changes.
 
@@ -43,7 +43,7 @@ I'd ask simple questions:
 
 ---
 
-## Week 3-4: Build a Master Inventory
+## Week 3-4: Build a master inventory
 
 **Goal:** Create a single source of truth about what documentation exists.
 
@@ -69,7 +69,7 @@ The spreadsheet becomes my north star. Every decision for the next 4 months refe
 
 ---
 
-## Week 5-6: Assess for Problems
+## Week 5-6: Assess for problems
 
 **Goal:** Understand quality, gaps, and risk systematically.
 
@@ -93,7 +93,7 @@ High-scoring documents are high-risk. The assessment tells me which procedures p
 
 ---
 
-## Week 7-8: Prioritize Based on Real Impact
+## Week 7-8: Prioritize based on real impact
 
 **Goal:** Focus on highest-impact work first; avoid trying to fix everything.
 
@@ -119,7 +119,7 @@ I'd present this prioritization to the Senior Facilities Manager with realistic 
 
 ---
 
-## Week 9-10: Standardize on a Single Template & Style
+## Week 9-10: Standardize on a single template & style
 
 **Goal:** Establish consistency so all future procedures follow the same model.
 
@@ -156,7 +156,7 @@ I'd define what every procedure must have:
 
 ---
 
-## Week 11-14: Rewrite High-Priority Procedures
+## Week 11-14: Rewrite high-priority procedures
 
 **Goal:** Fix the procedures that matter most, using the new template and standards.
 
@@ -184,7 +184,7 @@ If there's disagreement ("the document says X, but I do Y"), I ask: Is X wrong? 
 
 ---
 
-## Week 15: Validate with Field Teams
+## Week 15: Validate with field teams
 
 **Goal:** Make sure the procedures actually work for the people who use them.
 
@@ -208,7 +208,7 @@ I'd update based on feedback. Not every suggestion gets implemented (scope creep
 
 ---
 
-## Week 16: Establish Ownership & Review Cycles
+## Week 16: Establish ownership & review cycles
 
 **Goal:** Introduce version control, approvals, and defined ownership, so documentation is audit-ready, controlled, and consistently maintained. Support implementation with practical guidance, and establish ongoing review cycles so standards stay embedded in operations and current over time.
 
@@ -231,7 +231,7 @@ I'd make this visible. The owner's name goes on the document itself. The review 
 
 ---
 
-## Throughout: Handle Global vs. Local Variation
+## Throughout: Handle global vs. local variation
 
 **Goal:** Engage regions to align requirements, balancing global consistency with essential local considerations.
 
@@ -267,7 +267,7 @@ This way, I'm not pretending there's no variation. I'm making it explicit and ma
 
 ---
 
-## The Outcome
+## The outcome
 
 After about 4 months of this work:
 
@@ -284,7 +284,7 @@ The audit goes smoothly. Regional leaders have clarity on their procedures. Fiel
 
 ---
 
-## Why This Sequence Works
+## Why this sequence works
 
 Each step informs the next:
 
@@ -300,7 +300,7 @@ Each phase is short (1-2 weeks), focused, and produces concrete output.
 
 ---
 
-## Where AI Tooling Fits
+## Where AI tooling fits
 
 The 16-week timeline above assumes manual work throughout. In practice, I'd use AI coding and writing assistants (Claude Code, Codex-style agents) for the mechanical, high-volume parts of this work – not for the parts that depend on people.
 

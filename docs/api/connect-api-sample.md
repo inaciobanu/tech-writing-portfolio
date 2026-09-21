@@ -17,7 +17,7 @@ The **Connect API** allows distribution partners and institutional clients to in
 
 ---
 
-## Who Is This For?
+## Who is this for?
 
 This portal is for **software engineers** at partner organisations building integrations with the PrimaryBid platform. You should be comfortable with:
 
@@ -32,7 +32,7 @@ If you're a retail investor or internal PrimaryBid user, see the [User Guide](..
 
 ## Quickstart
 
-### 1. Get API Credentials
+### 1. Get API credentials
 
 Contact your PrimaryBid account manager to receive:
 
@@ -40,7 +40,7 @@ Contact your PrimaryBid account manager to receive:
 - `client_secret`
 - Your sandbox environment URL
 
-### 2. Obtain an Access Token
+### 2. Obtain an access token
 
 Connect uses **OAuth 2.0 Client Credentials** flow:
 
@@ -64,7 +64,7 @@ curl -X POST https://auth.primarybid.com/oauth/token \
 
 Tokens expire after **1 hour**. Implement token refresh before expiry to avoid request failures.
 
-### 3. Browse Live Offers
+### 3. Browse live offers
 
 ```bash
 curl https://connect.primarybid.com/api/v1/offers \
@@ -73,9 +73,9 @@ curl https://connect.primarybid.com/api/v1/offers \
 
 ---
 
-## Core Endpoints
+## Core endpoints
 
-### List Offers
+### List offers
 
 ```
 GET /offers
@@ -115,7 +115,7 @@ Returns all currently active IPO and follow-on offers available to your distribu
 
 ---
 
-### Submit an Indication of Interest
+### Submit an indication of interest
 
 ```
 POST /offers/{offer_id}/indications
@@ -145,7 +145,7 @@ Submits a retail investor's indication of interest for an active offer.
 
 ---
 
-## Webhook Events
+## Webhook events
 
 PrimaryBid fires webhook events for key lifecycle changes. Configure your endpoint in the Connect Dashboard under **Settings → Webhooks**.
 
@@ -174,7 +174,7 @@ PrimaryBid fires webhook events for key lifecycle changes. Configure your endpoi
 }
 ```
 
-### Verifying Webhook Signatures
+### Verifying webhook signatures
 
 Every webhook includes a `PrimaryBid-Signature` header. Verify it to ensure the payload is genuine:
 

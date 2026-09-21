@@ -8,7 +8,7 @@ description: "PayFlow API error response format and standard HTTP status codes."
 
 The PayFlow API uses standard HTTP status codes. When an error occurs, the response body includes an `error` object with details.
 
-## Error Response Format
+## Error response format
 
 ```json
 {
@@ -28,7 +28,7 @@ The PayFlow API uses standard HTTP status codes. When an error occurs, the respo
 | `param` | The request parameter that caused the error (if applicable) |
 | `doc_url` | Link to this documentation page |
 
-## HTTP Status Codes
+## HTTP status codes
 
 | Status | Meaning |
 |---|---|
@@ -42,9 +42,9 @@ The PayFlow API uses standard HTTP status codes. When an error occurs, the respo
 | `429 Too Many Requests` | Rate limit exceeded |
 | `500 Internal Server Error` | PayFlow server error |
 
-## Common Error Codes
+## Common error codes
 
-### Authentication Errors
+### Authentication errors
 
 | Code | Description |
 |---|---|
@@ -52,7 +52,7 @@ The PayFlow API uses standard HTTP status codes. When an error occurs, the respo
 | `api_key_expired` | The API key has expired – rotate it in the Dashboard |
 | `no_api_key` | No API key was provided in the request |
 
-### Payment Errors
+### Payment errors
 
 | Code | Description |
 |---|---|
@@ -62,7 +62,7 @@ The PayFlow API uses standard HTTP status codes. When an error occurs, the respo
 | `incorrect_cvc` | The CVC number is incorrect |
 | `processing_error` | An error occurred while processing the card |
 
-### Request Errors
+### Request errors
 
 | Code | Description |
 |---|---|
@@ -71,7 +71,7 @@ The PayFlow API uses standard HTTP status codes. When an error occurs, the respo
 | `resource_not_found` | The requested resource ID does not exist |
 | `idempotency_conflict` | A request with this idempotency key already exists with different parameters |
 
-## Handling Errors
+## Handling errors
 
 ```python
 import requests
