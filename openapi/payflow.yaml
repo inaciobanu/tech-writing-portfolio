@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
   title: PayFlow API
-  version: 2.4.0
+  version: 2.5.2
   description: >
     Use the PayFlow API to process payments, manage subscriptions, issue
     refunds, and retrieve transaction history programmatically.
@@ -60,13 +60,13 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Payment'
+                \$ref: '#/components/schemas/Payment'
         '402':
           description: Payment failed (card error).
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Error'
+                \$ref: '#/components/schemas/Error'
     get:
       operationId: listPayments
       tags: [Payments]
@@ -115,7 +115,7 @@ paths:
                   data:
                     type: array
                     items:
-                      $ref: '#/components/schemas/Payment'
+                      \$ref: '#/components/schemas/Payment'
 
   /payments/{id}:
     get:
@@ -137,13 +137,13 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Payment'
+                \$ref: '#/components/schemas/Payment'
         '404':
           description: Payment not found.
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Error'
+                \$ref: '#/components/schemas/Error'
 
   /refunds:
     post:
@@ -220,7 +220,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Customer'
+                \$ref: '#/components/schemas/Customer'
     get:
       operationId: listCustomers
       tags: [Customers]
@@ -252,7 +252,7 @@ paths:
                   data:
                     type: array
                     items:
-                      $ref: '#/components/schemas/Customer'
+                      \$ref: '#/components/schemas/Customer'
 
 components:
   securitySchemes:
@@ -283,19 +283,9 @@ components:
         currency:
           type: string
           example: gbp
-        customer_id:
-          type: string
-          example: cus_9KZFXWr
-        description:
-          type: string
-          example: "Pro plan - March 2026"
         created:
           type: string
           format: date-time
-          example: "2026-03-18T09:00:00Z"
-        metadata:
-          type: object
-          additionalProperties: true
     Customer:
       type: object
       properties:
@@ -304,28 +294,16 @@ components:
           example: cus_9KZFXWr
         email:
           type: string
-          example: dev@example.com
+          example: inatechwriter@gmail.com
         name:
           type: string
-          example: Jane Doe
-        created:
-          type: string
-          format: date-time
+          example: Ina Banu
     Error:
       type: object
       properties:
         error:
-          type: object
-          properties:
-            code:
-              type: string
-              example: card_declined
-            message:
-              type: string
-              example: Your card was declined.
-            param:
-              type: string
-              example: payment_method
-            doc_url:
-              type: string
-              example: https://docs.payflow.io/errors#card_declined
+          type: string
+          example: bad_request
+        message:
+          type: string
+          example: Missing required parameters.

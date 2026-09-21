@@ -4,6 +4,8 @@ A Docusaurus-powered technical writing portfolio showcasing API documentation, d
 
 **🌐 Live site:** [inaciobanu.github.io/tech-writing-portfolio](https://inaciobanu.github.io/tech-writing-portfolio)
 
+[![Deploy](https://github.com/inaciobanu/tech-writing-portfolio/actions/workflows/deploy.yml/badge.svg)](https://github.com/inaciobanu/tech-writing-portfolio/actions/workflows/deploy.yml) [![PR Preview](https://github.com/inaciobanu/tech-writing-portfolio/actions/workflows/pr-preview.yml/badge.svg)](https://github.com/inaciobanu/tech-writing-portfolio/actions/workflows/pr-preview.yml) [![Lint](https://github.com/inaciobanu/tech-writing-portfolio/actions/workflows/lint.yml/badge.svg)](https://github.com/inaciobanu/tech-writing-portfolio/actions/workflows/lint.yml)
+
 ---
 
 ## Portfolio Contents
@@ -101,8 +103,6 @@ The site is published by GitHub Actions – GitHub Pages must be set to deploy f
 - **`pr-preview.yml`** – runs on every pull request, builds it with a `previews/pr-<n>/` base URL, and posts the preview link as a PR comment. Preview builds are stored on the `gh-pages` branch, which `deploy.yml` folds into the live site. When the PR closes, the preview is removed and the site is republished.
 - **`lint.yml`** – runs Vale on every push and pull request.
 
-Don't use `npm run deploy` – it pushes a build straight to the `gh-pages` branch, which isn't how the site is published and would overwrite the stored previews.
-
 ---
 
 ## Project Structure
@@ -142,21 +142,11 @@ tech-writing-portfolio/
 
 ---
 
-## Customising This Portfolio
-
-### Update your details
-
-1. **`docusaurus.config.js`** – update your name, GitHub username, LinkedIn URL, and email
-2. **`src/pages/index.js`** – update the homepage bio and skills
-3. **`docs/`** – replace sample content with your own writing
-
-The `docs/guides/code-in-docs.md` page is a reusable reference for teams defining how code examples should be written, reviewed, tested, and maintained.
-
-### Add a new section
+## Adding a New Section
 
 1. Create a folder under `docs/` (e.g. `docs/tutorials/`)
-2. Add your `.md` files with front matter (`id`, `title`)
-3. Add a new sidebar entry in `sidebars.js`
+2. Add `.md` files with front matter (`id`, `title`)
+3. Add a sidebar entry in `sidebars.js`
 4. Add a nav link in `docusaurus.config.js` under `navbar.items`
 
 ---
