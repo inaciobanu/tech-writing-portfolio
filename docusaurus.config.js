@@ -102,7 +102,21 @@ const config = {
   // Keep search engines away from preview builds.
   headTags: isPR ? [{ tagName: 'meta', attributes: { name: 'robots', content: 'noindex, nofollow' } }] : [],
 
-  themes: ['docusaurus-theme-openapi-docs', '@docusaurus/theme-mermaid'],
+  themes: [
+    'docusaurus-theme-openapi-docs',
+    '@docusaurus/theme-mermaid',
+    [
+      // Offline full-text search, built into the static bundle at build
+      // time, so it works on GitHub Pages with no external service.
+      '@easyops-cn/docusaurus-search-local',
+      {
+        hashed: true,
+        indexBlog: false,
+        docsRouteBasePath: '/docs',
+        highlightSearchTermsOnTargetPage: true,
+      },
+    ],
+  ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
