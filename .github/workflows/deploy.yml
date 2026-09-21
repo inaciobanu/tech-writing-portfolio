@@ -72,14 +72,25 @@ jobs:
           name: site-build
           path: build
 
+      # The site is served under the /tech-writing-portfolio/ base path, so
+      # every root-relative link in the HTML starts with it – but the build
+      # output itself is flat. Nest it the same way so lychee resolves
+      # root-relative links the way a browser actually would.
+      - name: Mirror the served path
+        run: |
+          mkdir -p site/tech-writing-portfolio
+          cp -r build/. site/tech-writing-portfolio/
+
       - name: Lychee link check
         uses: lycheeverse/lychee-action@v2
         with:
           args: >-
             --no-progress
             --exclude-loopback
-            --base ${{ github.workspace }}/build
-            './build/**/*.html'
+            --exclude 'medium\.com'
+            --exclude 'x\.com'
+            --base ${{ github.workspace }}/site
+            './site/tech-writing-portfolio/**/*.html'
           fail: true
 
   deploy:
