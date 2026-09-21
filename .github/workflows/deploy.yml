@@ -56,6 +56,32 @@ jobs:
         with:
           path: build
 
+      - name: Upload build for link check
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-build
+          path: build
+
+  linkcheck:
+    name: Check external links
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: site-build
+          path: build
+
+      - name: Lychee link check
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --no-progress
+            --exclude-loopback
+            --base build
+            './build/**/*.html'
+          fail: true
+
   deploy:
     name: Deploy
     needs: build
