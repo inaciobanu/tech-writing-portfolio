@@ -89,7 +89,8 @@ jobs:
             --exclude-loopback
             --exclude 'medium\.com'
             --exclude 'x\.com'
-            --base ${{ github.workspace }}/site
+            --root-dir ${{ github.workspace }}/site
+            --fallback-extensions html
             './site/tech-writing-portfolio/**/*.html'
           fail: true
 
