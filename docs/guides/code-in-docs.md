@@ -671,7 +671,7 @@ This guide is an original house style informed by established documentation and 
 
 - [Google developer documentation style: Code in text](https://developers.google.com/style/code-in-text)
 - [Google developer documentation style: Code syntax](https://developers.google.com/style/code-syntax)
-- [Microsoft Writing Style Guide: Code comments](https://learn.microsoft.com/en-us/style-guide/code-comments)
+- [Microsoft Writing Style Guide: Code examples](https://learn.microsoft.com/en-us/style-guide/developer-content/code-examples)
 - [Python Enhancement Proposal 8](https://peps.python.org/pep-0008/)
 - [The Rust Programming Language](https://doc.rust-lang.org/book/)
 - [Effective Go](https://go.dev/doc/effective_go)
