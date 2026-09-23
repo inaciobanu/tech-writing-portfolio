@@ -27,7 +27,6 @@ The PayFlow API uses standard HTTP status codes. When an error occurs, the respo
 | Status | Meaning |
 |---|---|
 | `200 OK` | Request succeeded |
-| `201 Created` | Resource created successfully |
 | `400 Bad Request` | Invalid parameters |
 | `401 Unauthorized` | Missing or invalid API key |
 | `402 Payment Required` | Payment failed (card error) |
@@ -94,7 +93,7 @@ See [Create a payment](./reference/create-payment)'s 409 response.
 | `rate_limited` | Too many requests sent within the current window | Slow down and honor the `Retry-After` header |
 | `server_error` | An unexpected failure on PayFlow's side | Retry; contact support if it persists |
 
-Returned by every endpoint. See [Rate Limits](./rate-limits) for `rate_limited`; `server_error` isn't caused by anything in the request – retry is always safe.
+Returned by every endpoint. See [Rate Limits](./rate-limits) for `rate_limited`; `server_error` isn't caused by anything in the request. Retrying won't fail again for that reason, but on a write (`createPayment`, `createRefund`, `createCustomer`) a retry without an `Idempotency-Key` risks a duplicate if the original request actually succeeded server-side despite returning `500` – always send one on writes so a retry replays the original response instead.
 
 ## Handling errors
 
