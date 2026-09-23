@@ -28,7 +28,7 @@ This isn't just written content – the repo enforces it:
 - **Prose linting in CI** ([`vale`](https://vale.sh/)) – every hand-written page is checked on every push and pull request against the Google and Microsoft developer documentation style guides plus a house style in `.vale/styles/Portfolio/` – a rule that enforces the site's spaced en dash and one that bans aspirational self-description. Gated on `error`-level findings; `.vale.ini` documents what's deliberately excluded and why
 - **Broken-link CI gate** – `onBrokenLinks` and `onBrokenMarkdownLinks` are set to `throw`, not `warn`, so a dangling internal link fails the build instead of shipping silently. A separate [`lychee`](https://github.com/lycheeverse/lychee) job in `deploy.yml` re-checks every external link on the built site on each push, catching links that rot after the fact; it excludes the fictional product domains used in the case studies (PayFlow, Logpilot), which never resolve
 - **PR preview deployments** – every pull request publishes its own rendered copy of the site under `previews/pr-<n>/` and posts the link as a PR comment, so reviewers see built pages rather than a Markdown diff; the preview is removed when the PR closes
-- **Spec-driven API reference** – `openapi/payflow.yaml` generates the entire API endpoint reference via `docusaurus-plugin-openapi-docs`; the spec is the source of truth, not the rendered page
+- **Spec-driven API reference** – `openapi/payflow.yaml` generates the entire API endpoint reference via `docusaurus-plugin-openapi-docs`; the spec is the source of truth, not the rendered page. The sidebar is generated from the same output, so a new endpoint can't end up as an orphaned page nothing links to
 - **Git-based freshness** – every doc page shows a "last updated" date pulled straight from git history, not a manually maintained timestamp
 - **Code example maintenance** – the Code in Docs guide defines language labels, copy-safe samples, verification status, ownership, review triggers, audits, and reader feedback loops
 - **Agent-facing export** – `docusaurus-plugin-llms` runs in the same build and writes `/llms.txt`, `/llms-full.txt`, and a raw Markdown file per page, so an LLM reading this site gets the same source the Vale gate checks, not a separate export
@@ -67,13 +67,13 @@ The site will open at `http://localhost:3000`.
 
 ### Regenerating the API reference
 
-After editing `openapi/payflow.yaml`:
+`npm start` and `npm run build` regenerate `docs/api/reference/` from `openapi/payflow.yaml` automatically before every run, via npm's `prestart`/`prebuild` hooks – there's nothing to run by hand after editing the spec. The **API Reference** sidebar entries are derived from that same generated output at build time (see `sidebars.js` and `scripts/build-api-sidebar.js`), so adding or removing an endpoint can't leave the sidebar out of sync.
+
+To just regenerate without starting the dev server or a full build:
 
 ```bash
 npm run gen-api-docs
 ```
-
-This regenerates `docs/api/reference/`. The sidebar entries for it are hand-maintained in `sidebars.js` – keep them in sync with the plugin's output if you add or remove endpoints.
 
 ### Regenerating the favicon and social preview image
 
@@ -130,7 +130,9 @@ tech-writing-portfolio/
 ├── openapi/
 │   └── payflow.yaml             # OpenAPI spec – source of truth for docs/api/reference/
 ├── scripts/
-│   └── generate-social-images.js # Renders favicon/og-image PNGs from SVG sources
+│   ├── generate-social-images.js # Renders favicon/og-image PNGs from SVG sources
+│   ├── clean-api-reference.js   # Wipes docs/api/reference/ before each regeneration
+│   └── build-api-sidebar.js     # Converts the plugin's generated sidebar.ts into a requirable sidebar.generated.js
 ├── assets/social/                # Editable SVG sources for the favicon and social preview image
 ├── .vale.ini                    # Vale config: styles, vocab, rule exclusions
 ├── .vale/styles/
