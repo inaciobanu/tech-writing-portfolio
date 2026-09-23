@@ -69,7 +69,7 @@ The site will open at `http://localhost:3000`.
 
 `npm start` and `npm run build` regenerate `docs/api/reference/` from `openapi/payflow.yaml` automatically before every run, via npm's `prestart`/`prebuild` hooks – there's nothing to run by hand after editing the spec. The **API Reference** sidebar entries are derived from that same generated output at build time (see `sidebars.js` and `scripts/build-api-sidebar.js`), so adding or removing an endpoint can't leave the sidebar out of sync.
 
-To just regenerate without starting the dev server or a full build:
+To just regenerate without starting the development server or a full build:
 
 ```bash
 npm run gen-api-docs
