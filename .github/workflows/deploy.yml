@@ -91,6 +91,7 @@ jobs:
             --exclude 'payflow\.io'
             --exclude 'github\.com/logpilot/logpilot'
             --exclude 'npmjs\.com/package/logpilot'
+            --exclude 'linkedin\.com/in/inaciobanu/details/honors'
             --root-dir ${{ github.workspace }}/site
             --fallback-extensions html
             './site/tech-writing-portfolio/**/*.html'
