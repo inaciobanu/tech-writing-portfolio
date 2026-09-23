@@ -14,7 +14,7 @@ I wrote this one the way I'd ideally do it: sit with the engineer who actually r
 **Last reviewed:** 2026-06-15 · **Next review due:** 2026-09-15
 **Status:** Active
 
-This follows the standard procedure template from the [Ownership and review model](./governance) – Purpose, Scope, Owner, Last Reviewed, Prerequisites, Procedure, Rollback, Related pages, in that order. Same layout on every runbook means readers don't have to relearn the page structure when switching to a different one.
+This follows the standard procedure template from the [Ownership and review model](./governance) – Owner, Last Reviewed, Purpose, Scope, Prerequisites, Procedure, Rollback, Related pages, in that order. Same layout on every runbook means readers don't have to relearn the page structure when switching to a different one.
 
 ## Purpose
 

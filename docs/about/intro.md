@@ -95,11 +95,8 @@ These are the principles I apply to every project – not as a checklist, but as
 
 ## Awards
 
-- 🏆 **UK Enterprise Awards 2020** – Best Specialist eCommerce SEO Service
-- 🏆 **Greater London Enterprise Awards 2020** – Best Specialised eCommerce Copywriting & SEO Service of the Year
-- 🏆 Most Outstanding Specialist eCommerce SEO Service
-- 🏆 Best Specialist eCommerce SEO Optimization Service Provider
-- 📸 Sixth Overall Winner – Ealing Wildlife Group Annual Photo Competition
+- 🏆 Recognized with 7 industry awards for copywriting and content strategy at SEOzon Prime, 2020–2022 (full list on [LinkedIn](https://www.linkedin.com/in/inaciobanu/details/honors/))
+- 📸 Sixth Overall Winner – Ealing Wildlife Group Annual Photo Competition, Oct 2020
 
 ---
 
