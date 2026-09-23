@@ -6,27 +6,21 @@ description: "PayFlow API error response format and standard HTTP status codes."
 
 # Error Codes
 
-The PayFlow API uses standard HTTP status codes. When an error occurs, the response body includes an `error` object with details.
+The PayFlow API uses standard HTTP status codes. When an error occurs, the response body includes `error` and `message` fields.
 
 ## Error response format
 
 ```json
 {
-  "error": {
-    "code": "card_declined",
-    "message": "Your card was declined.",
-    "param": "payment_method",
-    "doc_url": "https://docs.payflow.io/errors#card_declined"
-  }
+  "error": "card_declined",
+  "message": "The card was declined by the issuing bank."
 }
 ```
 
 | Field | Description |
 |---|---|
-| `code` | Machine-readable error identifier |
+| `error` | Machine-readable error code |
 | `message` | Human-readable explanation |
-| `param` | The request parameter that caused the error (if applicable) |
-| `doc_url` | Link to this documentation page |
 
 ## HTTP status codes
 
@@ -44,15 +38,28 @@ The PayFlow API uses standard HTTP status codes. When an error occurs, the respo
 
 ## Common error codes
 
-### Authentication errors
+Each table below covers one HTTP status. For the full Cause/Fix/Retry guidance behind each code, see the linked [API Reference](./reference/payflow-api) page – it's generated straight from the OpenAPI spec, so it can't drift from what the API actually returns.
+
+### 401 – Authentication errors
 
 | Code | Description |
 |---|---|
+| `no_api_key` | No API key was provided in the request |
 | `invalid_api_key` | The API key provided is not valid |
 | `api_key_expired` | The API key has expired – rotate it in the Dashboard |
-| `no_api_key` | No API key was provided in the request |
 
-### Payment errors
+Returned by every endpoint. See [Authentication](./authentication) for how to send your key, or any [reference](./reference/payflow-api) page's 401 response for the full detail.
+
+### 400 – Request errors
+
+| Code | Description |
+|---|---|
+| `missing_param` | A required parameter was not provided |
+| `invalid_param` | A parameter value is invalid |
+
+See [Create a payment](./reference/create-payment)'s 400 response.
+
+### 402 – Payment errors
 
 | Code | Description |
 |---|---|
@@ -62,14 +69,32 @@ The PayFlow API uses standard HTTP status codes. When an error occurs, the respo
 | `incorrect_cvc` | The CVC number is incorrect |
 | `processing_error` | An error occurred while processing the card |
 
-### Request errors
+See [Create a payment](./reference/create-payment)'s 402 response, including the sandbox `customer_id` prefixes that trigger each case.
+
+### 404 – Not found
 
 | Code | Description |
 |---|---|
-| `missing_param` | A required parameter was not provided |
-| `invalid_param` | A parameter value is invalid |
 | `resource_not_found` | The requested resource ID does not exist |
-| `idempotency_conflict` | A request with this idempotency key already exists with different parameters |
+
+See [Retrieve a payment](./reference/retrieve-payment)'s 404 response.
+
+### 409 – Idempotency conflict
+
+| Code | Description |
+|---|---|
+| `idempotency_conflict` | A request reused an `Idempotency-Key` with a different request body |
+
+See [Create a payment](./reference/create-payment)'s 409 response.
+
+### 429 and 500 – Rate limits and server errors
+
+| Code | Description |
+|---|---|
+| `rate_limited` | Too many requests sent within the current window |
+| `server_error` | An unexpected failure on PayFlow's side |
+
+Returned by every endpoint. See [Rate Limits](./rate-limits) for `rate_limited`; `server_error` isn't caused by anything in the request – retry is always safe.
 
 ## Handling errors
 
@@ -86,6 +111,6 @@ try:
     payment = response.json()
 
 except requests.exceptions.HTTPError as e:
-    error = e.response.json().get("error", {})
-    print(f"Error {e.response.status_code}: {error.get('code')} – {error.get('message')}")
+    body = e.response.json()
+    print(f"Error {e.response.status_code}: {body['error']} – {body['message']}")
 ```

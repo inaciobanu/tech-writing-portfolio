@@ -65,11 +65,8 @@ If authentication fails, the API returns a `401 Unauthorized` response:
 
 ```json
 {
-  "error": {
-    "code": "invalid_api_key",
-    "message": "No valid API key provided.",
-    "doc_url": "https://docs.payflow.io/errors#invalid_api_key"
-  }
+  "error": "invalid_api_key",
+  "message": "The API key provided is not valid."
 }
 ```
 
