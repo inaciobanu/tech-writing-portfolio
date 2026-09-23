@@ -1,3 +1,22 @@
+// Derived from openapi/payflow.yaml by `npm run gen-api-docs` (see
+// scripts/build-api-sidebar.js), so a new endpoint in the spec can't end up
+// orphaned — unlinked from the sidebar — the way a hand-maintained list
+// could. Runs automatically before `start`/`build` (see package.json
+// "prestart"/"prebuild"); run `npm run gen-api-docs` manually first if
+// requiring it below fails.
+let apiReferenceItems;
+try {
+  apiReferenceItems = require('./docs/api/reference/sidebar.generated.js').filter(
+    (item) => item.type === 'category'
+  );
+} catch (err) {
+  throw new Error(
+    'docs/api/reference/sidebar.generated.js is missing or unreadable. Run ' +
+      '`npm run gen-api-docs` to generate the API reference pages and sidebar ' +
+      `from openapi/payflow.yaml before building. (${err.message})`
+  );
+}
+
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   aboutSidebar: [
@@ -23,29 +42,7 @@ const sidebars = {
           type: 'category',
           label: 'API Reference',
           link: { type: 'doc', id: 'api/reference/payflow-api' },
-          // Generated from openapi/payflow.yaml – run `npm run gen-api-docs`
-          // after editing the spec, then keep this list in sync with the
-          // output of docs/api/reference/sidebar.ts.
-          items: [
-            {
-              type: 'category',
-              label: 'Payments',
-              items: [
-                { type: 'doc', id: 'api/reference/create-payment', label: 'Create a payment', className: 'api-method post' },
-                { type: 'doc', id: 'api/reference/list-payments', label: 'List payments', className: 'api-method get' },
-                { type: 'doc', id: 'api/reference/retrieve-payment', label: 'Retrieve a payment', className: 'api-method get' },
-                { type: 'doc', id: 'api/reference/create-refund', label: 'Create a refund', className: 'api-method post' },
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Customers',
-              items: [
-                { type: 'doc', id: 'api/reference/create-customer', label: 'Create a customer', className: 'api-method post' },
-                { type: 'doc', id: 'api/reference/list-customers', label: 'List customers', className: 'api-method get' },
-              ],
-            },
-          ],
+          items: apiReferenceItems,
         },
         'api/errors',
         'api/rate-limits',

@@ -27,3 +27,8 @@ yarn-error.log*
 # Vale synced style packages (third-party, fetched via `vale sync`)
 .vale/styles/Google/
 .vale/styles/Microsoft/
+
+# API sidebar, regenerated from openapi/payflow.yaml by `npm run gen-api-docs`
+# (see scripts/build-api-sidebar.js) — never committed, always fresh.
+docs/api/reference/sidebar.ts
+docs/api/reference/sidebar.generated.js

@@ -32,11 +32,10 @@ jobs:
         run: npm ci
 
       - name: Build site
-        run: |
-          npm install
-          rm -rf docs/api/reference          # 🧹 Force-wipes the old cached reference folder!
-          npm run gen-api-docs               # 🔌 Generates pristine markdown files from the synced spec
-          npm run build
+        # `npm run build` regenerates docs/api/reference (and its sidebar)
+        # fresh from openapi/payflow.yaml via the prebuild hook — see
+        # package.json and scripts/clean-api-reference.js.
+        run: npm run build
 
       # PR previews are stored on the gh-pages branch under previews/pr-<n>/
       # by the pr-preview workflow. GitHub Pages only serves what this
