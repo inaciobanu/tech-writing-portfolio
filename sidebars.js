@@ -1,6 +1,6 @@
 // Derived from openapi/payflow.yaml by `npm run gen-api-docs` (see
 // scripts/build-api-sidebar.js), so a new endpoint in the spec can't end up
-// orphaned — unlinked from the sidebar — the way a hand-maintained list
+// orphaned (unlinked from the sidebar) the way a hand-maintained list
 // could. Runs automatically before `start`/`build` (see package.json
 // "prestart"/"prebuild"); run `npm run gen-api-docs` manually first if
 // requiring it below fails.

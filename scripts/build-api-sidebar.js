@@ -20,7 +20,7 @@ const src = fs.readFileSync(SRC, 'utf8');
 if (!src.includes(IMPORT_LINE) || !src.includes(TYPE_ANNOTATION) || !src.includes(EXPORT_LINE)) {
   throw new Error(
     `${SRC} doesn't match the docusaurus-plugin-openapi-docs template this script expects. ` +
-      'The plugin format may have changed — update scripts/build-api-sidebar.js.'
+      'The plugin format may have changed; update scripts/build-api-sidebar.js.'
   );
 }
 

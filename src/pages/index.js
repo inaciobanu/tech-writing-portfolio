@@ -239,7 +239,6 @@ function HomepageHero() {
 export default function Home() {
   return (
     <Layout
-      title="Ina Ciobanu · Senior Technical Writer Portfolio"
       description="Senior technical writer specialising in API docs, developer portals, and AI/data platform documentation. KX · PrimaryBid · London, open to remote."
     >
       <Head>
