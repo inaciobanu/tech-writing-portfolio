@@ -141,7 +141,7 @@ const thinkingItems = [
   {
     problem: "Complex AI/data platform with no existing documentation ecosystem",
     action: "Built documentation architecture for KDB.AI and PyKX from first principles – collaborating directly with engineers and data scientists to capture accurate, user-focused content",
-    result: "Developer resources that empower quants and engineers to self-serve advanced platform capabilities",
+    result: "Quants and engineers can self-serve setup, queries, and troubleshooting without asking the team directly",
     company: "KX",
   },
   {
