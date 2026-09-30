@@ -103,7 +103,7 @@ import requests
 try:
     response = requests.post(
         "https://api.payflow.io/v2/payments",
-        headers={"Authorization": "Bearer sk_live_abc123"},
+        headers={"Authorization": "Bearer YOUR_TEST_KEY"},
         json={"amount": 2500, "currency": "gbp", "customer_id": "cus_9KZFXWr"}
     )
     response.raise_for_status()

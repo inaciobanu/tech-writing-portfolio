@@ -27,7 +27,7 @@ Include your API key as a Bearer token in every request:
 
 ```bash
 curl https://api.payflow.io/v2/payments \
-  -H "Authorization: Bearer sk_live_abc123" \
+  -H "Authorization: Bearer YOUR_TEST_KEY" \
   -H "Content-Type: application/json"
 ```
 
@@ -37,7 +37,7 @@ Store your API key in an environment variable rather than hardcoding it:
 
 ```bash
 # .env file (never commit this to version control)
-PAYFLOW_SECRET_KEY=sk_live_abc123
+PAYFLOW_SECRET_KEY=YOUR_TEST_KEY
 ```
 
 ```python
