@@ -600,10 +600,10 @@ Use a small set of priorities so the response matches the harm:
 
 | Priority | Example | First action |
 |---|---|---|
-| Urgent | The sample exposes a secret, deletes data, or gives unsafe security advice | Remove or correct it immediately; notify the security or product owner |
-| High | The documented path cannot work for a supported version or blocks a common task | Assign an owner and publish a correction as soon as possible |
-| Normal | The sample works but is unclear, incomplete, or out of date | Add it to the next maintenance cycle |
-| Low | Formatting, naming, or discoverability issue | Fix during the next related edit |
+| Urgent | The sample exposes a secret, deletes data, or gives unsafe security advice. | Remove or correct it immediately, and notify the security or product owner. |
+| High | The documented path cannot work for a supported version or blocks a common task. | Assign an owner and publish a correction as soon as possible. |
+| Normal | The sample works but is unclear, incomplete, or out of date. | Add it to the next maintenance cycle. |
+| Low | The problem is formatting, naming, or discoverability. | Fix it during the next related edit. |
 
 The person triaging the report does not need to be the person who fixes it. They do need to assign an owner, record the status, and tell the reporter what will happen next.
 

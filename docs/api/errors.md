@@ -1,7 +1,7 @@
 ---
 id: errors
 title: Error Codes
-description: "PayFlow API error response format and standard HTTP status codes."
+description: "Understand and fix PayFlow API errors: response format, status codes, and what to do about each one."
 ---
 
 # Error Codes
@@ -37,15 +37,15 @@ The PayFlow API uses standard HTTP status codes. When an error occurs, the respo
 
 ## Common error codes
 
-Each table below covers one HTTP status. For the full Cause/Fix/Retry guidance behind each code, see the linked [API Reference](./reference/payflow-api) page – it's generated straight from the OpenAPI spec, so it can't drift from what the API actually returns.
+Each table below covers one HTTP status. For the full Cause/Fix/Retry guidance behind each code, see the linked [API Reference](./reference/payflow-api) page.
 
 ### 401 – Authentication errors
 
 | Code | Description | Quick fix |
 |---|---|---|
-| `no_api_key` | No API key was provided in the request | Send an `Authorization: Bearer <key>` header |
-| `invalid_api_key` | The API key provided is not valid | Check the key is correct for this environment (live vs. test) |
-| `api_key_expired` | The API key has expired | Rotate it in the Dashboard |
+| `no_api_key` | No API key was provided in the request. | Send an `Authorization: Bearer <key>` header. |
+| `invalid_api_key` | The API key provided is not valid. | Check the key is correct for this environment (live vs. test). |
+| `api_key_expired` | The API key has expired. | Rotate it in the Dashboard. |
 
 Returned by every endpoint. See [Authentication](./authentication) for how to send your key, or any [reference](./reference/payflow-api) page's 401 response for the full detail.
 
@@ -53,8 +53,8 @@ Returned by every endpoint. See [Authentication](./authentication) for how to se
 
 | Code | Description | Quick fix |
 |---|---|---|
-| `missing_param` | A required parameter was not provided | Add the missing field and resend |
-| `invalid_param` | A parameter value is invalid | Correct the field value and resend |
+| `missing_param` | A required parameter was not provided. | Add the missing field and resend. |
+| `invalid_param` | A parameter value is invalid. | Correct the field value and resend. |
 
 See [Create a payment](./reference/create-payment)'s 400 response.
 
@@ -62,11 +62,11 @@ See [Create a payment](./reference/create-payment)'s 400 response.
 
 | Code | Description | Quick fix |
 |---|---|---|
-| `card_declined` | The card was declined by the issuing bank | Ask the customer to use a different payment method or contact their issuer |
-| `insufficient_funds` | The card has insufficient funds | Ask the customer to use a different payment method |
-| `expired_card` | The card expiry date has passed | Ask the customer to use a different card |
-| `incorrect_cvc` | The CVC number is incorrect | Ask the customer to re-enter their card details |
-| `processing_error` | An error occurred while processing the card | Retry – often transient |
+| `card_declined` | The card was declined by the issuing bank. | Ask the customer to use a different payment method or contact their issuer. |
+| `insufficient_funds` | The card has insufficient funds. | Ask the customer to use a different payment method. |
+| `expired_card` | The card expiry date has passed. | Ask the customer to use a different card. |
+| `incorrect_cvc` | The CVC number is incorrect. | Ask the customer to re-enter their card details. |
+| `processing_error` | An error occurred while processing the card. | Retry. It's often transient. |
 
 See [Create a payment](./reference/create-payment)'s 402 response, including the sandbox `customer_id` prefixes that trigger each case.
 
@@ -74,7 +74,7 @@ See [Create a payment](./reference/create-payment)'s 402 response, including the
 
 | Code | Description | Quick fix |
 |---|---|---|
-| `resource_not_found` | The requested resource ID does not exist | Check the ID and that you're using the right API key/environment |
+| `resource_not_found` | The requested resource ID does not exist. | Check the ID and that you're using the right API key/environment. |
 
 See [Retrieve a payment](./reference/retrieve-payment)'s 404 response.
 
@@ -82,7 +82,7 @@ See [Retrieve a payment](./reference/retrieve-payment)'s 404 response.
 
 | Code | Description | Quick fix |
 |---|---|---|
-| `idempotency_conflict` | A request reused an `Idempotency-Key` with a different request body | Use a new key for a different request, or resend the original body to replay it |
+| `idempotency_conflict` | A request reused an `Idempotency-Key` with a different request body. | Use a new key for a different request, or resend the original body to replay it. |
 
 See [Create a payment](./reference/create-payment)'s 409 response.
 
@@ -90,8 +90,8 @@ See [Create a payment](./reference/create-payment)'s 409 response.
 
 | Code | Description | Quick fix |
 |---|---|---|
-| `rate_limited` | Too many requests sent within the current window | Slow down and honor the `Retry-After` header |
-| `server_error` | An unexpected failure on PayFlow's side | Retry; contact support if it persists |
+| `rate_limited` | Too many requests were sent within the current window. | Slow down and honor the `Retry-After` header. |
+| `server_error` | An unexpected failure occurred on PayFlow's side. | Retry, and contact support if it persists. |
 
 Returned by every endpoint. See [Rate Limits](./rate-limits) for `rate_limited`; `server_error` isn't caused by anything in the request. Retrying won't fail again for that reason, but on a write (`createPayment`, `createRefund`, `createCustomer`) a retry without an `Idempotency-Key` risks a duplicate if the original request actually succeeded server-side despite returning `500` – always send one on writes so a retry replays the original response instead.
 

@@ -23,9 +23,9 @@ Welcome to the PayFlow Dashboard. This manual covers everything you need to mana
 
 | Section | Description |
 |---|---|
-| [Getting Started](./getting-started) | Create your account and make your first test payment |
-| [Dashboard Overview](./dashboard) | A guided tour of every section |
-| [Troubleshooting](./troubleshooting) | Fix common issues |
+| [Getting Started](./getting-started) | Create your account and make your first test payment. |
+| [Dashboard Overview](./dashboard) | Take a guided tour of every section. |
+| [Troubleshooting](./troubleshooting) | Fix common issues. |
 
 ## Getting help
 

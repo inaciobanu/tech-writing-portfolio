@@ -63,9 +63,9 @@ Reports can be filtered by date range and payment status.
 
 | Setting | Description |
 |---|---|
-| **Business Profile** | Your company details and verification documents |
-| **API Keys** | View, create, and rotate your API keys |
-| **Webhooks** | Configure event notification endpoints |
-| **Team** | Invite team members and set their permissions |
-| **Notifications** | Choose which email alerts you receive |
-| **Branding** | Customise the payment page with your logo and colours |
+| **Business Profile** | Update your company details and verification documents. |
+| **API Keys** | View, create, and rotate your API keys. |
+| **Webhooks** | Configure event notification endpoints. |
+| **Team** | Invite team members and set their permissions. |
+| **Notifications** | Choose which email alerts you receive. |
+| **Branding** | Customise the payment page with your logo and colours. |
