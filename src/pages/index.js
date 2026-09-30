@@ -163,6 +163,7 @@ const approachItems = [
 
 const techEnv = [
   { cat: "Docs-as-code", tools: "Markdown · MDX · Git / GitHub / GitLab · VS Code · MkDocs · Docusaurus" },
+  { cat: "CI/CD & tooling", tools: "GitHub Actions · Vale · lychee · Docker" },
   { cat: "API tooling", tools: "OpenAPI / Swagger · Postman · REST · JSON · XML · readme.io" },
   { cat: "Dev environment", tools: "HTML · CSS · JavaScript · Python basics · CLI tools" },
   { cat: "Collaboration", tools: "Confluence · JIRA · Kanban · LucidChart · Figma · Monday.com" },

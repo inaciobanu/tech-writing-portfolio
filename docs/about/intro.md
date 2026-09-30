@@ -47,7 +47,7 @@ I work docs-as-code by default: Markdown, Git, pull requests, and CI/CD pipeline
 | Category | Tools & Platforms |
 |---|---|
 | **Docs-as-code** | Markdown · MDX · Git / GitHub / GitLab · VS Code · MkDocs · Docusaurus |
-| **CI/CD & tooling** | GitHub Actions · Docker · Vale |
+| **CI/CD & tooling** | GitHub Actions · Vale · lychee · Docker |
 | **API tooling** | OpenAPI / Swagger · Postman · REST · JSON · XML · readme.io |
 | **Dev skills** | HTML · CSS · JavaScript · Python basics |
 | **AI/data platforms** | KDB.AI · PyKX · kdb+ · vector databases · time-series data |
