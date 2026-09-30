@@ -20,7 +20,7 @@ You have two types of API keys:
 The two aren't interchangeable. Using a test key where a live key is expected, or the reverse, returns `invalid_api_key`.
 
 :::warning Keep your keys secret
-Never expose API keys in client-side code, public repositories, or logs. Call PayFlow from your backend, not from a browser or mobile app. If a key is compromised, [rotate it](#rotating-api-keys) immediately.
+Never expose API keys in client-side code, public repositories, or logs. Call PayFlow from your server, not from a browser or mobile app. If a key is compromised, [rotate it](#rotating-api-keys) immediately.
 :::
 
 ## Get your API keys
