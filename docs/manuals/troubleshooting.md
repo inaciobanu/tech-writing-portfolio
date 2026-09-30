@@ -30,9 +30,9 @@ If you still can't find the payment, contact support with the customer's name an
 
 If the payment status is **Authorised** (not yet captured):
 
-1. Open the payment
-2. Select **Cancel Authorisation**
-3. Confirm the cancellation
+1. Open the payment.
+2. Select **Cancel Authorisation**.
+3. Confirm the cancellation.
 
 The held amount is released to the customer immediately, though it may take a few days to appear on their statement.
 
@@ -44,9 +44,9 @@ The held amount is released to the customer immediately, though it may take a fe
 
 Most refunds complete within 5–10 business days. If it's been longer:
 
-1. Check the payment is showing as **Refunded** in your Dashboard (if not, the refund may not have been submitted)
-2. Ask the customer to contact their bank with the refund reference number (visible on the payment details page)
-3. If the bank cannot locate the refund, contact PayFlow support with the payment ID
+1. Check the payment is showing as **Refunded** in your Dashboard (if not, the refund may not have been submitted).
+2. Ask the customer to contact their bank with the refund reference number (visible on the payment details page).
+3. If the bank cannot locate the refund, contact PayFlow support with the payment ID.
 
 ### Can I refund a payment made more than 90 days ago?
 

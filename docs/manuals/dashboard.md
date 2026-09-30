@@ -21,11 +21,11 @@ Select any payment to see its full details, including the card used, timestamps,
 
 ### Issuing a refund
 
-1. Open the payment you want to refund
-2. Select **Refund** in the top right
-3. Choose **Full refund** or enter a partial amount
-4. Select a reason (optional)
-5. Select **Confirm Refund**
+1. Open the payment you want to refund.
+2. Select **Refund** in the top right.
+3. Choose **Full refund** or enter a partial amount.
+4. Select a reason (optional).
+5. Select **Confirm Refund**.
 
 Refunds typically appear on the customer's statement within **5–10 business days**, depending on their bank.
 

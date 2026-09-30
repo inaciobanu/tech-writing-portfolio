@@ -10,9 +10,9 @@ Make your first PayFlow API call in under 5 minutes.
 
 ## Step 1: Get your API key
 
-1. Log in to the [PayFlow Dashboard](https://dashboard.payflow.io)
-2. Navigate to **Settings → API Keys**
-3. Copy your **test secret key** (`sk_test_...`)
+1. Log in to the [PayFlow Dashboard](https://dashboard.payflow.io).
+2. Navigate to **Settings → API Keys**.
+3. Copy your **test secret key** (`sk_test_...`).
 
 :::warning Use test keys for development
 Never use your live key (`sk_live_...`) during development. Test keys process no real payments.

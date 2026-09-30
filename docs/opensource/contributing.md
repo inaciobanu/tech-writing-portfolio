@@ -109,7 +109,7 @@ git checkout -b fix/null-metadata-crash
 git checkout -b feat/syslog-transport
 ```
 
-3. **Make your changes** and write or update tests
+3. **Make your changes** and write or update tests.
 
 4. **Lint and test** before committing:
 
@@ -126,7 +126,7 @@ git commit -m "feat: add syslog transport"
 git commit -m "docs: add transport configuration examples"
 ```
 
-6. **Push** your branch and **open a pull request** against `main`
+6. **Push** your branch and **open a pull request** against `main`.
 
 ## Pull request checklist
 

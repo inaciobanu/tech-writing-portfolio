@@ -256,13 +256,13 @@ Before maintenance can begin, the following **must** be confirmed:
 **How:** Use the escalation protocol below.
 
 **Escalation steps:**
-1. Notify Facilities Manager with: asset name, defect description, risk level, photograph (if taken)
+1. Notify Facilities Manager with: asset name, defect description, risk level, photograph (if taken).
 2. Facilities Manager has 48 hours to respond with a decision:
    - Authorize immediate repair (attach purchase order)
    - Schedule urgent repair for next available window
    - Accept the risk and add to next quarterly review
-3. Update the work order with the Facilities Manager's decision
-4. Close the escalation
+3. Update the work order with the Facilities Manager's decision.
+4. Close the escalation.
 
 **No defect escalation should remain open for more than one week.**
 
