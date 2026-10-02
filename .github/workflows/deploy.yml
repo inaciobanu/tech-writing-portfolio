@@ -82,9 +82,13 @@ jobs:
 
       - name: Lychee link check
         uses: lycheeverse/lychee-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           args: >-
             --no-progress
+            --max-retries 5
+            --retry-wait-time 10
             --exclude-loopback
             --exclude 'medium\.com'
             --exclude 'x\.com'
