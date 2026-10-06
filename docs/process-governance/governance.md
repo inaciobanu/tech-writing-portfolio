@@ -52,7 +52,9 @@ Appointing an owner and setting a date helps, but on its own it's not enough –
 
 ## Naming and templates
 
-Pages follow `[Category] - [Topic] - [Status]` – `SOP - Adding a New Site - Active`, for example. When something's superseded, its status changes to Archived and it moves to the Archive space rather than being deleted, keeping the audit trail intact without cluttering search.
+Pages follow `[Type] – [System] – [Topic]`, for example `SOP – Firewall – Rule request`. The system part is optional for pages that cover the whole space, such as `Policy – Ownership and review`. Putting the type first groups related pages together in search and in the page tree, and each title is unique and specific enough to tell the reader what's inside before they open it.
+
+I first tried putting the status in the title (`SOP - Adding a New Site - Active`), so a retired page would be obvious in search. Building a demo space in Confluence showed me the problem: the title and the status field on the page can disagree, and every status change means a rename that somebody has to remember. So live pages now carry their status in a field at the top of the page, and only retired pages get a marker in the title (`Archived – SOP – Sites – Add a new site`), which keeps the obvious-in-search benefit without the drift. When something's superseded it gets that marker and a banner saying why it was retired and what replaces it, then moves to the Archive rather than being deleted, which keeps the audit trail intact without cluttering search.
 
 Three templates cover most of the space: the SOP template shown in [Sample SOP Template](./template-sop), an architecture doc template (system overview, current topology, design rationale, dependencies, change history), and a meeting notes template (attendees, decisions, action items with named owners, linked back to the project they relate to). Same template, same page type, every time – a reader who's learned to navigate one SOP can navigate all of them without relearning the layout.
 
