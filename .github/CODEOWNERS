@@ -1,0 +1,15 @@
+# Editorial reviewer for pages and for the rules that govern them.
+/docs/ @inaciobanu
+/docs-workflow/ @inaciobanu
+/.claude/ @inaciobanu
+/.vale/ @inaciobanu
+/.vale.ini @inaciobanu
+
+# The checks and this file itself, so the rules cannot be weakened unreviewed.
+/.github/workflows/ @inaciobanu
+/.github/CODEOWNERS @inaciobanu
+
+# PLACEHOLDER – technical reviewer. Replace TECHNICAL-REVIEWER-USERNAME with a
+# GitHub username, then remove the leading "# " from the line below. It is
+# commented out because an unknown username makes GitHub report an error.
+# /openapi/ @TECHNICAL-REVIEWER-USERNAME

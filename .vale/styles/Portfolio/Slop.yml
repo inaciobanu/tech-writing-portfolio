@@ -1,0 +1,24 @@
+# Portfolio copy says things plainly. Stock phrases that read as generated
+# or padded are flagged wherever they appear. Say the specific thing instead.
+extends: existence
+message: "Avoid the stock phrase '%s'. Say the specific thing plainly."
+level: error
+ignorecase: true
+tokens:
+  - delv(e|es|ed|ing)
+  - tapestr(y|ies)
+  - seamless(ly)?
+  - leverag(e|es|ed|ing)
+  - game[- ]chang(er|ers|ing)
+  - it['’]s important to note
+  - it['’]s worth noting
+  - in today['’]s fast-paced world
+  - in today['’]s digital (age|landscape)
+  - unlock(ing)? the power
+  - harness(ing)? the power
+  - ever-evolving
+  - cutting-edge
+  - navigate the complexities
+  - in the realm of
+  - dive into
+  - testament to
