@@ -4,6 +4,7 @@ Algarve
 APIs
 Asana
 Atlassian
+[Aa]utomations
 [Bb]ackoff
 BGP
 Bootcamp
@@ -88,6 +89,7 @@ Tines
 [Tt]oolchain
 [Tt]ooltip
 [Tt]riaging
+[Uu]nbuilt
 [Uu]ncontracted
 Udemy
 [Uu]nconfigured
