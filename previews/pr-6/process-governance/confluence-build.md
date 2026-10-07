@@ -24,13 +24,13 @@ So the landing page is a single table, "I want to … / Start here", with one ro
 first and are shaded, and the row for writing or updating a page links to step-by-step instructions. The last row
 links to a short guide on reporting a mistake, so that a report reaches the page owner and not a dead end.
 
-![Landing page of the Confluence demo space: a table headed "What do you need?" with one row for each thing a visitor might want to do, such as fixing something that is broken, doing a routine task, or writing a new page, each linking to the right section; the two most urgent rows are shaded red](/img/confluence-landing-page.gif)
+![Landing page table of the Confluence demo space with two columns, "I want to…" and "Start here": one row for each thing a visitor might want to do, such as fixing something that is broken, doing a routine task, or writing a new page, each linking to the right section; the two most urgent rows are shaded red and the row for writing or updating a page is shaded green](/img/confluence-landing-page.gif)
 
 Below the table, the space map shows the whole structure at a glance. The blue sections are the core structure from the
 earlier case study. The green ones I added for this role: incident and change as their own sections, automation,
 processes, the document register and the archive.
 
-![Space map: twelve linked sections in three rows of four, coloured blue for the core structure and green for sections added for this role, with a row of four cross-cutting standards underneath: a named owner, a review-due date, consistent templates, and labels for filtering](/img/confluence-space-map.gif)
+![Space map: twelve linked sections in a grid of four columns and three rows, each with a one-line description. Six blue sections are the core structure: Architecture & Design, SOPs & Runbooks, Policies & Standards, Onboarding & Glossary, Projects & Delivery, and Troubleshooting & Knowledge Base. Six green sections were added for this role: Incident & On-call, Change Management, Network Automation, Processes, Document register, and Archive](/img/confluence-landing-sections.gif)
 
 ## Five decisions, and why
 
@@ -69,6 +69,16 @@ A document register then pulls those properties into one table, so a manager can
 
 ![Document register table listing each page title with its owner, a coloured status badge, its system and its next review date](/img/confluence-document-register.gif)
 
+The register page also carries a status key, so nobody has to guess what a badge means. There are five statuses.
+Planned is a placeholder: the page exists and the content is still to come. Draft means the page is being written and
+is not yet safe to rely on. In review means it is waiting for the owner, who is the subject-matter expert, to confirm
+technical accuracy. Current means it has been reviewed, is accurate and is in use. Deprecated means it is no longer
+valid and has been moved to the Archive with a note explaining why. Current is the only status that says a page has
+been reviewed and is accurate, which makes it the answer to the landing page's row for checking whether a page can be
+trusted.
+
+![Status key table with two columns, Status and Meaning, listing five coloured badges: Planned, a placeholder with content to follow; Draft, being written and not yet safe to rely on; In review, waiting for the owner, a subject-matter expert, to confirm technical accuracy; Current, reviewed, accurate and in use; and Deprecated, no longer valid and moved to the Archive with a note explaining why](/img/confluence-status-legend.png)
+
 ### 3. Two separate reviews, each recorded
 
 Operational pages pass two reviews by two different people before they are Current. The author runs a **style check**,
@@ -85,7 +95,7 @@ A row in a table is a record, not a lock. Confluence on its own cannot stop a pa
 Enforcing it needs approvals, where a plan includes them, or an app that adds a workflow. So the space reports on
 exceptions instead, and the policy says so plainly.
 
-![Table showing the eight steps a page passes through: author, style check, technical review by a subject-matter expert, owner, approver, published, periodic review, and update or retire, with the status shown under each step](/img/confluence-publishing-path.gif)
+![Table showing the eight steps a page passes through: author, style check, technical review by a subject-matter expert, owner, approver, published, periodic review, and update or retire, with the status shown under each step](/img/confluence-publishing-process.png)
 
 ### 4. Templates with worked examples
 
@@ -102,8 +112,6 @@ Anything with a yes-or-no answer, such as a missing owner or an overdue review, 
 reminder on the [process improvement page](./process-improvement) is the first example: a clock doing the remembering,
 not a person. AI is for judgement
 checks a rule cannot make, and it works as suggestions only. A person decides whether something is technically correct.
-
-![Summary table of four documentation automations with status badges: the monthly review reminder is live, the style check is manual today and designed as an agent, drafting from a source is proposed for later, and a related-pages check is an untested idea](/img/confluence-automation-approach.gif)
 
 ## What is live, and what is only designed
 
