@@ -4259,19 +4259,6 @@ Incident response and change management each got their own section, because the 
 under pressure and should not have to browse. Architecture is kept apart from procedures, because the two are read in
 very different moments.
 
-That is also where the diagrams live. The logical topology rebuilds the architecture diagram from the
-[structure page](./structure) as an editable table, so anyone on the team can update it without a drawing tool. It has
-a title, a legend, a one-sentence caption and a last-updated date, and it uses the same site codes as the connectivity
-register, so the two cannot disagree.
-
-The two pages differ in one detail, on purpose. The structure page describes the replication link as a single dedicated
-circuit, which is how the demo's network was first built. In the demo's worked examples, an incident shows that one
-circuit is a single point of failure, and a second circuit from a different carrier is added. So the topology now draws
-one logical link that is really two circuits, and the single dashed link in the structure page's diagram is the same
-link at a higher level.
-
-![Logical topology page: three exchange boxes feed a primary, active colo, which is joined by a failover link to a standby disaster recovery colo; below them a firewall labelled monitoring and change access only leads to a segmented corporate network with no direct path to production, and a colour legend sits underneath](/img/confluence-topology.gif)
-
 #### 2. Every page has an owner, a backup owner and a status
 
 The table at the top of each page records the owner, a backup owner on operational pages, the status, the system and
@@ -4282,7 +4269,7 @@ spreadsheet nobody opens.
 The [ownership model](./governance) says every page has a backup. In the demo I narrowed that to operational pages,
 such as procedures, runbooks and designs, because a backup on a set of meeting notes is more upkeep than it is worth.
 
-![Properties table at the top of a procedure page showing owner, backup owner, steward, status In review, system and next review date, above a note saying the page is a sample](/img/confluence-page-properties.gif)
+![Properties table at the top of a page with six rows: owner Network Engineering (sample), backup owner Network Engineering lead (sample), steward Technical author, status In review, system WAN / production network, and next review Jan 6, 2027](/img/confluence-page-properties.png)
 
 A document register then pulls those properties into one table, so a manager can see every page with its owner, status, system and next review date in one place without opening anything. Template pages are left out, because they are not real documents.
 
