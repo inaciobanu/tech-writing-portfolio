@@ -1,0 +1,28 @@
+# User Manual
+
+> The PayFlow Dashboard user manual – managing payments, customers, and account settings.
+
+# PayFlow Dashboard – User Manual
+
+Welcome to the PayFlow Dashboard. This manual covers everything you need to manage payments, customers, and your account settings – no technical knowledge required.
+
+## What you can do in the dashboard
+
+- **View and search** all your payments and refunds
+- **Manage customers** and their payment methods
+- **Issue refunds** with a few clicks
+- **Set up subscriptions** and billing plans
+- **Download reports** for accounting and reconciliation
+- **Configure webhooks** and API keys
+
+## In this manual
+
+| Section | Description |
+|---|---|
+| [Getting Started](./getting-started) | Create your account and make your first test payment. |
+| [Dashboard Overview](./dashboard) | Take a guided tour of every section. |
+| [Troubleshooting](./troubleshooting) | Fix common issues. |
+
+## Getting help
+
+If you can't find the answer you need here, contact our support team at **support@payflow.io** or use the in-app chat (select the **?** icon in the bottom right of the Dashboard).

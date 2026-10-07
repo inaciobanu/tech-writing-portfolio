@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 707 483" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <rect x="8" y="8" width="691" height="467" rx="24" fill="#E4F6EA" stroke="#B9E6C6" stroke-width="1.5"/>
+
+  <text x="30" y="45" font-size="15" font-weight="700" fill="#16311F">Network Infrastructure Confluence space</text>
+
+  <!-- Row 1 -->
+  <g>
+    <rect x="30" y="65" width="145" height="90" rx="12" fill="#EAF1FC" stroke="#BBD3F5" stroke-width="1.5"/>
+    <text x="102" y="103" font-size="14" font-weight="700" fill="#2154C9" text-anchor="middle">Home</text>
+    <text x="102" y="124" font-size="12" fill="#5B6B82" text-anchor="middle">Landing page</text>
+  </g>
+  <g>
+    <rect x="192" y="65" width="145" height="90" rx="12" fill="#EAF1FC" stroke="#BBD3F5" stroke-width="1.5"/>
+    <text x="264" y="103" font-size="14" font-weight="700" fill="#2154C9" text-anchor="middle">Architecture</text>
+    <text x="264" y="124" font-size="12" fill="#5B6B82" text-anchor="middle">Topology &amp; design</text>
+  </g>
+  <g>
+    <rect x="354" y="65" width="145" height="90" rx="12" fill="#EAF1FC" stroke="#BBD3F5" stroke-width="1.5"/>
+    <text x="426" y="103" font-size="14" font-weight="700" fill="#2154C9" text-anchor="middle">SOPs</text>
+    <text x="426" y="124" font-size="12" fill="#5B6B82" text-anchor="middle">Runbooks &amp; change</text>
+  </g>
+  <g>
+    <rect x="516" y="65" width="145" height="90" rx="12" fill="#EAF1FC" stroke="#BBD3F5" stroke-width="1.5"/>
+    <text x="588" y="103" font-size="14" font-weight="700" fill="#2154C9" text-anchor="middle">Policies</text>
+    <text x="588" y="124" font-size="12" fill="#5B6B82" text-anchor="middle">Governance</text>
+  </g>
+
+  <!-- Row 2 -->
+  <g>
+    <rect x="121" y="175" width="145" height="90" rx="12" fill="#EAF1FC" stroke="#BBD3F5" stroke-width="1.5"/>
+    <text x="193" y="213" font-size="14" font-weight="700" fill="#2154C9" text-anchor="middle">Onboarding</text>
+    <text x="193" y="234" font-size="12" fill="#5B6B82" text-anchor="middle">Training &amp; terms</text>
+  </g>
+  <g>
+    <rect x="283" y="175" width="145" height="90" rx="12" fill="#EAF1FC" stroke="#BBD3F5" stroke-width="1.5"/>
+    <text x="355" y="213" font-size="14" font-weight="700" fill="#2154C9" text-anchor="middle">Projects</text>
+    <text x="355" y="234" font-size="12" fill="#5B6B82" text-anchor="middle">Change log</text>
+  </g>
+  <g>
+    <rect x="445" y="175" width="145" height="90" rx="12" fill="#EAF1FC" stroke="#BBD3F5" stroke-width="1.5"/>
+    <text x="517" y="213" font-size="14" font-weight="700" fill="#2154C9" text-anchor="middle">Troubleshoot</text>
+    <text x="517" y="234" font-size="12" fill="#5B6B82" text-anchor="middle">Known issues</text>
+  </g>
+
+  <!-- Cross-cutting standards panel -->
+  <rect x="30" y="290" width="631" height="150" rx="12" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="50" y="320" font-size="14" font-weight="700" fill="#111827">Cross-cutting standards</text>
+  <text x="50" y="349" font-size="12.5" fill="#4B5563">Named owner per page</text>
+  <text x="50" y="374" font-size="12.5" fill="#4B5563">Review-due date shown</text>
+  <text x="50" y="399" font-size="12.5" fill="#4B5563">Consistent templates</text>
+  <text x="50" y="424" font-size="12.5" fill="#4B5563">Labels for filtering</text>
+</svg>

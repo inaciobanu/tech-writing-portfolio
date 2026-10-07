@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunktech_writing_portfolio=globalThis.webpackChunktech_writing_portfolio||[]).push([[3327],{13327(e,i,t){t.d(i,{createPacketServices:()=>c.$});var c=t(73263);t(4954)}}]);
