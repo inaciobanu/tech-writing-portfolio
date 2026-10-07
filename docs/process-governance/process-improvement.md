@@ -53,3 +53,5 @@ Neither of these looked like documentation problems on the surface – the sympt
 ## What's next
 
 The reminder rule was the first automation I put in, not the last one I'd want. Three more are on my list: extending the reminder itself to a two-stage nudge with a directory active-account check once it's on a tier with room for weekly runs; nudging new-page authors toward the right template before a page goes live, instead of catching drift at the next review; and automatically drafting a Troubleshooting page from a closed ticket the moment something new gets resolved, so the write-up starts before anyone has to remember to do it. None of the three are built yet – the reminder rule got the time first because it was the most widespread problem.
+
+Since writing this, I have built the space around these ideas in Confluence, including a style check and a technical review before a page goes live: see [Building the Space in Confluence](./confluence-build).

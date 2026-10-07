@@ -99,6 +99,7 @@ const sidebars = {
         'process-governance/template-sop',
         'process-governance/governance',
         'process-governance/process-improvement',
+        'process-governance/confluence-build',
       ],
     },
   ],

@@ -222,6 +222,7 @@ const config = {
               { label: 'SOP Template', to: '/docs/process-governance/template-sop' },
               { label: 'Ownership & Review Model', to: '/docs/process-governance/governance' },
               { label: 'Process Improvement', to: '/docs/process-governance/process-improvement' },
+              { label: 'Confluence Build', to: '/docs/process-governance/confluence-build' },
             ],
           },
           {

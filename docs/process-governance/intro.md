@@ -36,6 +36,7 @@ flowchart TD
 - [Sample SOP Template](./template-sop) – one runbook, written the way I'd want it if I were the person on call at 3 AM
 - [Ownership & Review Model](./governance) – how the space stays accurate after I'm not the one checking it every week
 - [Finding and Fixing a Broken Process](./process-improvement) – a workflow problem worth watching for, and the fix I put in place for it
+- [Building the Space in Confluence](./confluence-build) – the structure, ownership model and reviews built in Confluence, and what is live and what is only designed
 
 ## How this maps to DMAIC
 
