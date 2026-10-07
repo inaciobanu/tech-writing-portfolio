@@ -2,11 +2,17 @@
 id: confluence-build
 title: Building the Space in Confluence
 description: "How I built a governed Confluence documentation space for a fictional network infrastructure team: the structure, the ownership and review model, what is automated, and what I learned."
-sidebar_label: Confluence build
+sidebar_label: Confluence Build
 slug: /process-governance/confluence-build
 ---
 
 # Building the space in Confluence
+
+**In brief**
+
+- **Built:** a Confluence space for a fictional network infrastructure team, with a task-based landing page, ownership properties on every page, a document register, six templates and a two-review process.
+- **Live:** the monthly review reminder, which emails each owner a list of pages due for review, and the document register.
+- **Not live:** the other three automations, the agent that would run the style check, and any enforcement of the two reviews. The style check is manual, and the reviews are recorded but not enforced.
 
 The case study so far describes a method: [audit](./audit) a documentation space, redesign its
 [structure](./structure), and put an [ownership and review model](./governance) behind it so it does not decay again.
@@ -60,13 +66,9 @@ A document register then pulls those properties into one table, so a manager can
 
 ![Document register table listing each page title with its owner, a coloured status badge, its system and its next review date](/img/confluence-document-register.png)
 
-The register page also carries a status key, so nobody has to guess what a badge means. There are five statuses.
-Planned is a placeholder: the page exists and the content is still to come. Draft means the page is being written and
-is not yet safe to rely on. In review means it is waiting for the owner, who is the subject-matter expert, to confirm
-technical accuracy. Current means it has been reviewed, is accurate and is in use. Deprecated means it is no longer
-valid and has been moved to the Archive with a note explaining why. Current is the only status that says a page has
-been reviewed and is accurate, which makes it the answer to the landing page's row for checking whether a page can be
-trusted.
+The register page also carries a status key, so nobody has to guess what a badge means. Current is the only status
+that says a page has been reviewed and is accurate, which makes it the answer to the landing page's row for checking
+whether a page can be trusted.
 
 ![Status key table with two columns, Status and Meaning, listing five coloured badges: Planned, a placeholder with content to follow; Draft, being written and not yet safe to rely on; In review, waiting for the owner, a subject-matter expert, to confirm technical accuracy; Current, reviewed, accurate and in use; and Deprecated, no longer valid and moved to the Archive with a note explaining why](/img/confluence-status-legend.png)
 
@@ -118,6 +120,19 @@ checks a rule cannot make, and it works as suggestions only. A person decides wh
 
 The style check, the agent design and the drafting idea are additions since the process improvement page was written.
 That page's three "what's next" automations are still unbuilt.
+
+## How I'd know it works
+
+Four measures would show whether the space is holding. Each can be read from the page properties and the document
+register, so none needs a survey:
+
+- **Findings per page.** Repeat the [audit](./audit) a year later. The number should fall.
+- **Pages with both reviews done.** The share of operational pages where the style check and the technical review are
+  both recorded.
+- **Time from draft to published.** How long a page waits between Draft and Current.
+- **Overdue pages.** The count of pages past their next review date.
+
+None of these is measured yet, because the demo space has no history to measure against.
 
 ## How I used AI
 
