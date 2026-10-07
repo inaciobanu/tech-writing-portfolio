@@ -280,7 +280,7 @@ After about 4 months of this work:
 ✅ **Scalability** – Framework works whether we have 50 docs or 500  
 ✅ **Sustainability** – Governance model keeps things current over time  
 
-The audit goes smoothly. Regional leaders have clarity on their procedures. Field teams can actually follow the documentation. And when someone asks "what's the right way to do X?", there's a single, current, approved answer.
+The audit goes well. Regional leaders have clarity on their procedures. Field teams can actually follow the documentation. And when someone asks "what's the right way to do X?", there's a single, current, approved answer.
 
 ---
 

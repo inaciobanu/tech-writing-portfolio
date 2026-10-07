@@ -24,7 +24,7 @@ As Senior Technical Writer, I own documentation for two flagship products:
 - Conduct thorough reviews and copyediting of content produced by team members
 - Align documentation releases with software release schedules in an Agile environment
 - Monitor competitor documentation to benchmark quality and identify improvement opportunities
-- Incorporate user feedback and industry best practices to continually raise documentation standards
+- Incorporate user feedback and industry best practices to raise documentation standards
 
 ---
 
@@ -57,7 +57,7 @@ Founded and grew a trademarked Amazon keyword optimisation and copywriting servi
 Nearly a decade of freelance technical writing and content strategy across a wide range of industries.
 
 - Delivered over **2,000,000 words** of content for medical, legal, fintech, SaaS, e-commerce, investment, digital banking, and telecom clients
-- Deliverables included: app release notes, in-app UX copy, FAQs, how-to guides, branding manuals, security and data privacy tutorial scripts
+- Deliverables included: app release notes, in-app UX copy, FAQs, how-to guides, branding manuals, and security and data privacy tutorial scripts
 - Long-term clients included:
   - **Infopay** – Public Information Database Records (Boston, MA)
   - **Zistemo** – Business Management Software (Switzerland)

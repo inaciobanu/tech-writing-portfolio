@@ -401,7 +401,7 @@ Use a simple scorecard during reviews. A sample does not need a perfect score to
 | Accessibility | Does it work with keyboard navigation, assistive technology, and narrow screens? | 0–2 |
 | Maintenance | Is there an owner, source of truth, and review trigger? | 0–2 |
 
-Treat correctness and safety as publication blockers. A sample that is beautifully formatted but wrong is still a failed sample.
+Treat correctness and safety as publication blockers. A sample that is well formatted but wrong is still a failed sample.
 
 ### Example audit
 
@@ -431,7 +431,7 @@ The surrounding page should state that it runs on Node.js 20+, uses a sandbox ke
 
 ## Security and versioning
 
-Code examples are copied into real systems. Review them as carefully as production-adjacent code.
+Code examples are copied into real systems. Review them with the same care as production-adjacent code.
 
 ### Security rules
 

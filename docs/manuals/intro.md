@@ -14,7 +14,7 @@ Welcome to the PayFlow Dashboard. This manual covers everything you need to mana
 
 - **View and search** all your payments and refunds
 - **Manage customers** and their payment methods
-- **Issue refunds** with a few clicks
+- **Issue refunds** in a few steps
 - **Set up subscriptions** and billing plans
 - **Download reports** for accounting and reconciliation
 - **Configure webhooks** and API keys
