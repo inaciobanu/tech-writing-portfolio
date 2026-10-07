@@ -80,6 +80,11 @@ jobs:
           mkdir -p site/tech-writing-portfolio
           cp -r build/. site/tech-writing-portfolio/
 
+      # Each page's own full address (canonical, og:url) points at the live
+      # site. This check runs before the deploy publishes, so a brand-new page
+      # would 404 on its own address and fail once. Those addresses are
+      # skipped; links between pages are root-relative, so they're still
+      # resolved and checked against the mirrored build above.
       - name: Lychee link check
         uses: lycheeverse/lychee-action@v2
         env:
@@ -92,6 +97,7 @@ jobs:
             --exclude-loopback
             --exclude 'medium\.com'
             --exclude 'x\.com'
+            --exclude '^https://inaciobanu\.github\.io/tech-writing-portfolio/'
             --exclude 'github\.com/inaciobanu/[^/]+/blob/'
             --exclude 'payflow\.io'
             --exclude 'github\.com/logpilot/logpilot'
