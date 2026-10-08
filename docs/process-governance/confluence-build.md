@@ -60,7 +60,7 @@ spreadsheet nobody opens.
 The [ownership model](./governance) says every page has a backup. In the demo I narrowed that to operational pages,
 such as procedures, runbooks and designs, because a backup on a set of meeting notes is more upkeep than it's worth.
 
-![Properties table at the top of a page with six rows: owner Network Engineering (sample), backup owner Network Engineering lead (sample), steward Technical author, status In review, system WAN / production network, and next review Jan 6, 2027](/img/confluence-page-properties.png)
+![Properties table at the top of a page with eight rows: owner Network Engineering (sample), backup owner Change Management lead (sample), steward Technical author, status In review, style check Done, technical review Not done, system WAN / site connectivity, and next review Jan 6, 2027](/img/confluence-page-properties.png)
 
 A document register then pulls those properties into one table, so a manager can see every page with its owner, status, system, and next review date in one place without opening anything. Template pages are left out, because they're not real documents.
 
