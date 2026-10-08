@@ -30,7 +30,7 @@ Currently at **KX**, I document **KDB.AI** (a real-time vector database for AI w
 | Wrote 45,000+ words of user guides, API docs, and UX content in 13 months | PrimaryBid |
 | Delivered 2M+ words of technical content across fintech, SaaS, healthcare, and legal | Upwork (9 years) |
 | Won 7 international awards for specialist content strategy | SEOzon Prime |
-| Led rollout of PrimaryBid's engineering tech blog | PrimaryBid |
+| Led rollout of [PrimaryBid's engineering tech blog](https://medium.com/primarybid-technology-blog) | PrimaryBid |
 
 ---
 
