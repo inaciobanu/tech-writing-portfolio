@@ -70,7 +70,7 @@ The register page also carries a status key, so nobody has to guess what a badge
 that says a page has been reviewed and is accurate, which makes it the answer to the landing page's row for checking
 whether a page can be trusted.
 
-![Status key table with two columns, Status and Meaning, listing five coloured badges: Planned, a placeholder with content to follow; Draft, being written and not yet safe to rely on; In review, waiting for the owner, a subject-matter expert, to confirm technical accuracy; Current, reviewed, accurate and in use; and Deprecated, no longer valid and moved to the Archive with a note explaining why](/img/confluence-status-legend.png)
+![Status key table with two columns, Status and Meaning, listing five coloured badges: Planned, a placeholder with content to follow; Draft, being written and not yet safe to rely on; In review, waiting for a subject-matter expert to confirm technical accuracy; Current, reviewed, accurate and in use; and Deprecated, no longer valid and moved to the Archive with a note explaining why](/img/confluence-status-legend.png)
 
 ### 3. Two separate reviews, each recorded
 
