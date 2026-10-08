@@ -80,7 +80,7 @@ spots a warning in the wrong place is usually not the person who knows whether a
 in the page's properties, and the engineer leaves a comment with their name and the date.
 
 This is the accuracy half of the problem on the [process improvement page](./process-improvement). The review reminder
-fixed timing, so reviews happen. It didn't fix whether a page is right, and the technical review is there for
+fixed timing, so reviews get prompted. It didn't fix whether a page is right, and the technical review is there for
 that. It also extends the lifecycle on the [governance page](./governance), which has seven steps: the demo adds a
 style check before the subject-matter expert's review, so that step becomes the technical review.
 
