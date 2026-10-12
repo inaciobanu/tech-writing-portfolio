@@ -8,10 +8,10 @@ description: "The pipelines behind this portfolio: spec-driven API reference gen
 
 This is a Docusaurus site, but the parts worth explaining aren't the theme – they're the build. Six pieces keep the content honest without me touching it by hand: the API reference, the prose gate, the PR previews, the cross-repo sync, the social images, and the agent-facing export.
 
-The first four fit into one pipeline. The API reference is generated from a spec that's linted, contract-tested, and synced in from another repo, and hand-written pages pass the prose gate before everything meets in the build:
+The first four fit into one pipeline. The API reference is generated from a spec that's linted, contract-tested, and synced in from [another repo](https://github.com/inaciobanu/payflow-api), and hand-written pages pass the prose gate before everything meets in the build:
 
 ```mermaid
-flowchart LR
+flowchart TD
     subgraph api ["payflow-api repo"]
         A["Push to main<br/>changes payflow.yaml"] --> B["Redocly lint"]
         B --> C["Contract tests<br/>mock API vs spec"]
@@ -40,7 +40,7 @@ The current API version and base URL only ever appear in one place: the generate
 
 ## The spec itself arrives by sync, not by hand
 
-The spec isn't written in this repo either. `payflow-api` – a small mock payments service I built separately – owns `payflow.yaml` as its source of truth, and a workflow in that repo pushes it into `openapi/payflow.yaml` here on every push to its `main`, authenticating with a fine-grained PAT scoped to this repo. Those commits land under the `github-actions[bot]` author, distinct from anything I write by hand.
+The spec isn't written in this repo either. [`payflow-api`](https://github.com/inaciobanu/payflow-api) – a small mock payments service I built separately – owns `payflow.yaml` as its source of truth, and a workflow in that repo pushes it into `openapi/payflow.yaml` here on every push to its `main`, authenticating with a fine-grained PAT scoped to this repo. Those commits land under the `github-actions[bot]` author, distinct from anything I write by hand.
 
 The sync only runs after two checks in `payflow-api` pass. [Redocly](https://redocly.com/docs/cli/) lints `payflow.yaml` as an OpenAPI document, and a Jest suite sends requests to the mock service and validates each response against the schemas in the same spec – including the `409 idempotency_conflict` and replayed-key cases the docs describe. If either check fails, the spec never reaches this repo, so the reference can't describe behaviour the mock service doesn't have. The same checks run on every pull request to `payflow-api`.
 
