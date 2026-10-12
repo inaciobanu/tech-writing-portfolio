@@ -8,6 +8,26 @@ description: "The pipelines behind this portfolio: spec-driven API reference gen
 
 This is a Docusaurus site, but the parts worth explaining aren't the theme – they're the build. Six pieces keep the content honest without me touching it by hand: the API reference, the prose gate, the PR previews, the cross-repo sync, the social images, and the agent-facing export.
 
+The first four fit into one pipeline. The API reference is generated from a spec that's linted, contract-tested, and synced in from another repo, and hand-written pages pass the prose gate before everything meets in the build:
+
+```mermaid
+flowchart LR
+    subgraph api ["payflow-api repo"]
+        A["Push to main<br/>changes payflow.yaml"] --> B["Redocly lint"]
+        B --> C["Contract tests<br/>mock API vs spec"]
+    end
+    C -->|both pass| D["Bot commits<br/>openapi/payflow.yaml"]
+    C -->|either fails| X["Nothing syncs"]
+    subgraph site ["This repo"]
+        D --> E["gen-api-docs<br/>reference pages + sidebar"]
+        F["Hand-written pages"] --> G{"Vale<br/>prose gate"}
+        E --> H["Docusaurus build<br/>broken links fail"]
+        G -->|pass| H
+        H --> I["Pull request:<br/>preview on gh-pages"]
+        H --> J["Push to main:<br/>deploy to GitHub Pages"]
+    end
+```
+
 ## The API reference is generated, not written
 
 [`openapi/payflow.yaml`](https://github.com/inaciobanu/tech-writing-portfolio/blob/main/openapi/payflow.yaml) is the source of truth for [API Documentation](/docs/api/intro). `docusaurus-plugin-openapi-docs` turns it into the endpoint pages under `docs/api/reference/` – I don't hand-write those. The plugin only writes its sidebar file once, if one doesn't already exist, so regenerating on top of a previous run silently kept a stale sidebar until I added a step (`scripts/clean-api-reference.js`) that wipes the whole folder first. That runs via npm's `prestart`/`prebuild` hooks before every `npm start` and `npm run build`, not just in `deploy.yml`, so a stale cached copy can't ship from any entry point, including PR previews.
@@ -20,7 +40,9 @@ The current API version and base URL only ever appear in one place: the generate
 
 ## The spec itself arrives by sync, not by hand
 
-The spec isn't written in this repo either. `payflow-api` – a small mock payments service I built separately – owns `openapi.yaml` as its source of truth, and a workflow in that repo pushes it into `openapi/payflow.yaml` here on every push to its `main`, authenticating with a fine-grained PAT scoped to this repo. Those commits land under the `github-actions[bot]` author, distinct from anything I write by hand.
+The spec isn't written in this repo either. `payflow-api` – a small mock payments service I built separately – owns `payflow.yaml` as its source of truth, and a workflow in that repo pushes it into `openapi/payflow.yaml` here on every push to its `main`, authenticating with a fine-grained PAT scoped to this repo. Those commits land under the `github-actions[bot]` author, distinct from anything I write by hand.
+
+The sync only runs after two checks in `payflow-api` pass. [Redocly](https://redocly.com/docs/cli/) lints `payflow.yaml` as an OpenAPI document, and a Jest suite sends requests to the mock service and validates each response against the schemas in the same spec – including the `409 idempotency_conflict` and replayed-key cases the docs describe. If either check fails, the spec never reaches this repo, so the reference can't describe behaviour the mock service doesn't have. The same checks run on every pull request to `payflow-api`.
 
 That means the API reference on this site is a build output twice over: once when `payflow-api` syncs its spec here, and again when this repo's build regenerates the reference pages from it. Neither step is a copy-paste I could forget to redo.
 

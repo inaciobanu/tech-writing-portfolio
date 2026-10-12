@@ -69,7 +69,30 @@ module.exports = router;
 
 ## Handle webhooks
 
-PayFlow sends webhook events for asynchronous payment updates. Set up a webhook endpoint to listen for these:
+PayFlow sends webhook events for asynchronous payment updates. Set up a webhook endpoint to listen for these.
+
+The payment request returns straight away with a `pending` status. PayFlow then sends the final result to your endpoint as a signed event, and your endpoint verifies the signature before it acts on the event:
+
+```mermaid
+sequenceDiagram
+    participant App as Your server
+    participant PF as PayFlow
+    participant Hook as Your webhook endpoint
+
+    App->>PF: POST /payments
+    PF-->>App: 200 OK, status "pending"
+    Note over PF: Payment completes
+    PF->>Hook: POST event (payment.succeeded or payment.failed)<br/>with Payflow-Signature header
+    Hook->>Hook: Verify the signature with your webhook secret
+    alt Signature is valid
+        Hook-->>PF: 200 {"received": true}
+        Note over Hook: Fulfil the order or notify the customer
+    else Signature is invalid
+        Hook-->>PF: 400
+    end
+```
+
+The handler below does this:
 
 ```javascript
 // routes/webhooks.js

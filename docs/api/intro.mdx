@@ -68,6 +68,25 @@ curl https://api.payflow.io/v2/payments \
 
 A `status` of `succeeded` means the payment went through. Keep the `id` to look up or refund the payment later.
 
+## Retry a request safely
+
+If a request times out, you don't know whether the payment was created. Send the same `Idempotency-Key` again and PayFlow returns the original response instead of creating a second charge. Reusing a key with a different body is an error:
+
+```mermaid
+sequenceDiagram
+    participant App as Your server
+    participant PF as PayFlow
+
+    App->>PF: POST /payments<br/>Idempotency-Key: f47ac10b-...
+    PF--xApp: Response lost (timeout)
+    App->>PF: Retry: same key, same body
+    PF-->>App: 200 OK, the original payment
+    App->>PF: Same key, different body
+    PF-->>App: 409 idempotency_conflict
+```
+
+Generate a new key for each new payment, and store it with your order so a retry reuses it. For more, see [Best Practices](../guides/best-practices#use-idempotency-keys).
+
 ## Next steps
 
 - [Quickstart](../guides/quickstart) – make your first call step by step
