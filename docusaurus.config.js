@@ -88,7 +88,7 @@ const config = {
         // the same source as the human one, gated by the same link check.
         title: 'Ina Ciobanu | Senior Technical Writer',
         description:
-          'Portfolio of API documentation, developer guides, user manuals, open source docs, and documentation-governance case studies.',
+          'Portfolio of API documentation, developer guides, user manuals, and documentation-governance case studies.',
         generateMarkdownFiles: true,
       },
     ],
@@ -170,6 +170,7 @@ const config = {
               { label: 'API Reference', to: '/docs/api/reference/payflow-api' },
               { label: 'Errors', to: '/docs/api/errors' },
               { label: 'Rate Limits', to: '/docs/api/rate-limits' },
+              { label: 'Changelog', to: '/docs/api/changelog' },
               { label: 'Connect API Sample', to: '/docs/api/connect-api-sample' },
             ],
           },
@@ -196,18 +197,6 @@ const config = {
               { label: 'Getting Started', to: '/docs/manuals/getting-started' },
               { label: 'Dashboard', to: '/docs/manuals/dashboard' },
               { label: 'Troubleshooting', to: '/docs/manuals/troubleshooting' },
-            ],
-          },
-          {
-            type: 'dropdown',
-            position: 'left',
-            label: 'Open Source',
-            className: 'navbarMegaMenu',
-            items: [
-              { label: 'Open Source Overview', to: '/docs/opensource/intro' },
-              { label: 'Contributing', to: '/docs/opensource/contributing' },
-              { label: 'Architecture', to: '/docs/opensource/architecture' },
-              { label: 'Changelog', to: '/docs/opensource/changelog' },
             ],
           },
           {
@@ -263,7 +252,6 @@ const config = {
               { label: 'API Documentation', to: '/docs/api/intro' },
               { label: 'Developer Guides', to: '/docs/guides/intro' },
               { label: 'User Manuals', to: '/docs/manuals/intro' },
-              { label: 'Open Source Docs', to: '/docs/opensource/intro' },
               { label: 'Process & Governance', to: '/docs/process-governance/intro' },
               { label: 'FM Operations', to: '/docs/fm-operations' },
               { label: 'Glossary', to: '/docs/glossary' },

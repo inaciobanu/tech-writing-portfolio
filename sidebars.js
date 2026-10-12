@@ -46,6 +46,7 @@ const sidebars = {
         },
         'api/errors',
         'api/rate-limits',
+        'api/changelog',
         'api/rotko-sample',
         'api/connect-api-sample',
       ],
@@ -73,18 +74,6 @@ const sidebars = {
         'manuals/getting-started',
         'manuals/dashboard',
         'manuals/troubleshooting',
-      ],
-    },
-  ],
-  opensourceSidebar: [
-    {
-      type: 'category',
-      label: 'Open Source Docs',
-      items: [
-        'opensource/intro',
-        'opensource/contributing',
-        'opensource/architecture',
-        'opensource/changelog',
       ],
     },
   ],

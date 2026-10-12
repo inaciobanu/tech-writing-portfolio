@@ -129,13 +129,6 @@ const portfolioSections = [
     tags: ['UX Writing', 'Onboarding', 'User Guides'],
   },
   {
-    emoji: '🌐',
-    title: 'Open Source & Complex Systems',
-    desc: 'Architecture, contribution, and changelog docs for real codebases.',
-    href: '/docs/opensource/intro',
-    tags: ['Open Source', 'Architecture', 'Changelog'],
-  },
-  {
     emoji: '🗂️',
     title: 'Process & Governance',
     desc: 'Audits, information architecture, ownership, and review workflows for healthy docs.',

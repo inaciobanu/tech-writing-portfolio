@@ -100,8 +100,6 @@ jobs:
             --exclude '^https://inaciobanu\.github\.io/tech-writing-portfolio/'
             --exclude 'github\.com/inaciobanu/[^/]+/blob/'
             --exclude 'payflow\.io'
-            --exclude 'github\.com/logpilot/logpilot'
-            --exclude 'npmjs\.com/package/logpilot'
             --exclude 'linkedin\.com/in/inaciobanu/details/honors'
             --root-dir ${{ github.workspace }}/site
             --fallback-extensions html

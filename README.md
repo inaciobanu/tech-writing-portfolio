@@ -1,6 +1,6 @@
 # 📝 Ina's Technical Writing Portfolio
 
-A Docusaurus-powered technical writing portfolio showcasing API documentation, developer guides, user manuals, open source documentation, documentation systems work, and facilities management operations – built docs-as-code, with CI enforcing prose style and link integrity.
+A Docusaurus-powered technical writing portfolio showcasing API documentation, developer guides, user manuals, documentation systems work, and facilities management operations – built docs-as-code, with CI enforcing prose style and link integrity.
 
 **🌐 Live site:** [inaciobanu.github.io/tech-writing-portfolio](https://inaciobanu.github.io/tech-writing-portfolio)
 
@@ -15,7 +15,6 @@ A Docusaurus-powered technical writing portfolio showcasing API documentation, d
 | 🔌 **API Documentation** | REST API reference for a payments API – authentication, endpoints, error codes, and rate limiting. The endpoint reference is generated from an OpenAPI spec, not hand-written. |
 | 🛠️ **Developer Guides** | Quickstart, integration walkthrough, production best practices, and a Code in Docs style guide |
 | 📖 **User Manuals** | End-user documentation covering onboarding, dashboard features, and troubleshooting |
-| 🌐 **Open Source Docs** | Contributing guide, architecture overview, and changelog for an open source Node.js library |
 | 🗂️ **Process & Governance** | Case study on auditing and redesigning a documentation space – information architecture, ownership, review workflows, a sample SOP, and workflow automation |
 | 🏢 **FM Operations** | Case study on auditing and transforming fragmented global facilities management documentation across three regions – master inventory, risk-based prioritisation, and a sample PPM procedure |
 
@@ -26,7 +25,7 @@ A Docusaurus-powered technical writing portfolio showcasing API documentation, d
 This isn't just written content – the repo enforces it:
 
 - **Prose linting in CI** ([`vale`](https://vale.sh/)) – every hand-written page is checked on every push and pull request against the Google and Microsoft developer documentation style guides plus a house style in `.vale/styles/Portfolio/` – a rule that enforces the site's spaced en dash and one that bans aspirational self-description. Gated on `error`-level findings; `.vale.ini` documents what's deliberately excluded and why
-- **Broken-link CI gate** – `onBrokenLinks` and `onBrokenMarkdownLinks` are set to `throw`, not `warn`, so a dangling internal link fails the build instead of shipping silently. A separate [`lychee`](https://github.com/lycheeverse/lychee) job in `deploy.yml` re-checks every external link on the built site on each push, catching links that rot after the fact; it excludes the fictional product domains used in the case studies (PayFlow, Logpilot), which never resolve
+- **Broken-link CI gate** – `onBrokenLinks` and `onBrokenMarkdownLinks` are set to `throw`, not `warn`, so a dangling internal link fails the build instead of shipping silently. A separate [`lychee`](https://github.com/lycheeverse/lychee) job in `deploy.yml` re-checks every external link on the built site on each push, catching links that rot after the fact; it excludes the fictional product domains used in the case studies (PayFlow), which never resolve
 - **PR preview deployments** – every pull request publishes its own rendered copy of the site under `previews/pr-<n>/` and posts the link as a PR comment, so reviewers see built pages rather than a Markdown diff; the preview is removed when the PR closes
 - **Spec-driven API reference** – `openapi/payflow.yaml` generates the entire API endpoint reference via `docusaurus-plugin-openapi-docs`; the spec is the source of truth, not the rendered page. The sidebar is generated from the same output, so a new endpoint can't end up as an orphaned page nothing links to
 - **Git-based freshness** – every doc page shows a "last updated" date pulled straight from git history, not a manually maintained timestamp
@@ -121,7 +120,6 @@ tech-writing-portfolio/
 │   │   └── reference/           # Generated from openapi/payflow.yaml – do not edit by hand
 │   ├── guides/                  # Developer guides and Code in Docs style guide
 │   ├── manuals/                 # User manuals
-│   ├── opensource/              # Open source project docs
 │   ├── process-governance/      # Documentation systems and operations case study
 │   ├── fm-operations/           # Facilities management documentation case study
 │   ├── glossary/                # Documentation glossary

@@ -48,7 +48,6 @@ KDB\.AI
 Lety
 Linqto
 LLMs
-Logpilot
 Moneygram
 n8n
 ngrok
