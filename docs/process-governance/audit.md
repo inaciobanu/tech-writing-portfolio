@@ -40,7 +40,7 @@ Two flags mattered more than the Keep/Update/Merge/Archive call itself: whether 
 | Site Topology Diagrams | – | Aug 2023 | Predates the DC migration | Update |
 | Change Management Process | Owned, actively maintained | Jun 2026 | Accurate | Keep |
 | VPN Setup (Legacy) | – | Jan 2021 | Decommissioned provider | Archive |
-| Incident Response – Core Switch Failure | – | Feb 2024 | Correct steps, split across two pages | Merge |
+| Incident Response – Core Switch Failure | – | Feb 2024 | Steps look correct but haven't been reviewed; split across two pages | Merge |
 | Naming Conventions | – | Unknown | No review date on record | Update |
 
 ## What came out of it
@@ -77,11 +77,11 @@ For each document in the audit, I assess **seven dimensions of risk**:
 | **Completeness** | Are required steps or controls missing? | All critical steps present | Some guidance missing | Gaps in procedure; missing controls |
 | **Consistency** | Does it contradict other documentation? | Consistent terminology & logic | Minor variations with other docs | Directly contradicts; creates ambiguity |
 | **Ownership** | Is there a responsible owner? | Named owner with backup | Named owner; no backup | Ownerless; nobody accountable |
-| **Currency** | Has it been reviewed recently? | Review completed fewer than 6 months ago | Last reviewed 6–12 months ago | No review date; appears obsolete |
+| **Currency** | Has it been reviewed recently? | Review completed fewer than 6 months ago | Last reviewed 6–12 months ago | Not reviewed in 12+ months, or no review date |
 | **Usability** | Can the intended audience actually follow it? | Tested with users; clear structure | Mostly usable; minor clarity issues | Confusing; jargon-heavy; untested |
 | **Control** | Is the document versioned and approved? | Approved version tracked; change history | Version exists; approval unclear | No version; no approval record |
 
-**Risk scoring:** For each dimension, score 1–3 (low, medium, high). Average the seven scores to get overall document risk.
+**Risk scoring:** For each dimension, score 1–3 (low, medium, high). Average the seven scores to get overall document risk: below 1.5 is Low, 1.5 to 2.4 is Medium, and 2.5 or above is High.
 
 ### Example audit matrix
 
@@ -89,14 +89,14 @@ For each document in the audit, I assess **seven dimensions of risk**:
 |----------|-------|--------------|----------|--------------|-------------|-----------|----------|-----------|---------|------------|--------|
 | Adding a New Site (v1) | – | Mar 2022 | High | Medium | High | High | High | Medium | High | **HIGH** | Merge with v2 |
 | Adding a New Site (v2) | – | Nov 2023 | High | Low | Medium | High | High | Low | Low | **MEDIUM** | Merge (becomes the base page) |
-| Site Topology Diagrams | – | Aug 2023 | High | High | Low | High | Medium | Medium | High | **HIGH** | Update + assign owner |
+| Site Topology Diagrams | – | Aug 2023 | High | High | Low | High | High | Medium | High | **HIGH** | Update + assign owner |
 | Change Management Process | Named (Compliance) | Jun 2026 | Low | Low | Low | Low | Low | Low | Low | **LOW** | Keep |
-| VPN Setup (Legacy) | – | Jan 2021 | High | High | Medium | High | High | High | High | **CRITICAL** | Archive (retain for compliance) |
-| Incident Response | – | Feb 2024 | Low | High | High | High | Medium | Low | High | **HIGH** | Merge pages + assign owner |
+| VPN Setup (Legacy) | – | Jan 2021 | High | High | Medium | High | High | High | High | **HIGH** | Archive (retain for compliance) |
+| Incident Response | – | Feb 2024 | High | High | High | High | High | Low | High | **HIGH** | Merge pages + assign owner |
 
 ### What this reveals
 
-Documents scoring "HIGH RISK" or "CRITICAL" across multiple dimensions indicate:
+Documents rated High overall, or High on several dimensions, indicate:
 
 - **Ownership gaps** – Nobody is accountable for staying current
 - **Accuracy risk** – Information may be outdated or wrong

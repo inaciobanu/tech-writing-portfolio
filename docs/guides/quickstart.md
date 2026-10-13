@@ -43,6 +43,8 @@ curl https://api.payflow.io/v2/payments \
 </TabItem>
 <TabItem value="python" label="Python">
 
+Install the `requests` library first with `pip install requests`.
+
 ```python
 import requests
 
@@ -65,6 +67,8 @@ print(response.json())
 
 </TabItem>
 <TabItem value="node" label="Node.js">
+
+Save this as `payment.mjs` and run it with `node payment.mjs` on Node.js 18 or later. The `.mjs` extension lets the file use `await` outside a function.
 
 ```javascript
 const response = await fetch('https://api.payflow.io/v2/payments', {
@@ -109,4 +113,4 @@ Confirm it in your Dashboard under **Payments → Test Payments**.
 
 - [Integration Guide](./integration) – add PayFlow to a real application
 - [API Reference](../api/reference/payflow-api) – full reference for all available endpoints
-- [Error Handling](../api/errors) – handle failures gracefully
+- [Error Handling](../api/errors) – how to handle failures and retries

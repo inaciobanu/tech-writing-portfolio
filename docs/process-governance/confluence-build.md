@@ -11,7 +11,7 @@ slug: /process-governance/confluence-build
 **In brief**
 
 - **Built:** a Confluence space for a fictional network infrastructure team, with a task-based landing page, ownership properties on every page, a document register, six templates and a two-review process.
-- **Live:** the monthly review reminder, which emails each owner a list of pages due for review, and the document register.
+- **Live:** the monthly review reminder, which emails each page author a list of their pages that haven't been updated for a while, and the document register.
 - **Not live:** the other three automations, the agent that would run the style check, and any enforcement of the two reviews. The style check is manual, and the reviews are recorded but not enforced.
 
 The case study so far describes a method: [audit](./audit) a documentation space, redesign its
@@ -110,7 +110,7 @@ checks a rule can't make, and it works as suggestions only. A person decides whe
 
 | Item | Status |
 |---|---|
-| Monthly review reminder, emailing each owner a linked list of pages due for review | Live, as a Confluence Automation rule. The rule, its audit log and the email it sends are shown on [Finding and fixing a broken process](./process-improvement). |
+| Monthly review reminder, emailing each page author a linked list of their pages that haven't been updated for a while | Live, as a Confluence Automation rule. The rule, its audit log and the email it sends are shown on [Finding and fixing a broken process](./process-improvement). |
 | The three automations that page lists as next: a two-stage nudge with a directory check, a template prompt for new pages, and a draft Troubleshooting page from a closed ticket | Not built, as that page says. |
 | Style check, using a documentation style reviewer | Manual: I run it with Claude on request. |
 | The same check as an agent that runs from the page | Designed, not built. |
