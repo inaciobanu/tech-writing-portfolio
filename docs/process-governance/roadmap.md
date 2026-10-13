@@ -89,3 +89,16 @@ For project managers I would add one more: where does work wait, or get passed b
 ## After the first month
 
 The following months would migrate the remaining pages in batches, run the monthly analytics check, and start tracking the four measures on the [Confluence build](confluence-build.md) page, none of which is measured yet.
+
+## Ideas for later
+
+These go beyond the documentation itself. I would not start them in the first month, and some belong to the team rather than to me, so I would raise them once the basics are working.
+
+- **Capturing knowledge that's only in people's heads.** I would interview the people who hold it, set up a handover routine for when someone leaves, and record what a departing engineer knows before they go. Question 3 in the interviews above starts this.
+- **Feeding lessons back into the docs.** After each incident or change, the post-incident review should trigger an update to the relevant runbook. That keeps the docs tied to what happens in practice.
+- **A champions network.** One person per sub-team who helps keep their pages current. It should spread the work beyond one author, and it gives the review step someone to rely on when engineers can't make the time.
+- **A feedback route that people actually use.** A visible "report a mistake" link, a named person who answers, and a count of how many reports were handled. In my analytics check on the demo space, the guide for reporting a mistake had no views, and there were no comments.
+- **Adoption and communication.** Short announcements, a short walkthrough for new starters, and an onboarding path through the key pages. A well-organised space still fails if nobody knows it changed.
+- **Findability beyond structure.** Metadata, labels and search tuning, so that people find pages by the words they type. In the demo space I started with descriptive titles and a list of approved labels, but when I checked, none of the pages carried a label yet.
+- **Preparing content for AI assistants.** Clean, current, owned pages, with sensitive content kept separate, so that an assistant can answer only from pages the team has reviewed. It's the same principle as on the [Confluence build](confluence-build.md) page: AI suggests, and a person decides.
+- **Retiring knowledge.** Archive rules, and a periodic check that old content is still needed. As in the [audit](audit.md), I would archive rather than delete.

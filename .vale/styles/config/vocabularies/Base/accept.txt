@@ -31,6 +31,7 @@ Enescu
 [Ff]ailover[s]?
 favicon
 Figma
+[Ff]indability
 [Ff]intech
 [Ff]ormatters
 Forshaw
