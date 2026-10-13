@@ -37,10 +37,10 @@ links to a short guide on reporting a mistake, so that a report reaches the page
 ![Landing page table of the Confluence demo space with two columns, "I want to…" and "Start here": one row for each thing a visitor might want to do, such as fixing something that's broken, doing a routine task, or writing a new page, each linking to the right section; the two most urgent rows are shaded red and the row for writing or updating a page is shaded green](/img/confluence-landing-page.png)
 
 Below the table, the space map shows the whole structure at a glance. The blue sections are the core structure from the
-earlier case study. The green ones I added for this role: incident and change as their own sections, automation,
+earlier case study, some under new names. The green ones I added in the build: incident and change as their own sections, automation,
 processes, the document register, and the archive.
 
-![Space map: twelve linked sections in a grid of four columns and three rows, each with a one-line description. Six blue sections are the core structure: Architecture & Design, SOPs & Runbooks, Policies & Standards, Onboarding & Glossary, Projects & Delivery, and Troubleshooting & Knowledge Base. Six green sections were added for this role: Incident & On-call, Change Management, Network Automation, Processes, Document register, and Archive](/img/confluence-landing-sections.png)
+![Space map: twelve linked sections in a grid of four columns and three rows, each with a one-line description. Six blue sections are the core structure: Architecture & Design, SOPs & Runbooks, Policies & Standards, Onboarding & Glossary, Projects & Delivery, and Troubleshooting & Knowledge Base. Six green sections were added in the build: Incident & On-call, Change Management, Network Automation, Processes, Document register, and Archive](/img/confluence-landing-sections.png)
 
 ## Five decisions, and why
 
@@ -124,7 +124,7 @@ That page's three "what's next" automations are still unbuilt.
 ## How I'd know it works
 
 Four measures would show whether the space is holding. Each can be read from the page properties and the document
-register, so none needs a survey:
+register:
 
 - **Findings per page.** Repeat the [audit](./audit) a year later. The number should fall.
 - **Pages with both reviews done.** The share of operational pages where the style check and the technical review are
@@ -132,7 +132,9 @@ register, so none needs a survey:
 - **Time from draft to published.** How long a page waits between Draft and Current.
 - **Overdue pages.** The count of pages past their next review date.
 
-None of these is measured yet, because the demo space has no history to measure against.
+None of these is measured yet, because the demo space has no history to measure against. The
+[baseline survey](./roadmap#the-baseline-survey) on the roadmap would sit alongside them, to show how the team feels about
+the space.
 
 ## How I used AI
 
@@ -143,12 +145,8 @@ anything it can't confirm becomes a question for the engineer, marked `[TO CONFI
 
 ## What I would do first on a real team
 
-1. Read the existing space and talk to the people who use it, before touching anything.
-2. Audit every page: keep, update, merge or archive, and flag the ones nobody owns.
-3. Fix the pages used during incidents first.
-4. Agree the structure, templates and ownership model with the team, then migrate in batches.
-5. Put the review reminder in place before the first review date arrives, as described on the
-   [process improvement page](./process-improvement).
+On a real team I would not start by building. The [roadmap](./roadmap) sets out the order I would work in: listen
+first, triage by risk, agree the rules, then fix.
 
 ## Things I learned
 

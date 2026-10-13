@@ -25,9 +25,9 @@ I went page by page and sorted each one into Keep, Update, Merge, or Archive:
 - **Keep** – the content was accurate and someone was already using it.
 - **Update** – the topic still mattered but the detail was wrong or missing.
 - **Merge** – two or three pages said the same thing, sometimes contradicting each other, and needed to become one page.
-- **Archive** – the underlying system or process didn't exist anymore.
+- **Archive** – the underlying system or process didn't exist any more.
 
-My first instinct was to delete the Archive pile outright – it was outdated, why keep it. That's not a call to make alone, though: from a compliance angle, some of that content needed to stay findable for audit purposes even once it stopped being current. So I moved it into a separate Archive space instead of deleting it: out of the way, but not gone. That's the version that made it into the final structure.
+My first instinct was to delete the Archive pile outright – it was outdated, why keep it. That's not a call to make alone, though: from a compliance angle, some of that content needed to stay findable for audit purposes even once it stopped being current. So I moved it into an Archive section instead of deleting it: out of the way, but not gone. That's the version that made it into the final structure.
 
 Two flags mattered more than the Keep/Update/Merge/Archive call itself: whether a page had a named owner, and whether it had ever been reviewed. A page can be Keep-worthy today and still be one departure away from going stale, if nobody's accountable for checking it.
 
@@ -53,16 +53,16 @@ See [Redesigning the Space Structure](./structure) for what I built once the aud
 
 ## Documentation audit framework
 
-When auditing a documentation space, I use a systematic framework to identify what needs work and prioritize remediation by risk.
+When auditing a documentation space, I use a systematic framework to identify what needs work and prioritise remediation by risk.
 
 ### Audit methodology
 
-**Inventory → Assess → Risk-Rate → Prioritize → Remediate → Approve → Monitor**
+**Inventory → Assess → Risk-Rate → Prioritise → Remediate → Approve → Monitor**
 
-1. **Inventory** – Catalog every document with its metadata (owner, last update, audience, criticality)
+1. **Inventory** – Catalogue every document with its metadata (owner, last update, audience, criticality)
 2. **Assess** – Evaluate each document against quality criteria
 3. **Risk-Rate** – Score each document by risk impact
-4. **Prioritize** – Focus on highest-risk items first
+4. **Prioritise** – Focus on highest-risk items first
 5. **Remediate** – Fix accuracy, structure, ownership, review cycles
 6. **Approve** – Get sign-off from owner before publishing
 7. **Monitor** – Track changes and refresh cycles ongoing
@@ -88,7 +88,7 @@ For each document in the audit, I assess **seven dimensions of risk**:
 | Document | Owner | Last Updated | Accuracy | Completeness | Consistency | Ownership | Currency | Usability | Control | Risk Level | Action |
 |----------|-------|--------------|----------|--------------|-------------|-----------|----------|-----------|---------|------------|--------|
 | Adding a New Site (v1) | – | Mar 2022 | High | Medium | High | High | High | Medium | High | **HIGH** | Merge with v2 |
-| Adding a New Site (v2) | Named (FM Ops) | Nov 2023 | Low | Low | Low | Low | Low | Low | Low | **LOW** | Keep |
+| Adding a New Site (v2) | – | Nov 2023 | High | Low | Medium | High | High | Low | Low | **MEDIUM** | Merge (becomes the base page) |
 | Site Topology Diagrams | – | Aug 2023 | High | High | Low | High | Medium | Medium | High | **HIGH** | Update + assign owner |
 | Change Management Process | Named (Compliance) | Jun 2026 | Low | Low | Low | Low | Low | Low | Low | **LOW** | Keep |
 | VPN Setup (Legacy) | – | Jan 2021 | High | High | Medium | High | High | High | High | **CRITICAL** | Archive (retain for compliance) |
@@ -102,17 +102,19 @@ Documents scoring "HIGH RISK" or "CRITICAL" across multiple dimensions indicate:
 - **Accuracy risk** – Information may be outdated or wrong
 - **Operational risk** – Users may be following incorrect procedures
 - **Compliance risk** – Audit trail may be broken
-- **Organizational debt** – These documents worsen without intervention
+- **Organisational debt** – These documents worsen without intervention
 
-The risk matrix allows a Facilities Manager or documentation owner to see at a glance which documents need urgent attention and which can be left stable.
+The risk matrix allows a team lead or documentation owner to see at a glance which documents need urgent attention and which can be left stable.
 
-### Using the audit for prioritization
+### Using the audit for prioritisation
 
-Once you've scored all documents, prioritize remediation by:
+Once you've scored all documents, prioritise remediation by:
 
 **Risk × Operational Importance × Frequency of Use × Regulatory Impact**
 
 For example:
-- An ownerless SOP used by field teams daily that affects safety = **Fix first**
+- An ownerless runbook that on-call engineers use during incidents = **Fix first**
 - A design document with one named owner, reviewed 9 months ago = **Review and update**
 - An archived procedure from 2021 = **Retain for compliance; monitor only**
+
+For the order I would do this in on a real team, see the [roadmap](./roadmap).

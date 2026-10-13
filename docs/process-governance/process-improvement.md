@@ -26,9 +26,9 @@ Three of the four steps on the left involve nobody doing anything, which is usua
 
 ## What I built
 
-I built it as a rule in Confluence's own Automation rather than reaching for a separate tool – the space already lived there, and it kept the whole thing on one platform instead of adding an integration to maintain. The rule branches over each page in the space, checks whether it's past its review date and has an owner's email on record, and sends that owner a flagged email directly:
+I built it as a rule in Confluence's own Automation rather than reaching for a separate tool – the space already lived there, and it kept the whole thing on one platform instead of adding an integration to maintain. The rule picks up the pages that haven't been updated for a while, groups them by author, checks that each author has an email address on record, and sends them one email listing their pages. In the demo, the page author stands in for the owner, and time since the last update stands in for the review date:
 
-![Confluence Automation rule canvas: a scheduled trigger runs monthly, branches for each inactive page, checks the page author's email address is not empty, then sends a customised review email to the owner](/img/process-improvement/confluence-automation-canvas.png)
+![Confluence Automation rule canvas: a scheduled trigger runs monthly, branches for each inactive page, checks the page author's email address isn't empty, then sends a review email to that address](/img/process-improvement/confluence-automation-canvas.png)
 
 It's not sophisticated. It doesn't need to be. It just moves the trigger off a person's memory and onto a clock.
 
@@ -40,18 +40,18 @@ And here's what actually landed in the owner's inbox – ten pages that hadn't b
 
 ![Email titled "For review: These pages may need updating", sent from Confluence automation, listing ten pages with their review status (review due or published) and last-updated date, each linked directly](/img/process-improvement/confluence-automation-email.png)
 
-The second nudge and the directory active-account check from the original sketch aren't in this version – they'd need either a paid Automation tier with a higher run quota, or moving the logic to a general-purpose tool like n8n or Tines that isn't capped by page-count the way Confluence's own automation is. That's the honest gap between what I mapped and what I shipped first: I built the smallest version that proved the mechanism, not the full design.
+The second nudge and the directory active-account check from the original sketch aren't in this version – they'd need either a paid Automation tier with a higher run quota, or moving the logic to a general-purpose tool like n8n or Tines that isn't capped by monthly rule runs the way Confluence's own automation is. That's the honest gap between what I mapped and what I shipped first: I built the smallest version that proved the mechanism, not the full design.
 
 ## The other half of this: Capturing what people actually do
 
 The reminder fixed timing. It didn't fix accuracy, which is a separate problem I ran into while writing the [site provisioning SOP](./template-sop). Picturing what the on-call engineer would actually do, step by step, against what the written procedure said turned up three places where the two would diverge – the kind of detail a straight description-from-memory wouldn't catch. It's the reason I'd rather sit with someone during a real change and write down what happens than take a page at its word.
 
-I'd apply the same method to the change log process: picture sitting with a PM and tracing two change requests end to end. That surfaces a step where ticket status was being copied manually into a page nobody downstream was actually reading, because it used to matter and the reason it mattered was long gone. I wrote up a shorter version of the process and a simple flowchart of the change lifecycle, and that step came out.
+I'd apply the same method to the change log process: picture sitting with a PM and tracing two change requests end to end. That's the kind of exercise that surfaces a step where ticket status is being copied manually into a page nobody downstream is actually reading, because it used to matter and the reason it mattered is long gone. A shorter write-up of the process and a simple flowchart of the change lifecycle would take that step out.
 
-Neither of these looked like documentation problems on the surface – the symptom was "the page is wrong" or "nobody's doing what the page says." The actual problem, both times, was upstream in the process itself. That's the part of this work I find genuinely interesting: the writing is often the easy half.
+Neither of these looked like documentation problems on the surface – the symptom was "the page is wrong" or "nobody's doing what the page says." The actual problem, in both cases, was upstream in the process itself. That's the part of this work I find genuinely interesting: the writing is often the easy half.
 
 ## What's next
 
-The reminder rule was the first automation I put in, not the last one I'd want. Three more are on my list: extending the reminder itself to a two-stage nudge with a directory active-account check once it's on a tier with room for weekly runs; nudging new-page authors toward the right template before a page goes live, instead of catching drift at the next review; and automatically drafting a Troubleshooting page from a closed ticket the moment something new gets resolved, so the write-up starts before anyone has to remember to do it. None of the three are built yet – the reminder rule got the time first because it was the most widespread problem.
+The reminder rule was the first automation I put in, not the last one I'd want. Three more are on my list: extending the reminder itself to a two-stage nudge with a directory active-account check once it's on a tier with room for weekly runs; nudging new-page authors towards the right template before a page goes live, instead of catching drift at the next review; and automatically drafting a Troubleshooting page from a closed ticket the moment something new gets resolved, so the write-up starts before anyone has to remember to do it. None of the three are built yet – the reminder rule got the time first because it was the most widespread problem.
 
 Since writing this, I have built the space around these ideas in Confluence, including a style check and a technical review before a page goes live: see [Building the Space in Confluence](./confluence-build).

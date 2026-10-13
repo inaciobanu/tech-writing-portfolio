@@ -89,6 +89,7 @@ const sidebars = {
         'process-governance/governance',
         'process-governance/process-improvement',
         'process-governance/confluence-build',
+        'process-governance/roadmap',
       ],
     },
   ],

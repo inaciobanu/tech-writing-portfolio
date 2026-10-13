@@ -11,8 +11,8 @@ slug: /process-governance/template-sop
 I wrote this one the way I'd ideally do it: sit with the engineer who actually runs this procedure and write down what they do, rather than repeat what the old page claimed. In practice the two wouldn't fully match – more on that in [Finding and Fixing a Broken Process](./process-improvement).
 
 **Owner:** Network Infrastructure (site provisioning) · **Backup owner:** Change Management lead
-**Last reviewed:** 2026-06-15 · **Next review due:** 2026-09-15
-**Status:** Active
+**Last reviewed:** 2026-10-06 · **Next review due:** 2027-01-06
+**Status:** Current
 
 This follows the standard procedure template from the [Ownership and review model](./governance) – Owner, Last Reviewed, Purpose, Scope, Prerequisites, Procedure, Rollback, Related pages, in that order. Same layout on every runbook means readers don't have to relearn the page structure when switching to a different one.
 
