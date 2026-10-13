@@ -212,6 +212,7 @@ const config = {
               { label: 'Ownership & Review Model', to: '/docs/process-governance/governance' },
               { label: 'Process Improvement', to: '/docs/process-governance/process-improvement' },
               { label: 'Confluence Build', to: '/docs/process-governance/confluence-build' },
+              { label: 'Roadmap', to: '/docs/process-governance/roadmap' },
             ],
           },
           {
