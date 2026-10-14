@@ -10,8 +10,8 @@ slug: /process-governance/confluence-build
 
 **In brief**
 
-- **Built:** a Confluence space for a fictional network infrastructure team, with a task-based landing page, ownership properties on every page, a document register, six templates and a two-review process.
-- **Live:** the monthly review reminder, which emails each page author a list of their pages that haven't been updated for a while, and the document register.
+- **Built:** a Confluence space for a fictional network infrastructure team, with a task-based landing page, ownership properties on every page, a document register, an approved list of topic labels, six templates and a two-review process.
+- **Live:** the monthly review reminder, which emails each page author a list of their pages that haven't been updated for a while, the document register, and topic labels on 55 of the 60 pages.
 - **Not live:** the other three automations, the agent that would run the style check, and any enforcement of the two reviews. The style check is manual, and the reviews are recorded but not enforced.
 
 The case study so far describes a method: [audit](./audit) a documentation space, redesign its
@@ -42,7 +42,7 @@ processes, the document register, and the archive.
 
 ![Space map: twelve linked sections in a grid of four columns and three rows, each with a one-line description. Six blue sections are the core structure: Architecture & Design, SOPs & Runbooks, Policies & Standards, Onboarding & Glossary, Projects & Delivery, and Troubleshooting & Knowledge Base. Six green sections were added in the build: Incident & On-call, Change Management, Network Automation, Processes, Document register, and Archive](/img/confluence-landing-sections.png)
 
-## Five decisions, and why
+## Six decisions, and why
 
 ### 1. Organise by what people are doing, not by who wrote it
 
@@ -106,6 +106,28 @@ reminder on the [process improvement page](./process-improvement) is the first e
 not a person. AI is for judgement
 checks a rule can't make, and it works as suggestions only. A person decides whether something is technically correct.
 
+### 6. Topic labels, separate from status
+
+A topic label is a short tag on a Confluence page, such as `sop`, `runbook` or `incident`, that says what kind of page
+it is. It does a different job from the status badge. The badge says whether you can trust a page, and the label says
+what the page is, so a label never describes status.
+
+Select a label on any page and Confluence lists every page that carries it, wherever it sits in the page tree. Someone
+who wants every SOP can find them all without knowing where each one was filed.
+
+That only works if everyone uses the same words. Otherwise `firewall`, `firewalls` and `fw` would split the same pages
+three ways. So the space has one approved list of 14 labels, with four rules:
+
+- Use only labels from the approved list.
+- Write labels in lowercase and the singular, with hyphens between words.
+- Use up to four labels on a page.
+- Describe the page type or topic, never the status.
+
+![Approved labels table with two columns, Label and Use on, listing the 14 topic labels as coloured tags, each with the kind of page it's used on, such as runbook for alert and failure runbooks and incident for incident runbooks and reviews](/img/confluence-approved-labels.png)
+
+Five pages are left unlabelled on purpose: the home page, the document register, the archive and the two archived
+templates. Of the 60 pages in the space, 55 carry at least one label, and none carries more than two.
+
 ## What's live, and what's only designed
 
 | Item | Status |
@@ -117,6 +139,7 @@ checks a rule can't make, and it works as suggestions only. A person decides whe
 | The style reviewer's instructions, kept on a page in the space so they're visible and versioned | Written. The agent they're meant for isn't built, and the instructions are untested in an agent. |
 | Drafting a page from a named source, with unknowns marked | Proposed for later. |
 | A document register that lists every page with its owner, status, system, and next review date | Built, and the columns display. |
+| An approved list of 14 topic labels | Live, on 55 of the 60 pages. |
 
 The style check, the agent design and the drafting idea are additions since the process improvement page was written.
 That page's three "what's next" automations are still unbuilt.
